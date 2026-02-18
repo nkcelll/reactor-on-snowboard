@@ -1,0 +1,43 @@
+* {
+	margin: 0;	
+	padding: 0;	
+	box-sizing: border-box;	
+}
+
+:root {
+	font-synthesis: none;	
+	text-rendering: optimizeLegibility;	
+	-webkit-font-smoothing: antialiased;	
+	-moz-osx-font-smoothing: grayscale;	
+
+	/* Main Black Background */	
+	--backMainDark: #1e201e;	
+	--color-light: #e6e6e6;	
+
+	/* Main White Background */	
+	--backMainLight: #e4e2e2;	
+	--color-dark: #181818;	
+
+	letter-spacing: 1px;	
+}
+
+body {
+	font-family: 'Urbanist', sans-serif;	
+	margin: 0;	
+}
+
+a {
+  	text-decoration: none;	
+	color: var(--color-dark);
+}
+
+ul,
+li {
+  	list-style: none;	
+}
+
+button {
+  	cursor: pointer;
+	background-color: transparent;	
+	border: none;
+}
