@@ -1,0 +1,39 @@
+[
+  {
+    "id": "men-snowboarding",
+    "topCat": "Snowboarding",
+    "subCategory": [
+      { "id": "men-snowboards", "subCat": "Snowboards", "url": "/men/snowboards" },
+      { "id": "men-boots", "subCat": "Snowboard Boots", "url": "/men/boots" },
+      { "id": "men-bindings", "subCat": "Snowboard Bindings", "url": "/men/bindings" },
+      { "id": "men-bags", "subCat": "Snowboard Bags", "url": "/men/bags" },
+      { "id": "men-tools", "subCat": "Snowboard Tools", "url": "/men/tools" }
+    ]
+  },
+  {
+    "id": "men-clothes",
+    "topCat": "Clothes",
+    "subCategory": [
+      { "id": "men-jackets", "subCat": "Jackets", "url": "/men/jackets" },
+      { "id": "men-pants", "subCat": "Pants", "url": "/men/pants" },
+      { "id": "men-thermals", "subCat": "Thermals", "url": "/men/thermals" },
+      { "id": "men-hoodies", "subCat": "Hoodies", "url": "/men/hoodies" }
+    ]
+  },
+  {
+    "id": "men-accessories",
+    "topCat": "Accessories",
+    "subCategory": [
+      { "id": "men-goggles", "subCat": "Goggles", "url": "/men/goggles" },
+      { "id": "men-helmets", "subCat": "Helmets", "url": "/men/helmets" },
+      { "id": "men-gloves", "subCat": "Gloves", "url": "/men/gloves" },
+      { "id": "men-masks", "subCat": "Mask / Neck Warmers", "url": "/men/masks" },
+      { "id": "men-hats", "subCat": "Hats", "url": "/men/hats" },
+      { "id": "men-caps", "subCat": "Caps", "url": "/men/caps" },
+      { "id": "men-boxers", "subCat": "Boxer Shorts", "url": "/men/boxers" },
+      { "id": "men-socks", "subCat": "Socks", "url": "/men/socks" },
+      { "id": "men-belts", "subCat": "Belts", "url": "/men/belts" },
+      { "id": "men-wallets", "subCat": "Wallets", "url": "/men/wallets" }
+    ]
+  }
+]

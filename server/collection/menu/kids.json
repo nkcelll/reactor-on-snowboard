@@ -1,0 +1,19 @@
+[
+  {
+    "id": "kids-snowboarding",
+    "topCat": "Snowboarding",
+    "subCategory": [
+      { "id": "kids-snowboards", "subCat": "Snowboards", "url": "/kids/snowboards" },
+      { "id": "kids-boots", "subCat": "Snowboard Boots", "url": "/kids/boots" }
+    ]
+  },
+  {
+    "id": "kids-clothes",
+    "topCat": "Clothes",
+    "subCategory": [
+      { "id": "kids-jackets", "subCat": "Jackets", "url": "/kids/jackets" },
+      { "id": "kids-pants", "subCat": "Pants", "url": "/kids/pants" },
+      { "id": "kids-hoodies", "subCat": "Hoodies", "url": "/kids/hoodies" }
+    ]
+  }
+]

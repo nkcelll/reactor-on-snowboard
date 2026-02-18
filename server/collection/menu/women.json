@@ -1,0 +1,29 @@
+[
+  {
+    "id": "women-snowboarding",
+    "topCat": "Snowboarding",
+    "subCategory": [
+      { "id": "women-snowboards", "subCat": "Snowboards", "url": "/women/snowboards" },
+      { "id": "women-boots", "subCat": "Snowboard Boots", "url": "/women/boots" },
+      { "id": "women-bindings", "subCat": "Snowboard Bindings", "url": "/women/bindings" }
+    ]
+  },
+  {
+    "id": "women-clothes",
+    "topCat": "Clothes",
+    "subCategory": [
+      { "id": "women-jackets", "subCat": "Jackets", "url": "/women/jackets" },
+      { "id": "women-pants", "subCat": "Pants", "url": "/women/pants" },
+      { "id": "women-hoodies", "subCat": "Hoodies", "url": "/women/hoodies" }
+    ]
+  },
+  {
+    "id": "women-accessories",
+    "topCat": "Accessories",
+    "subCategory": [
+      { "id": "women-goggles", "subCat": "Goggles", "url": "/women/goggles" },
+      { "id": "women-helmets", "subCat": "Helmets", "url": "/women/helmets" },
+      { "id": "women-gloves", "subCat": "Gloves", "url": "/women/gloves" }
+    ]
+  }
+]

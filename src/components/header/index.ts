@@ -1,4 +1,4 @@
-export {default as Nav} from './Nav' 
+export {default as NavMenu} from './Menu' 
 export {default as SwitchTheme} from './SwitchTheme'
 export {default as SearchBox} from './SearchBox'
 export {default as Cart} from './Cart'

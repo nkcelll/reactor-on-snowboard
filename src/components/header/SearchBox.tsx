@@ -1,5 +1,5 @@
 import './header.css'
-import SearchIcon from "../../assets/SearchIcon"
+import SearchIcon from "../../assets/icons/IconSearch"
 
 export default function SearchBox() {
   return (

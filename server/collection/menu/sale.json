@@ -1,0 +1,18 @@
+[
+  {
+    "id": "sale-men",
+    "topCat": "Men Sale",
+    "subCategory": [
+      { "id": "sale-men-snowboards", "subCat": "Snowboards", "url": "/sale/men/snowboards" },
+      { "id": "sale-men-clothes", "subCat": "Clothes", "url": "/sale/men/clothes" }
+    ]
+  },
+  {
+    "id": "sale-women",
+    "topCat": "Women Sale",
+    "subCategory": [
+      { "id": "sale-women-snowboards", "subCat": "Snowboards", "url": "/sale/women/snowboards" },
+      { "id": "sale-women-clothes", "subCat": "Clothes", "url": "/sale/women/clothes" }
+    ]
+  }
+]
