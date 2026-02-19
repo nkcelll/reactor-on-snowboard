@@ -1,7 +1,7 @@
 import './header.css';
 
-import { Logo, IconUser } from './index';
-import { NavMenu, SearchBox, Cart, SwitchTheme } from './index';
+import { Logo, IconUser, } from './index';
+import { NavMenu, SearchBox, Cart, SwitchTheme, BurgerMenu } from './index';
 
 export default function Header() {
   return (
@@ -15,11 +15,12 @@ export default function Header() {
         <NavMenu />
         <div className="right-header_side">
           <SearchBox />
-          <a href="/">
+          <a className='toLogIn' href="/login">
             <IconUser />
           </a>
           <Cart />
           <SwitchTheme />
+          <BurgerMenu />
         </div>
       </nav>
     </header>

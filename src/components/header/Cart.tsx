@@ -10,19 +10,19 @@ export default function Cart() {
   const close = () => setIsVisible(false)
 
   return (
-    <div className="cart">
+    <div className="side-box">
       <button onClick={open}>
         <IconCart />
       </button>
-      <div className={`cart-overlay ${isVisible ? 'overlay-visible' : ''}`} onClick={close}></div>
-      <div className={`cart-box ${isVisible ? 'cart-box_open' : ''}`}>
-        <div className="cart-header cart-flex">
+      <div className={`overlay ${isVisible ? 'overlay-visible' : ''}`} onClick={close}></div>
+      <div className={`box-container ${isVisible ? 'box_open' : ''}`}>
+        <div className="box-header box-flex">
           <h3>Your Cart</h3>
           <button onClick={close}>
             <IconClose />
           </button>
         </div>
-        <section className="product-total cart-flex">
+        <section className="product-total box-flex">
           <h4>Products</h4>
           <h4>Total</h4>
         </section>
@@ -41,65 +41,9 @@ export default function Cart() {
               </button>
             </div>
           </div>
-          <div className="product-list">
-            <img className='product-img' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdu0jENPXob1kALvKa4pBt4c9WokDKrukdtQ&s" alt="Product Image" />
-            <div className="item-name_info">
-              <span>Surfer</span>
-              <span>Size: 150</span>
-              <span>Quantity: 1</span>
-            </div>
-            <div className="item-price_del">
-              <span>499.99$</span>
-              <button>
-                <IconRemoveTrash/>
-              </button>
-            </div>
-          </div>
-          <div className="product-list">
-            <img className='product-img' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdu0jENPXob1kALvKa4pBt4c9WokDKrukdtQ&s" alt="Product Image" />
-            <div className="item-name_info">
-              <span>Surfer</span>
-              <span>Size: 150</span>
-              <span>Quantity: 1</span>
-            </div>
-            <div className="item-price_del">
-              <span>499.99$</span>
-              <button>
-                <IconRemoveTrash/>
-              </button>
-            </div>
-          </div>
-          <div className="product-list">
-            <img className='product-img' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdu0jENPXob1kALvKa4pBt4c9WokDKrukdtQ&s" alt="Product Image" />
-            <div className="item-name_info">
-              <span>Surfer</span>
-              <span>Size: 150</span>
-              <span>Quantity: 1</span>
-            </div>
-            <div className="item-price_del">
-              <span>499.99$</span>
-              <button>
-                <IconRemoveTrash/>
-              </button>
-            </div>
-          </div>
-          <div className="product-list">
-            <img className='product-img' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdu0jENPXob1kALvKa4pBt4c9WokDKrukdtQ&s" alt="Product Image" />
-            <div className="item-name_info">
-              <span>Surfer</span>
-              <span>Size: 150</span>
-              <span>Quantity: 1</span>
-            </div>
-            <div className="item-price_del">
-              <span>499.99$</span>
-              <button>
-                <IconRemoveTrash/>
-              </button>
-            </div>
-          </div>
         </section>
-        <section className="cart-footer">
-          <div className="estimated-price cart-flex">
+        <section className="box-footer">
+          <div className="estimated-price box-flex">
             <h5>Estimated Total:</h5>
             <h5>499.99$</h5>
           </div>
