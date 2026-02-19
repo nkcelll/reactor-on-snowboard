@@ -1,5 +1,3 @@
-// src/components/Logo.jsx
-
 export default function Logo({ width = 90.66, height = 78.66}) {
   return (
     <svg

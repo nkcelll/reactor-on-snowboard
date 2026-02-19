@@ -6,7 +6,6 @@ import { NavMenu, SearchBox, Cart, SwitchTheme } from './index';
 export default function Header() {
   return (
     <header>
-      {/* <div className="scale"> */}
       <nav className="main-header_container">
         <div className="left-header_side">
           <a href="/">
@@ -23,7 +22,6 @@ export default function Header() {
           <SwitchTheme />
         </div>
       </nav>
-      {/* </div> */}
     </header>
   );
 }

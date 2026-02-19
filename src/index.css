@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -10,13 +12,29 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  
   /* Main Black Background */
   --backMainDark: #1e201e;
   --color-light: #e6e6e6;
+  --backSecLight: rgb(59, 59, 59);
+  --backHoverLight: #fff;
+  --textHoverLight: rgb(12, 12, 12);
+
 
   /* Main White Background */
+  --backHeader: rgb(214, 214, 214);
   --backMainLight: #e4e2e2;
+  --backSec: rgb(170, 170, 170);
+  --backHover: #302f2f;
   --color-dark: #181818;
+  --color-text: #fff;
+
+   /* ACTIVE THEME (default = light) */
+  --bg-header: var(--backHeader); 
+  --bg-main: var(--backMainLight);
+  --bg-sec: var(--backSec);
+  --bg-hover: var(--backHover);
+  --text-sec: var(--color-text);
 
   letter-spacing: 1px;
 }
@@ -24,12 +42,30 @@
 body {
   font-family: 'Urbanist', sans-serif;
   margin: 0;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+
 }
 
-a {
-  text-decoration: none;
-  color: var(--color-dark);
+body.dark {
+  --text-main: var(--color-light);
+  --text-sec: var(--textHoverLight);
+  --bg-main: var(--backMainDark);
+  --bg-sec: var(--backSecLight);
+  --bg-hover: var(--backHoverLight);
+  --bg-header: #2a2a2a; /* optional override for header */
 }
+
+body, a, h1, h2, h3, h4, h5, h6, button, input {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+svg {
+  color: var(--text-main);
+  transition: color 0.3s ease;
+}
+
 h1,
 h2,
 h3,
@@ -37,6 +73,11 @@ h4,
 h5,
 h6 {
   font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-main);
 }
 
 ul,
@@ -49,3 +90,14 @@ button {
   background-color: transparent;
   border: none;
 }
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+

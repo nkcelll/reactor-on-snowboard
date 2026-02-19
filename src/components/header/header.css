@@ -11,7 +11,7 @@
   position: sticky;
   top: 0;
   transition: 'top 0.3 ease';
-  background-color: var(--backMainLight);
+  background-color: var(--bg-header);
 }
 
 .left-header_side {
@@ -44,6 +44,7 @@
   justify-content: center;
   align-items: center;
   transition: opacity 0.3s ease;
+  color: var(--text-main);
 }
 .nav-dropDown-menu {
   width: 100%;
@@ -53,7 +54,9 @@
   left: 0;
   display: flex;
   justify-content: center;
-  background-color: rgb(214, 214, 214);
+  /* background-color: rgb(214, 214, 214); */
+  background-color: var(--bg-main);
+  color: var(--text-main);
   gap: 200px;
   z-index: 15;
 
@@ -73,7 +76,7 @@
 .list {
   display: flex;
   flex-direction: column;
-  border-right: 1px solid black;
+  border-right: 1px solid currentColor;
   height: 300px;
   margin: 20px 0 0 0;
   gap: 20px;
@@ -84,4 +87,214 @@
 .list > a {
   font-weight: 300;
   height: 770px;
+  color: var(--text-main);
+}
+
+/* Search Box */
+
+.search-input {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-main);
+  gap: 20px;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  transition:
+    top 0.3s ease,
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.search-input.open {
+  opacity: 1;
+  visibility: visible;
+  top: 0;
+}
+
+.search-input.close {
+  opacity: 0;
+  visibility: hidden;
+  top: -100%;
+}
+
+.input-dropDown_wrap {
+  display: flex;
+  width: 60%;
+  height: 40px;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+}
+
+.input-dropDown_wrap > input {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0 35px 0 20px;
+  outline: none;
+  letter-spacing: 2px;
+  color: var(--text-main);
+  border: 1px solid currentColor;
+  background-color: var(--bg-main);
+}
+
+.input-dropDown_wrap > .search-opened {
+  position: absolute;
+  right: 40px;
+  width: 20px;
+}
+
+/* Cart Box **************************/
+.cart-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 100;
+}
+
+.cart-overlay.overlay-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.cart-box {
+  display: flex;
+  width: 500px;
+  background-color: var(--bg-main);
+  /* height: 100%; */
+  height: 100vh;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+  cursor: default;
+  /* inset: 0; */
+  right: 0;
+  top: 0;
+  z-index: 110;
+  position: fixed;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 20px;
+  overflow: hidden;
+}
+
+.cart-box_open {
+  transform: translateX(0);
+}
+
+.cart-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-header {
+  height: 60px;
+}
+
+.product-total {
+  height: 40px;
+  border-bottom: 1px solid currentColor;
+}
+
+.product-wrap {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 5px;
+  width: 100%;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.product-img {
+  width: 150px;
+  height: 150px;
+}
+
+.product-list {
+  display: flex;
+  height: auto;
+  width: inherit;
+  justify-content: space-between;
+  /* padding: 20px 20px; */
+  padding: 20px 0;
+  border-bottom: 1px solid currentColor;
+}
+
+.item-name_info {
+  display: flex;
+  height: auto;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.item-price_del {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-name_info > span {
+  font-weight: 600;
+}
+
+.item-price_del > span {
+  font-weight: 600;
+}
+
+.remove-img {
+  color: red;
+}
+.item-price_del > button {
+  width: 100%;
+  height: 40px;
+  background-color: var(--bg-sec);
+}
+.item-price_del > button:hover {
+  background-color: grey;
+  width: 100%;
+  height: 40px;
+}
+
+.cart-footer {
+  display: flex;
+  gap: 30px;
+  margin: 0 0 20px 0;
+  flex-direction: column;
+}
+
+.checkout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+}
+
+.checkout > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  background-color: var(--bg-sec);
+  font-weight: 600;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.checkout > a:hover {
+  background-color: var(--bg-hover);
+  color: var(--text-sec);
 }

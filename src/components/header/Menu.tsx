@@ -1,5 +1,5 @@
 import './header.css';
-import { useState, useEffect, useRef } from 'react';
+import { useState} from 'react';
 
 export default function NavMenu() {
   const [isHovered, setIsHovered] = useState(false);
