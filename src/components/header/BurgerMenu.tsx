@@ -4,6 +4,8 @@ import IconFacebook from '../../assets/icons/IconFacebook';
 import IconInstagram from '../../assets/icons/IconInstagram';
 import IconUser from '../../assets/icons/IconUser';
 
+import BurgerBoxList from './BurgerBoxList';
+
 import { useState } from 'react';
 
 export default function BurgerMenu() {
@@ -37,18 +39,7 @@ export default function BurgerMenu() {
               </a>
             </div>
           </div>
-          <div className="nav_burger">
-            <div className="category">
-              <ul>
-                <li className='burger-nav-items'>
-                  <button>Winter Sports</button>
-                  <div className="burger-nav-items_child">
-                    
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <BurgerBoxList />
           <div className="socials">
             <a href="">
               <IconFacebook />

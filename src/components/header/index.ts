@@ -3,6 +3,8 @@ export {default as SwitchTheme} from './SwitchTheme'
 export {default as SearchBox} from './SearchBox'
 export {default as Cart} from './Cart'
 export {default as BurgerMenu} from './BurgerMenu'
+export {default as BurgerItemsButton} from './components/BurgerItemsButton'
+export {default as BurgerBoxList} from './BurgerBoxList'
 
 export {default as Logo} from '../../assets/Logo'
 export {default as IconUser} from '../../assets/icons/IconUser'

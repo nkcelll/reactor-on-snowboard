@@ -1,9 +1,21 @@
 import './header.css';
+import kids from '../../../services/collection/home/menu/kids.json'
+import men from '../../../services/collection/home/menu/men.json'
+import sale from '../../../services/collection/home/menu/sale.json'
+import women from '../../../services/collection/home/menu/women.json'
+
 import { useState} from 'react';
 
 export default function NavMenu() {
   const [isHovered, setIsHovered] = useState(false);
 
+  const menuItems = [
+    {label: 'Men', data: men},
+    {label: 'Women', data: women},
+    {label: 'Kids', data: kids},
+    {label: 'Sale', data: sale},
+    
+  ]
   
 
   return (

@@ -1,0 +1,70 @@
+#home-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1;
+  height: calc(100dvh - 77px);
+  overflow-x: auto;
+  /* overflow: hidden; */
+  overflow-y: hidden;
+  width: 100vw;
+  background-color: red;
+  padding: 0 20px;
+  gap: 30px;
+  background-color: var(--bg-main);
+  scrollbar-width: none;
+  
+}
+
+/* #home-container:hover .product-poster-card {
+  transform: scale(0.9);
+  opacity: 0.7;
+} */
+
+.product-poster-card {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* .product-poster-card:hover {
+  transform: scale(1.2); 
+  z-index: 10; 
+} */
+
+.product-poster-card img {
+  width: 200px;
+  height: calc(100vh - 77px - 50px);
+  object-fit: cover;
+  border-radius: 3px 3px 0 0;
+  filter: saturate(0);
+  transition: filter 0.3s ease;
+}
+
+.product-poster-card:hover img {
+  filter: saturate(1);
+}
+
+.textBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-sec);
+  height: 50px;
+}
+
+@media screen and (max-width: 425px) {
+  .product-poster-card img {
+  filter: saturate(1);
+}
+  .product-poster-card:hover {
+  transform: scale(1.2); /* Increase size on hover */
+  z-index: 10; /* Bring it on top of neighbors */
+}
+#home-container:hover .product-poster-card {
+  transform: scale(1);
+  opacity: 1;
+}
+
+}
