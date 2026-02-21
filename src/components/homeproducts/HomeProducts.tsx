@@ -5,9 +5,9 @@ import useSmoothHorizontalScroll from '../shared/ScrollAnime';
 import { useRef } from 'react';
 
 export default function HomeProducts() {
-  const containerRef = useRef<HTMLElement | null>(null);
+  const containerRef = useRef<HTMLElement>(null);
 
-  useSmoothHorizontalScroll(containerRef)
+  useSmoothHorizontalScroll(containerRef as React.RefObject<HTMLElement>);
 
   const products = Object.values(dataHome.data);
 

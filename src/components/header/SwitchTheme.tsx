@@ -1,8 +1,10 @@
-import IconDarkMoon from "../../assets/icons/IconDarkMoon"
-import IconSun from "../../assets/icons/IconSun"
+import icons from "@/assets/icons"
 import { useState, useEffect } from "react"
 
 export default function SwitchTheme() {
+  const IconSun = icons.IconSun
+  const IconDarkMoon = icons.IconDarkMoon
+
   const [darkMode, setDarkMode] = useState(() => {
     const savedTheme = localStorage.getItem('theme')
     return savedTheme === 'dark'

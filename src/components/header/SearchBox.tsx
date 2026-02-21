@@ -1,12 +1,13 @@
 import './header.css'
-import IconClose from '../../assets/icons/IconClose';
-import IconSearch from '../../assets/icons/IconSearch';
-// import {IconSearch } from './index'
+import icons from "@/assets/icons";
 import {useState} from 'react' 
 
 
 export default function SearchBox() {
   const [isVisible, setIsVisible] = useState(false)
+
+  const IconSearch = icons.IconSearch
+  const IconClose = icons.IconClose
 
   const open = () => {
     console.log(isVisible);

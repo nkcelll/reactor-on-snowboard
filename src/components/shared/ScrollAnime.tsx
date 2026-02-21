@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export default function useSmoothHorizontalScroll(ref: React.RefObject<HTMLElement>, speed = 2, ease = 0.03) {
+export default function useSmoothHorizontalScroll(ref: React.RefObject<HTMLElement >, speed = 2, ease = 0.03) {
   useEffect(() => {
     const container = ref.current;
     if (!container) return;

@@ -1,15 +1,11 @@
-import IconBurgerMenu from '../../assets/icons/IconBurgerMenu';
-import IconClose from '../../assets/icons/IconClose';
-import IconFacebook from '../../assets/icons/IconFacebook';
-import IconInstagram from '../../assets/icons/IconInstagram';
-import IconUser from '../../assets/icons/IconUser';
-
+import {IconBurgerMenu, IconClose, IconFacebook, IconInstagram, IconUser } from "@/assets/icons"
 import BurgerBoxList from './BurgerBoxList';
-
 import { useState } from 'react';
 
 export default function BurgerMenu() {
   const [isVisible, setIsVisible] = useState(false);
+
+
   const open = () => setIsVisible(true);
   const close = () => setIsVisible(false);
   return (

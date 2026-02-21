@@ -3,10 +3,10 @@ import BurgerItemsButton from './components/BurgerItemsButton';
 
 export default function BurgerBoxList() {
   // Track which items are open
-  const [openItems, setOpenItems] = useState({});
+  const [openItems, setOpenItems] = useState<Record<string, boolean>>({});
 
   // Toggle item open/close by ID
-  const toggleItem = (id) => {
+  const toggleItem = (id: string) => {
     setOpenItems((prev) => ({
       ...prev,
       [id]: !prev[id],

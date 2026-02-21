@@ -1,20 +1,21 @@
-import IconCart from '../../assets/icons/IconCart';
-import IconClose from '../../assets/icons/IconClose';
-import IconRemoveTrash from '../../assets/icons/IconRemoveTrash';
+import { IconCart, IconClose, IconRemoveTrash } from '@/assets/icons';
 
 import { useState } from 'react';
 
 export default function Cart() {
-  const [isVisible, setIsVisible] = useState(false)
-  const open = () => setIsVisible(true)
-  const close = () => setIsVisible(false)
+  const [isVisible, setIsVisible] = useState(false);
+  const open = () => setIsVisible(true);
+  const close = () => setIsVisible(false);
 
   return (
     <div className="side-box">
       <button onClick={open}>
         <IconCart />
       </button>
-      <div className={`overlay ${isVisible ? 'overlay-visible' : ''}`} onClick={close}></div>
+      <div
+        className={`overlay ${isVisible ? 'overlay-visible' : ''}`}
+        onClick={close}
+      ></div>
       <div className={`box-container ${isVisible ? 'box_open' : ''}`}>
         <div className="box-header box-flex">
           <h3>Your Cart</h3>
@@ -28,7 +29,11 @@ export default function Cart() {
         </section>
         <section className="product-wrap">
           <div className="product-list">
-            <img className='product-img' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdu0jENPXob1kALvKa4pBt4c9WokDKrukdtQ&s" alt="Product Image" />
+            <img
+              className="product-img"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdu0jENPXob1kALvKa4pBt4c9WokDKrukdtQ&s"
+              alt="Product Image"
+            />
             <div className="item-name_info">
               <span>Surfer</span>
               <span>Size: 150</span>
@@ -37,7 +42,7 @@ export default function Cart() {
             <div className="item-price_del">
               <span>499.99$</span>
               <button>
-                <IconRemoveTrash/>
+                <IconRemoveTrash />
               </button>
             </div>
           </div>
