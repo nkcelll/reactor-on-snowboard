@@ -18,7 +18,7 @@
 }
 
 .box-content {
-  flex: 1;              
+  flex: 1;
   overflow-y: auto;
 }
 
@@ -143,7 +143,7 @@
 }
 
 .box-footer.box-footer-checkout {
-  margin: 0px !important; 
+  margin: 0px !important;
 }
 
 .estimated-price {
@@ -208,7 +208,7 @@
   margin: 0 20px;
   display: flex;
   align-items: center;
-  border-bottom:1px solid currentColor;
+  border-bottom: 1px solid currentColor;
 }
 
 .create-account > a {
@@ -226,14 +226,15 @@
   flex-direction: column;
 }
 
-.inner-child, .inner.grandchild {
-
+.inner-child,
+.inner.grandchild {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
 }
 
-.inner-child.open, .inner.grandchild.open {
+.inner-child.open,
+.inner.grandchild.open {
   max-height: 1000px; /* large enough to fit content */
 }
 .button-section {
@@ -256,17 +257,12 @@
   height: 40px;
   font-size: 16px;
   padding: 0 20px;
-
 }
-
-
 
 .list-unstyled {
   padding: 0 20px;
   border-left: 1px solid currentColor;
   margin: 0 20px;
-
-
 }
 
 .list-unstyled > li {
@@ -297,7 +293,6 @@
   transform: rotate(0deg);
   transition: transform 0.3s ease;
 }
-
 
 /* Filter && Sort *********************/
 
@@ -330,36 +325,40 @@
   gap: 20px; /* Reduced gap for better alignment */
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   cursor: pointer;
   outline: none;
   appearance: none;
   position: relative;
   background-color: transparent;
-  width: 22px;  
-  height: 22px; 
+  width: 22px;
+  height: 22px;
 }
 
-input[type="checkbox"]::before {
-  content: "";
+input[type='checkbox']::before {
+  content: '';
   position: absolute;
   width: 22px;
   height: 22px;
   background-color: transparent;
   border-radius: 0;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
   border: 1px solid var(--bg-hover); /* Default border color */
 }
 
-input[type="checkbox"]:checked::before {
+input[type='checkbox']:checked::before {
   background-color: var(--bg-hover);
   border: 1px solid var(--bg-hover);
   border-radius: 0;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
 }
 
-input[type="checkbox"]::after {
-  content: "";
+input[type='checkbox']::after {
+  content: '';
   position: absolute;
   top: 45%;
   left: 50%;
@@ -372,7 +371,7 @@ input[type="checkbox"]::after {
   transition: opacity 0.2s ease;
 }
 
-input[type="checkbox"]:checked::after {
+input[type='checkbox']:checked::after {
   opacity: 1;
 }
 
@@ -381,11 +380,6 @@ label {
   color: var(--text-main);
   font-weight: 600;
 }
-
-.open-input {
-
-}
-
 
 @media screen and (min-width: 1024px) {
   .burger-menu_container {

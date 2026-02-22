@@ -1,0 +1,120 @@
+footer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border-top: 1px solid currentColor;
+  gap: 5px;
+  padding: 0 20px;
+}
+
+section {
+  display: flex;
+  width: auto;
+  height: 500px;
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 0 0 0;
+  transition:
+    max-height 0.5s ease,
+    opacity 0.5s ease;
+}
+
+.span-name {
+  border-bottom: 1px solid currentColor;
+  font-size: 16px;
+  letter-spacing: 1.25px;
+  font-weight: 600;
+  padding-bottom: 6px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition:
+    max-height 0.5s ease,
+    opacity 0.5s ease;
+}
+
+.links > a {
+  font-size: 14px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 0 0;
+  transition:
+    max-height 0.5s ease,
+    opacity 0.5s ease;
+}
+
+.contact-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 40px;
+}
+
+.mail-notifications {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  gap: 15px;
+  padding: 20px 0 0 0;
+  transition:
+    max-height 0.5s ease,
+    opacity 0.5s ease;
+}
+
+.email-submit {
+  display: flex;
+  gap: 10px;
+  /* width: 80%; */
+}
+
+#email-input-submit-footer {
+  background-color: transparent;
+  border: 1px solid currentColor;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  color: var(--text-main);
+  border-radius: 0px;
+}
+
+#email-input-submit-footer:focus {
+  outline: none;
+  border-radius: 0px;
+}
+
+#button-submit {
+  background-color: var(--bg-hover);
+  width: 100px;
+  height: 100%;
+}
+
+iframe {
+  border-radius: 20px;
+}
+
+.copyright-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 0 30px;
+  border-top: 1px solid currentColor;
+}
+.socials-footer {
+  display: flex;
+  gap: 16px;
+}
