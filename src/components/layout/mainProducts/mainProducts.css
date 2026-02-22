@@ -1,0 +1,26 @@
+#gif-top {
+  width: 100%;
+  height: 64px;
+}
+
+#gif-top > img {
+  width: 100%;
+  height: 64px;
+  filter: saturate(4);
+}
+
+.flexBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-section_name {
+  width: 100%;
+  height: 80px;
+}
+
+.product-section_name > span {
+  font-size: 24px;
+  letter-spacing: 1.2;
+}
