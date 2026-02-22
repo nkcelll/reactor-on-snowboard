@@ -3,6 +3,7 @@ import './home.css';
 import dataHome from '../../../services/collection/home/dataHome.json';
 import useSmoothHorizontalScroll from '../shared/ScrollAnime';
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function HomeProducts() {
   const containerRef = useRef<HTMLElement>(null);
@@ -17,9 +18,9 @@ export default function HomeProducts() {
 
     return (
       <div key={item.key} className="product-poster-card">
-        <a href={item.href}>
+        <Link to='collection'>
           <img src={postersSrc} alt={item.title} />
-        </a>
+        </Link>
         <div className="textBox">
           <span>{titles}</span>
         </div>

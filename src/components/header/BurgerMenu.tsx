@@ -1,8 +1,15 @@
 // BurgerMenu.tsx
-import { IconBurgerMenu, IconClose, IconUser, IconFacebook, IconInstagram } from "@/assets/icons";
+import {
+  IconBurgerMenu,
+  IconClose,
+  IconUser,
+  IconFacebook,
+  IconInstagram,
+} from '@/assets/icons';
 import BurgerBoxList from './BurgerBoxList';
-import SideBox from "../shared/sideBox/SideBox";
+import SideBox from '../shared/sideBox/SideBox';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function BurgerMenu() {
   const [isVisible, setIsVisible] = useState(false);
@@ -11,8 +18,8 @@ export default function BurgerMenu() {
   const close = () => setIsVisible(false);
 
   const header = (
-    <>
-      <div className="box-flex">
+    <div className="burger-head">
+      <div className="burger-head-text">
         <h3>Menu</h3>
         <button onClick={close}>
           <IconClose />
@@ -24,13 +31,17 @@ export default function BurgerMenu() {
           <span>Create an account</span>
         </a>
       </div>
-    </>
+    </div>
   );
 
   const footer = (
     <div className="socials">
-      <a href=""><IconFacebook /></a>
-      <a href=""><IconInstagram /></a>
+      <Link target="__blank" to="https://www.facebook.com/sadamde/">
+        <IconFacebook />
+      </Link>
+      <Link target="__blank" to="https://www.instagram.com/nkcellll/">
+        <IconInstagram />
+      </Link>
     </div>
   );
 

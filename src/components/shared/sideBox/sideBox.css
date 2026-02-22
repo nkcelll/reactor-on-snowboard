@@ -13,20 +13,19 @@
   z-index: 110;
   position: fixed;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px 20px;
+  gap: 40px;
   overflow: hidden;
 }
 
 .box-content {
-  flex: 1;               /* THIS pushes footer down */
+  flex: 1;              
   overflow-y: auto;
 }
 
-/* .box-container-burger {
+.box-container-burger {
   display: flex;
   justify-content: space-between;
-} */
+}
 
 .box_open {
   transform: translateX(0);
@@ -36,13 +35,42 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 20px 0 20px;
 }
 
-.box-header {
+/* .box-header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   height: 60px;
+} */
+
+.cart-head {
+  display: flex;
+  gap: 20px;
+  height: 60px;
+}
+.burger-head {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 0 0;
+  gap: 20px;
+}
+
+.burger-head-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  height: 40px;
+  padding: 20px 20px 0 20px;
 }
 
 .product-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
   height: 40px;
   border-bottom: 1px solid currentColor;
 }
@@ -67,8 +95,7 @@
   height: auto;
   width: inherit;
   justify-content: space-between;
-  /* padding: 20px 20px; */
-  padding: 20px 0;
+  padding: 20px 20px;
   border-bottom: 1px solid currentColor;
 }
 
@@ -130,6 +157,7 @@
   justify-content: center;
   width: 100%;
   height: 60px;
+  padding: 0 20px;
 }
 
 .checkout > a {
@@ -177,6 +205,7 @@
 
 .create-account {
   height: 40px;
+  margin: 0 20px;
   display: flex;
   align-items: center;
   border-bottom:1px solid currentColor;
@@ -198,6 +227,7 @@
 }
 
 .inner-child, .inner.grandchild {
+
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
@@ -214,6 +244,7 @@
   align-items: center;
   background-color: var(--bg-sec);
   border-bottom: 1px solid currentColor;
+  padding: 0 20px;
   /* background-color: red; */
 }
 
@@ -224,6 +255,18 @@
   align-items: center;
   height: 40px;
   font-size: 16px;
+  padding: 0 20px;
+
+}
+
+
+
+.list-unstyled {
+  padding: 0 20px;
+  border-left: 1px solid currentColor;
+  margin: 0 20px;
+
+
 }
 
 .list-unstyled > li {
@@ -231,13 +274,19 @@
   flex-direction: column;
   justify-content: center;
   height: 40px;
-  padding: 0 20px;
-  border-left: 1px solid currentColor;
 }
-
+.list-unstyled > li > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40px;
+  font-weight: 200;
+}
+/* 
 .list-unstyled > li > a {
   font-size: 16px;
-}
+
+} */
 
 .rotate {
   transform: rotate(180deg);
@@ -247,6 +296,94 @@
 .rotate-close {
   transform: rotate(0deg);
   transition: transform 0.3s ease;
+}
+
+
+/* Filter && Sort *********************/
+
+.filter {
+  display: none;
+}
+.filter2 {
+  display: block;
+}
+
+.filter-item_name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: red;
+}
+
+.input-fields_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+.input-fields {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  gap: 20px; /* Reduced gap for better alignment */
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  position: relative;
+  background-color: transparent;
+  width: 22px;  
+  height: 22px; 
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border-radius: 0;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  border: 1px solid var(--bg-hover); /* Default border color */
+}
+
+input[type="checkbox"]:checked::before {
+  background-color: var(--bg-hover);
+  border: 1px solid var(--bg-hover);
+  border-radius: 0;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+input[type="checkbox"]::after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 10px;
+  height: 5px;
+  border-left: 1px solid var(--bg-sec);
+  border-bottom: 1px solid var(--bg-sec);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+input[type="checkbox"]:checked::after {
+  opacity: 1;
+}
+
+label {
+  font-size: 14px; /* Adjust label font size */
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.open-input {
+
 }
 
 

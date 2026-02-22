@@ -1,6 +1,6 @@
 import { IconCart, IconClose, IconRemoveTrash } from '@/assets/icons';
 import { Link } from 'react-router-dom';
-import '../shared/sideBox/sideBox.css'
+import '../shared/sideBox/sideBox.css';
 import SideBox from '../shared/sideBox/SideBox';
 
 import { useState } from 'react';
@@ -11,7 +11,7 @@ export default function Cart() {
   const close = () => setIsVisible(false);
 
   const header = (
-    <div className="box-header box-flex">
+    <div className="box-header cart-head box-flex">
       <h3>Your Cart</h3>
       <button onClick={close}>
         <IconClose />
@@ -41,7 +41,7 @@ export default function Cart() {
       footer={footer}
       className="cart_container"
     >
-      <section className="product-total box-flex">
+      <section className="product-total ">
         <h4>Products</h4>
         <h4>Total</h4>
       </section>

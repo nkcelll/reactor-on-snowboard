@@ -435,7 +435,15 @@
   transition: transform 0.3s ease;
 }
   */
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
 
+.rotate-close {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
 .socials {
   display: flex;
   justify-content: center;

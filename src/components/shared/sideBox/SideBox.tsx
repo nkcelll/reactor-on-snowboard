@@ -3,13 +3,13 @@ import Overlay from '../Overlay';
 
 type SideBoxProps = {
   isVisible: boolean;
-  open: () => void;
+  open?: () => void;
   close: () => void;
-  trigger: ReactNode;       // the button or element that opens the box
-  header?: ReactNode;       // optional header content
-  footer?: ReactNode;       // optional footer content
-  children: ReactNode;      // main content inside box
-  className?: string;       // extra class for styling
+  trigger?: ReactNode;       
+  header?: ReactNode;       
+  footer?: ReactNode;       
+  children?: ReactNode;      
+  className?: string;       
 };
 
 export default function SideBox({
@@ -32,9 +32,12 @@ export default function SideBox({
 
       <Overlay isVisible={isVisible} close={close} />
 
-      <div className={`box-container ${isVisible ? 'box_open' : ''}`}>
-        <div className="box-container-burger"></div>
-        {header && <div className="box-header">{header}</div>}
+      <div className={`box-container burger ${isVisible ? 'box_open' : ''}`}>
+        {/* <div className="box-container-burger"></div> */}
+        {header && <div className="box-header">
+          {header}
+
+        </div>}
         <div className="box-content">{children}</div>
         {footer && <div className="box-footer">{footer}</div>}
       </div>
