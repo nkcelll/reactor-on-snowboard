@@ -1,4 +1,4 @@
-export default function IconGrid4({ width = 24, height = 20,  }) {
+export default function IconGrid4({ width = 24, height = 24 }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -9,9 +9,12 @@ export default function IconGrid4({ width = 24, height = 20,  }) {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
+      viewBox="0 0 24 24"
     >
-      <line x1="9" y1="4" x2="9" y2="20" />
-      <line x1="15" y1="4" x2="15" y2="20" />
+      <line x1="4" y1="4" x2="4" y2="20" />
+      <line x1="10" y1="4" x2="10" y2="20" />
+      <line x1="16" y1="4" x2="16" y2="20" />
+      <line x1="22" y1="4" x2="22" y2="20" />
     </svg>
   );
 }

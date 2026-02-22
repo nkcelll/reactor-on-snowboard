@@ -1,13 +1,14 @@
-import './mainProducts.css'
-import GifTop from "./GifTop"
+import './mainProducts.css';
+import { GifTop, FilterGridSection} from './index';
 
 export default function MainProducts() {
   return (
-    <main>
-      <GifTop/>
-      <section className='flexBox product-section_name'>
+    <div>
+      <GifTop />
+      <section className="flexBox product-section_name">
         <span>Snowboards</span>
       </section>
-    </main>
-  )
+      <FilterGridSection />
+    </div>
+  );
 }

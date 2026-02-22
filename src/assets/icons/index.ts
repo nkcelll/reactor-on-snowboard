@@ -35,6 +35,7 @@ export const IconRemoveTrash = icons.IconRemoveTrash
 export const IconSearch = icons.IconSearch
 export const IconSun = icons.IconSun
 export const IconUser = icons.IconUser
+export const IconFilter = icons.IconFilter
 
 // Optional default export
 export default icons;

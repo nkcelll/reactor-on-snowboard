@@ -42,9 +42,10 @@ export default function NavMenu() {
         className="gender-nav-section"
         onMouseLeave={() => setHoveredIndex(null)}
       >
-        <a href="" onMouseEnter={() => setHoveredIndex(index)}>
+        <Link to="/" onMouseEnter={() => setHoveredIndex(index)} className={`menu-gender-names ${hoveredIndex !== null && hoveredIndex !== index ? 'blurred' : ''} ${hoveredIndex === index ? 'isActive' : ''}`}>
+        {/* <Link to="/" onMouseEnter={() => setHoveredIndex(index)} className='menu-gender-names blur_hover'> */}
           {item.label.toLocaleUpperCase()} /
-        </a>
+        </Link>
 
         <div
           // className={`nav-dropDown-menu ${hoveredIndex === index ? 'menuVisible' : 'menuVisible'}`}

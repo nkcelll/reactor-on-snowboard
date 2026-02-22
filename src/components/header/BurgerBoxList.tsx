@@ -1,17 +1,18 @@
+import '../shared/sideBox/sideBox.css'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import BurgerItemsButton from './components/BurgerItemsButton';
 
 export default function BurgerBoxList() {
-  // Track which items are open
   const [openItems, setOpenItems] = useState<Record<string, boolean>>({});
 
-  // Toggle item open/close by ID
   const toggleItem = (id: string) => {
     setOpenItems((prev) => ({
       ...prev,
       [id]: !prev[id],
     }));
   };
+
 
   return (
     <div className="nav_burger">
@@ -33,19 +34,18 @@ export default function BurgerBoxList() {
                   isOpen={!!openItems['2']}
                   onClick={() => toggleItem('2')}
                 />
-
                 <div
                   className={`inner grandchild ${openItems['2'] ? 'open' : ''}`}
                 >
                   <ul className="list-unstyled">
                     <li>
-                      <a href="">Snowboards</a>
+                      <Link to="">Snowboards</Link>
                     </li>
                     <li>
-                      <a href="">Bindings</a>
+                      <Link to="">Bindings</Link>
                     </li>
                     <li>
-                      <a href="">Boots</a>
+                      <Link to="">Boots</Link>
                     </li>
                   </ul>
                 </div>
@@ -54,7 +54,6 @@ export default function BurgerBoxList() {
           </div>
         </li>
       </ul>
-      
     </div>
   );
 }

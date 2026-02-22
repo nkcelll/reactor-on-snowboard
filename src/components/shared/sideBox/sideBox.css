@@ -1,0 +1,273 @@
+.box-container {
+  display: flex;
+  width: 500px;
+  background-color: var(--bg-fourth);
+  /* height: 100%; */
+  height: 100vh;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+  cursor: default;
+  /* inset: 0; */
+  right: 0;
+  top: 0;
+  z-index: 110;
+  position: fixed;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 20px;
+  overflow: hidden;
+}
+
+.box-content {
+  flex: 1;               /* THIS pushes footer down */
+  overflow-y: auto;
+}
+
+/* .box-container-burger {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.box_open {
+  transform: translateX(0);
+}
+
+.box-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-header {
+  height: 60px;
+}
+
+.product-total {
+  height: 40px;
+  border-bottom: 1px solid currentColor;
+}
+
+.product-wrap {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 5px;
+  width: 100%;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.product-img {
+  width: 150px;
+  height: 150px;
+}
+
+.product-list {
+  display: flex;
+  height: auto;
+  width: inherit;
+  justify-content: space-between;
+  /* padding: 20px 20px; */
+  padding: 20px 0;
+  border-bottom: 1px solid currentColor;
+}
+
+.item-name_info {
+  display: flex;
+  height: auto;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.item-price_del {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-name_info > span {
+  font-weight: 600;
+}
+
+.item-price_del > span {
+  font-weight: 600;
+}
+
+.remove-img {
+  color: red;
+}
+.item-price_del > button {
+  width: 100%;
+  height: 40px;
+  background-color: var(--bg-sec);
+}
+.item-price_del > button:hover {
+  background-color: grey;
+  width: 100%;
+  height: 40px;
+}
+
+.box-footer {
+  display: flex;
+  gap: 30px;
+  margin: 0 0 20px 0;
+  flex-direction: column;
+}
+
+.box-footer.box-footer-checkout {
+  margin: 0px !important; 
+}
+
+.estimated-price {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.checkout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+}
+
+.checkout > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  background-color: var(--bg-sec);
+  font-weight: 600;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.checkout > a:hover {
+  background-color: var(--bg-hover);
+  color: var(--text-sec);
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-section,
+  .toLogIn {
+    display: none;
+  }
+  #logo {
+    width: 80px;
+    height: auto;
+  }
+  .left-header_side {
+    width: 80px;
+    height: auto;
+  }
+}
+
+/* Burgir Menu  ****************************************/
+
+.nav_burger {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.create-account {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-bottom:1px solid currentColor;
+}
+
+.create-account > a {
+  width: 100%;
+}
+
+.create-account > a > span {
+  margin-left: 20px;
+  text-align: center;
+  height: 20px;
+}
+
+.burger-nav-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-child, .inner.grandchild {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.inner-child.open, .inner.grandchild.open {
+  max-height: 1000px; /* large enough to fit content */
+}
+.button-section {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-sec);
+  border-bottom: 1px solid currentColor;
+  /* background-color: red; */
+}
+
+.item-collapser {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  font-size: 16px;
+}
+
+.list-unstyled > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40px;
+  padding: 0 20px;
+  border-left: 1px solid currentColor;
+}
+
+.list-unstyled > li > a {
+  font-size: 16px;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.rotate-close {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .burger-menu_container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box-container {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .box-container {
+    width: 100%;
+  }
+  .product-img {
+    width: 100px;
+    height: 100px;
+  }
+}

@@ -13,6 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 16px;
 }
 
 .product-section_name {
@@ -23,4 +24,34 @@
 .product-section_name > span {
   font-size: 24px;
   letter-spacing: 1.2;
+}
+
+/* Filter Section **************************/
+
+#filter-grid_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 46px;
+  background-color: var(--bg-sec);
+}
+.grid-column-icons {
+  gap: 16px;
+}
+
+.filter-sort_container {
+  gap: 10px;
+}
+.filter-sort_container > span {
+  font-size: 16px;
+  letter-spacing: 1.2px;
+}
+
+/* MEDIA **************************************/
+
+@media screen and (max-width: 1024px) {
+  .grid-column-icons {
+    display: none;
+  }
 }

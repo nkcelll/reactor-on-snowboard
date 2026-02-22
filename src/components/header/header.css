@@ -45,7 +45,31 @@
   transition: opacity 0.3s ease;
   color: var(--text-main);
 }
+.menu-gender-names {
+  font-weight: bold;
+  padding: 5px;
+  transition:
+    color 0.3s ease,
+    filter 0.3s ease;
+}
 
+.menu-gender-names:hover {
+  color: #b97f20;
+}
+
+.menu-gender-names.isActive {
+  color: #b97f20;
+}
+
+.menu-gender-names.blurred {
+  filter: blur(2px);
+  opacity: 0.6;
+}
+
+.menu-gender-names.blurred:hover {
+  filter: none;
+  opacity: 1;
+}
 
 .nav-dropDown-menu {
   width: 100%;
@@ -89,8 +113,14 @@
   align-items: flex-end;
 }
 
-.list > a {
-  font-weight: 300;
+.list > h3 {
+  font-weight: 700;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 5px;
+}
+
+.list > .item {
+  font-weight: 600;
   color: var(--text-main);
 }
 
@@ -172,16 +202,14 @@
   cursor: pointer;
 }
 
-.box-container {
+/* .box-container {
   display: flex;
   width: 500px;
   background-color: var(--bg-fourth);
-  /* height: 100%; */
   height: 100vh;
   transform: translateX(100%);
   transition: transform 0.5s ease-in-out;
   cursor: default;
-  /* inset: 0; */
   right: 0;
   top: 0;
   z-index: 110;
@@ -192,9 +220,9 @@
   overflow: hidden;
 }
 
-.box-container-burger {
-  display: flex;
-  justify-content: space-between;
+.box-content {
+  flex: 1;              
+  overflow-y: auto;
 }
 
 .box_open {
@@ -236,7 +264,6 @@
   height: auto;
   width: inherit;
   justify-content: space-between;
-  /* padding: 20px 20px; */
   padding: 20px 0;
   border-bottom: 1px solid currentColor;
 }
@@ -327,7 +354,10 @@
 
 /* Burgir Menu  ****************************************/
 
-.nav_burger {
+/* .nav_burger {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   overflow-y: scroll;
   scrollbar-width: none;
 }
@@ -349,13 +379,6 @@
   height: 20px;
 }
 
-
-.nav_burger {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
 .burger-nav-items {
   display: flex;
   flex-direction: column;
@@ -368,7 +391,7 @@
 }
 
 .inner-child.open, .inner.grandchild.open {
-  max-height: 1000px; /* large enough to fit content */
+  max-height: 1000px; 
 }
 .button-section {
   display: flex;
@@ -378,7 +401,6 @@
   align-items: center;
   background-color: var(--bg-sec);
   border-bottom: 1px solid currentColor;
-  /* background-color: red; */
 }
 
 .item-collapser {
@@ -412,23 +434,13 @@
   transform: rotate(0deg);
   transition: transform 0.3s ease;
 }
-
-
-
-
+  */
 
 .socials {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:20px;
-}
-
-
-@media screen and (min-width: 1024px) {
-  .burger-menu_container {
-    display: none;
-  }
+  gap: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -440,10 +452,10 @@
   }
 }
 @media screen and (max-width: 425px) {
- .main-header_container {
-  padding: 0 10px;
- }
-  
+  .main-header_container {
+    padding: 0 10px;
+  }
+
   #logo {
     width: 60px;
     height: auto;
@@ -451,13 +463,5 @@
   .left-header_side {
     width: 60px;
     height: auto;
-  }
-
-  .box-container {
-    width: 100%;
-  }
-  .product-img {
-    width: 100px;
-    height: 100px;
   }
 }
