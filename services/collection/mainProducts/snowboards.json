@@ -1,0 +1,330 @@
+{
+  "snowboards": [
+    {
+      "key": "snowboard-001",
+      "name": "Alpha Pro Snowboard",
+      "brand": "AlphaGear",
+      "size": ["155 cm", "158 cm", "160 cm"],
+      "price": 499.99,
+      "salePrice": 459.99,
+      "specs": {
+        "terrain": "All-mountain",
+        "coreMaterial": "Wood",
+        "baseType": "Sintered",
+        "flex": "Medium",
+        "recommendedFor": "Intermediate - Advanced",
+        "weight": "2.9 kg"
+      },
+      "images": [
+        "https://bataleon.com/cdn/shop/files/evil-twin-642532.jpg?v=1740742740&width=823",
+        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+
+      ],
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-002",
+      "name": "Explorer X Snowboard",
+      "brand": "ExplorerBoards",
+      "size": ["148 cm", "152 cm", "155 cm"],
+      "price": 399.99,
+      "specs": {
+        "terrain": "Freestyle",
+        "coreMaterial": "Aspen",
+        "baseType": "Extruded",
+        "flex": "Soft",
+        "recommendedFor": "Beginner - Intermediate",
+        "weight": "2.7 kg"
+      },
+      "images": [
+        "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
+        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+      ],
+      "availability": "Out of Stock"
+    },
+    {
+      "key": "snowboard-003",
+      "name": "Rider 360 Snowboard",
+      "brand": "RiderTech",
+      "size": ["160 cm", "163 cm", "165 cm"],
+      "price": 599.99,
+      "salePrice": 549.99,
+      "specs": {
+        "terrain": "Powder",
+        "coreMaterial": "Bamboo",
+        "baseType": "Sintered",
+        "flex": "Stiff",
+        "recommendedFor": "Advanced",
+        "weight": "3.1 kg"
+      },
+      "images": [
+        "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
+        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+      ],
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-004",
+      "name": "Velocity Snowboard",
+      "brand": "VelocityBoards",
+      "size": ["153 cm", "157 cm", "160 cm"],
+      "price": 450.00,
+      "salePrice": 420.00,
+      "specs": {
+        "terrain": "All-mountain",
+        "coreMaterial": "Wood and Carbon",
+        "baseType": "Extruded",
+        "flex": "Medium",
+        "recommendedFor": "Intermediate",
+        "weight": "2.8 kg"
+      },
+      "images": [
+        "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
+        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+      ],
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-005",
+      "name": "StormEdge Snowboard",
+      "brand": "EdgeTech",
+      "size": ["150 cm", "155 cm", "158 cm"],
+      "price": 499.00,
+      "specs": {
+        "terrain": "All-mountain",
+        "coreMaterial": "Poplar Wood",
+        "baseType": "Sintered",
+        "flex": "Medium",
+        "recommendedFor": "Intermediate",
+        "weight": "2.6 kg"
+      },
+      "images": [
+        "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
+        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+      ],
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-006",
+      "name": "Pro Rider 700 Snowboard",
+      "brand": "ProBoard",
+      "size": ["160 cm", "163 cm", "165 cm"],
+      "price": 649.99,
+      "specs": {
+        "terrain": "Freeride",
+        "coreMaterial": "Maple",
+        "baseType": "Extruded",
+        "flex": "Stiff",
+        "recommendedFor": "Advanced",
+        "weight": "3.1 kg"
+      },
+      "images": [
+        "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
+        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+      ],
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-007",
+      "name": "Pro Rider 700 Snowboard",
+      "brand": "ProBoard",
+      "size": ["160 cm", "163 cm", "165 cm"],
+      "price": 649.99,
+      "specs": {
+        "terrain": "Freeride",
+        "coreMaterial": "Maple",
+        "baseType": "Extruded",
+        "flex": "Stiff",
+        "recommendedFor": "Advanced",
+        "weight": "3.1 kg"
+      },
+      "images": [
+        "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
+        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+      ],
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-008",
+      "name": "Pro Rider 700 Snowboard",
+      "brand": "ProBoard",
+      "size": ["160 cm", "163 cm", "165 cm"],
+      "price": 649.99,
+      "specs": {
+        "terrain": "Freeride",
+        "coreMaterial": "Maple",
+        "baseType": "Extruded",
+        "flex": "Stiff",
+        "recommendedFor": "Advanced",
+        "weight": "3.1 kg"
+      },
+      "images": [
+        "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
+        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+      ],
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-009",
+      "name": "Pro Rider 700 Snowboard",
+      "brand": "ProBoard",
+      "size": ["160 cm", "163 cm", "165 cm"],
+      "price": 649.99,
+      "specs": {
+        "terrain": "Freeride",
+        "coreMaterial": "Maple",
+        "baseType": "Extruded",
+        "flex": "Stiff",
+        "recommendedFor": "Advanced",
+        "weight": "3.1 kg"
+      },
+      "images": [
+        "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
+        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+      ],
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-0010",
+      "name": "Pro Rider 700 Snowboard",
+      "brand": "ProBoard",
+      "size": ["160 cm", "163 cm", "165 cm"],
+      "price": 649.99,
+      "specs": {
+        "terrain": "Freeride",
+        "coreMaterial": "Maple",
+        "baseType": "Extruded",
+        "flex": "Stiff",
+        "recommendedFor": "Advanced",
+        "weight": "3.1 kg"
+      },
+      "images": [
+        "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
+        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+      ],
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-0011",
+      "name": "Pro Rider 700 Snowboard",
+      "brand": "ProBoard",
+      "size": ["160 cm", "163 cm", "165 cm"],
+      "price": 649.99,
+      "specs": {
+        "terrain": "Freeride",
+        "coreMaterial": "Maple",
+        "baseType": "Extruded",
+        "flex": "Stiff",
+        "recommendedFor": "Advanced",
+        "weight": "3.1 kg"
+      },
+      "images": [
+        "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
+        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+      ],
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-012",
+      "name": "Pro Rider 700 Snowboard",
+      "brand": "ProBoard",
+      "size": ["160 cm", "163 cm", "165 cm"],
+      "price": 649.99,
+      "specs": {
+        "terrain": "Freeride",
+        "coreMaterial": "Maple",
+        "baseType": "Extruded",
+        "flex": "Stiff",
+        "recommendedFor": "Advanced",
+        "weight": "3.1 kg"
+      },
+      "images": [
+        "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
+        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+      ],
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-013",
+      "name": "Pro Rider 700 Snowboard",
+      "brand": "ProBoard",
+      "size": ["160 cm", "163 cm", "165 cm"],
+      "price": 649.99,
+      "specs": {
+        "terrain": "Freeride",
+        "coreMaterial": "Maple",
+        "baseType": "Extruded",
+        "flex": "Stiff",
+        "recommendedFor": "Advanced",
+        "weight": "3.1 kg"
+      },
+      "images": [
+        "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
+        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+      ],
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-013",
+      "name": "Pro Rider 700 Snowboard",
+      "brand": "ProBoard",
+      "size": ["160 cm", "163 cm", "165 cm"],
+      "price": 649.99,
+      "specs": {
+        "terrain": "Freeride",
+        "coreMaterial": "Maple",
+        "baseType": "Extruded",
+        "flex": "Stiff",
+        "recommendedFor": "Advanced",
+        "weight": "3.1 kg"
+      },
+      "images": [
+        "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
+        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+      ],
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-013",
+      "name": "Pro Rider 700 Snowboard",
+      "brand": "ProBoard",
+      "size": ["160 cm", "163 cm", "165 cm"],
+      "price": 649.99,
+      "specs": {
+        "terrain": "Freeride",
+        "coreMaterial": "Maple",
+        "baseType": "Extruded",
+        "flex": "Stiff",
+        "recommendedFor": "Advanced",
+        "weight": "3.1 kg"
+      },
+      "images": [
+        "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
+        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+      ],
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-013",
+      "name": "Pro Rider 700 Snowboard",
+      "brand": "ProBoard",
+      "size": ["160 cm", "163 cm", "165 cm"],
+      "price": 649.99,
+      "specs": {
+        "terrain": "Freeride",
+        "coreMaterial": "Maple",
+        "baseType": "Extruded",
+        "flex": "Stiff",
+        "recommendedFor": "Advanced",
+        "weight": "3.1 kg"
+      },
+      "images": [
+        "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
+        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+      ],
+      "availability": "In Stock"
+    }
+    
+  ]
+}
+

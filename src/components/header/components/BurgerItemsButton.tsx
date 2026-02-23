@@ -1,4 +1,4 @@
-import type { FC } from 'react';
+import type { FC, } from 'react';
 import { IconArrowDown } from '@/assets/icons';
 import '../../shared/sideBox/sideBox.css';
 type BurgerItemsButtonProps = {
@@ -8,7 +8,7 @@ type BurgerItemsButtonProps = {
   id?: string;
   name: string;
   isOpen: boolean;
-};
+} 
 
 const BurgerItemsButton: FC<BurgerItemsButtonProps> = (props) => {
   return (

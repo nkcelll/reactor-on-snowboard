@@ -1,15 +1,32 @@
 import { IconGrid2, IconGrid3, IconGrid4 } from '@/assets/icons';
 
-export default function GridCenterIcons() {
+interface onGridChangeProps {
+  onGridChange: (columns: number) => void;
+  activeGrid?: number
+}
+
+export default function GridCenterIcons({ onGridChange, activeGrid }: onGridChangeProps) {
+  console.log(activeGrid);
+  
   return (
     <div className="flexBox grid-column-icons">
-      <button>
+      <button 
+        onClick={() => onGridChange(2)}
+        className={activeGrid === 2 ? 'active-grid' : ''} 
+      >
         <IconGrid2 />
       </button>
-      <button>
+      <button 
+        onClick={() => onGridChange(3)}
+        aria-label={`Currently active ${activeGrid}`}
+        className={activeGrid === 3 ? 'active-grid' : ''}   
+      >
         <IconGrid3 />
       </button>
-      <button>
+      <button 
+        onClick={() => onGridChange(4)}
+        className={activeGrid === 4 ? 'active-grid' : ''} 
+      >
         <IconGrid4 />
       </button>
     </div>

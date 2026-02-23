@@ -5,34 +5,90 @@ import {
   IconEmailInfo,
   IconFacebook,
   IconInstagram,
+  IconSendToEmail
 } from '@/assets/icons';
-
+import { BurgerItemsButton } from '@/components/header';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function Footer() {
+  // store multiple open sections
+  const [openSections, setOpenSections] = useState<string[]>([]);
+
+  const toggle = (sectionName: string) => {
+    setOpenSections((prev) =>
+      prev.includes(sectionName)
+        ? prev.filter((s) => s !== sectionName)
+        : [...prev, sectionName],
+    );
+  };
+
   return (
-    <footer>
-      <section>
+    <footer className="footer-main_container">
+      <section className="footer-section">
         <div className="faq">
           <span className="span-name">FAQ</span>
-          <div className="links">
+          <BurgerItemsButton
+            name="FAQ"
+            className="epxand-footer"
+            isOpen={openSections.includes('faq')}
+            onClick={() => toggle('faq')}
+            data-attribute="faq"
+            style={{
+              fontSize: '16px',
+              fontWeight: '600',
+              letterSpacing: '1.25px',
+            }}
+          />
+          <div
+            className={`links ${openSections.includes('faq') ? 'expand-links' : ''}`}
+          >
             <Link to="/">Size Chart</Link>
             <Link to="/">Shipping Policy</Link>
             <Link to="/">Terms and Conditions</Link>
           </div>
         </div>
+
         <div className="policy">
           <div className="faq">
             <span className="span-name">Policy</span>
-            <div className="links">
+            <BurgerItemsButton
+              name="Policy"
+              className="epxand-footer"
+              isOpen={openSections.includes('policy')}
+              onClick={() => toggle('policy')}
+              style={{
+                fontSize: '16px',
+                fontWeight: '600',
+                letterSpacing: '1.25px',
+              }}
+            />
+            <div
+              className={`links ${openSections.includes('policy') ? 'expand-links' : ''}`}
+            >
               <Link to="/">Privacy and Policy</Link>
               <Link to="/">Shipping Policy</Link>
             </div>
           </div>
         </div>
+
         <div className="contact">
+          <div className="faq ">
             <span className="span-name">Contact</span>
-            <div className="links">
+            <BurgerItemsButton
+              name="Contact"
+              className="epxand-footer"
+              isOpen={openSections.includes('contact')}
+              onClick={() => toggle('contact')}
+              style={{
+                fontSize: '16px',
+                fontWeight: '600',
+                letterSpacing: '1.25px',
+              }}
+            />
+            <div
+              className={`links ${openSections.includes('contact') ? 'expand-links' : ''}`}
+            >
               <div className="contact-info">
                 <IconLocation />
                 <span>Tbilisi, Dighmis 2nd block</span>
@@ -45,9 +101,7 @@ export default function Footer() {
                 <IconEmailInfo />
                 <span>kartozianikoloz1@gmail.com</span>
               </div>
-              <map
-                key="Map"
-              >
+              <map key="Map">
                 <iframe
                   key="Iframe"
                   src="https://www.google.com/maps?q=41.788072,44.756767&amp;z=15&amp;output=embed"
@@ -56,35 +110,41 @@ export default function Footer() {
                   referrerPolicy="no-referrer-when-downgrade"
                 />
               </map>
+            </div>
           </div>
         </div>
+
+        {/* Mail subscription */}
         <div className="mail-notifications">
           <span className="span-name">Add adventure to your inbox</span>
-          <form className="email-submit">
-            <input
-              id="email-input-submit-footer"
-              name="email"
-              type="email"
-              placeholder="Email address"
-            />
-            <button type="submit" id="button-submit">
-              <img
-                key="Img"
-                src="https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fi692710b8/c16e4fe8-3b80-45ad-bf28-d35abe23d410-debdd4b5-8a04-4607-aa3d-bd132d48ce52-6f7d43a4-8cce-4a56-bdb5-b047b7f8d961.svg"
-              ></img>
-            </button>
-          </form>
+          <span className="span-name-email-footer">
+            Add adventure to your inbox
+          </span>
+          <div className="email-submit-container">
+            <form className="email-submit">
+              <input
+                id="email-input-submit-footer"
+                name="email"
+                type="email"
+                placeholder="Email address"
+              />
+              <button type="submit" className="footer-button-submit">
+                <IconSendToEmail/>
+              </button>
+            </form>
+          </div>
+          
         </div>
       </section>
+
+      {/* Footer bottom */}
       <div className="copyright-footer">
         <span>Copyright policy by nkcell/2026</span>
-
         <div className="socials-footer">
-          <IconFacebook/>
-          <IconInstagram/>
+          <IconFacebook />
+          <IconInstagram />
         </div>
       </div>
-
     </footer>
   );
 }

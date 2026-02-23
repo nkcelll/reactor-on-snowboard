@@ -1,4 +1,4 @@
-import { IconFilter, IconClose} from '@/assets/icons/';
+import { IconFilter, IconClose } from '@/assets/icons/';
 import { BurgerItemsButton } from '@/components/header';
 import './mainProducts.css';
 import '../../shared/sideBox/sideBox.css';
@@ -10,14 +10,12 @@ export default function FilterSort() {
   const [openItems, setOpenItems] = useState<Record<string, boolean>>({});
   const [isVisible, setIsVisible] = useState(false);
 
-  console.log(openItems);
-  
-    const toggleItem = (id: string) => {
-      setOpenItems((prev) => ({
-        ...prev,
-        [id]: !prev[id],
-      }));
-    };
+  const toggleItem = (id: string) => {
+    setOpenItems((prev) => ({
+      ...prev,
+      [id]: !prev[id],
+    }));
+  };
 
   const open = () => setIsVisible(true);
   const close = () => setIsVisible(false);
@@ -36,31 +34,41 @@ export default function FilterSort() {
   );
 
   return (
-    <div className='filter-sort_container'>
-      <button onClick={open} aria-label={`box is ${isVisible ? 'Open' : 'Closed'}`} className='flexBox'>
+    <div className="filter-sort_container">
+      <button
+        onClick={open}
+        aria-label={`box is ${isVisible ? 'Open' : 'Closed'}`}
+        className="flexBox"
+      >
         <IconFilter />
         <span>Filter & Sort</span>
       </button>
-      <SideBox isVisible={isVisible} close={close} header={header} className={isVisible ? '.box-container' : 'filter'}>
-          <BurgerItemsButton
-            name="Sort By"
-            className="button-section"
-            isOpen={!!openItems['1']}
-            onClick={() => toggleItem('1')}
-            style={{fontWeight: 'bold', fontSize: '16px'}}
-          />
-          {openItems['1'] && <div className="input-fields_container">
+      <SideBox
+        isVisible={isVisible}
+        close={close}
+        header={header}
+        className={isVisible ? '.box-container' : 'filter'}
+      >
+        <BurgerItemsButton
+          name="Sort By"
+          className="button-section"
+          isOpen={!!openItems['1']}
+          onClick={() => toggleItem('1')}
+          style={{ fontWeight: 'bold', fontSize: '16px' }}
+        />
+        {openItems['1'] && (
+          <div className="input-fields_container">
             <div className="input-fields">
-              <input type="checkbox" className='checkbox-style'/>
-              <label htmlFor='checkbox'>123</label>
+              <input type="checkbox" className="checkbox-style" />
+              <label htmlFor="checkbox">123</label>
             </div>
             <div className="input-fields">
-              <input type="checkbox" className='checkbox-style'/>
-              <label htmlFor='checkbox'>123</label>
+              <input type="checkbox" className="checkbox-style" />
+              <label htmlFor="checkbox">123</label>
             </div>
-          </div>}
+          </div>
+        )}
       </SideBox>
-
     </div>
   );
 }

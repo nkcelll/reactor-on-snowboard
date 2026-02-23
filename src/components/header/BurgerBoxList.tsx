@@ -6,8 +6,6 @@ import BurgerItemsButton from './components/BurgerItemsButton';
 export default function BurgerBoxList() {
   const [openItems, setOpenItems] = useState<Record<string, boolean>>({});
 
-  console.log(openItems);
-
   const toggleItem = (id: string) => {
     setOpenItems((prev) => ({
       ...prev,
