@@ -1,5 +1,6 @@
 import './mainProducts.css';
-import { GifTop, FilterGridSection, ProductsGrid} from './index';
+import snowboards from '../../../../services/collection/mainProducts/snowboards.json'
+import { GifTop, FilterGridSection, ProductsGrid, LoadMoreContent} from './index';
 import { useState, useEffect } from 'react';
 
 export default function MainProducts() {
@@ -11,13 +12,13 @@ export default function MainProducts() {
   const toggleGridView = (columns: number) => {
     setGridColumnVuew(columns)
   }
-  
 
-
-  // console.log(gridColumnView);
   useEffect(() => {
     localStorage.setItem('grid-row', JSON.stringify(gridColumnView))
   }, [gridColumnView])
+
+  console.log(snowboards);
+  
   
 
   return (
@@ -26,8 +27,9 @@ export default function MainProducts() {
       <section className="flexBox product-section_name">
         <span>Snowboards</span>
       </section>
-      <FilterGridSection onGridChange={toggleGridView} activeGrid={gridColumnView}/>
-      <ProductsGrid onGridView={gridColumnView}/>
+      <FilterGridSection onGridChange={toggleGridView} activeGrid={gridColumnView} productLength={snowboards.snowboards.length}/>
+      <ProductsGrid onGridView={gridColumnView} products={snowboards.snowboards} />
+      <LoadMoreContent />
     </div>
   );
 }
