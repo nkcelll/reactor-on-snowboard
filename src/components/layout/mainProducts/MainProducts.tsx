@@ -27,7 +27,10 @@ export default function MainProducts() {
       <section className="flexBox product-section_name">
         <span>Snowboards</span>
       </section>
-      <FilterGridSection onGridChange={toggleGridView} activeGrid={gridColumnView} productLength={snowboards.snowboards.length}/>
+      <FilterGridSection 
+        onGridChange={toggleGridView} 
+        activeGrid={gridColumnView} 
+        productLength={snowboards.snowboards.length}/>
       <ProductsGrid onGridView={gridColumnView} products={snowboards.snowboards} />
       <LoadMoreContent />
     </div>

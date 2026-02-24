@@ -4,7 +4,121 @@
   flex: 1;
   height: calc(100dvh - 77px);
   overflow-x: auto;
-  /* overflow: hidden; */
+  overflow-y: hidden;
+  width: 100vw;
+  background-color: red;
+  padding: 0 20px;
+  gap: 30px;
+  background-color: var(--bg-main);
+  scrollbar-width: none;
+}
+
+.product-poster-card {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative; /* needed for textBox positioning */
+}
+
+.product-poster {
+  width: 200px;
+  height: calc(100vh - 77px - 50px);
+  object-fit: cover;
+  border-radius: 3px 3px 0 0;
+  filter: saturate(0);
+  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+
+.textBox {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0,0,0,0.5);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 3px 3px;
+  transition: all 0.3s ease; 
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+  .product-poster-card:hover .product-poster {
+    transform: scale(1.1);
+    filter: saturate(1);
+    opacity: 0.8;
+  }
+
+  .product-poster-card:hover .textBox {
+    bottom: unset;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    border: 1px solid currentColor;
+  }
+}
+@media screen and (max-width: 1023px) {
+  
+  .product-poster {
+    width: 200px;
+    height: calc(100vh - 77px);
+    object-fit: cover;
+    border-radius: 3px 3px 0 0;
+    filter: saturate(1);
+  }
+
+  .textBox {
+    bottom: unset;
+    width: 90%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    border: 1px solid currentColor;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+ 
+}
+
+
+@media screen and (max-width: 425px) {
+  
+  
+  /* #home-container:hover .product-poster-card {
+    transform: scale(1);
+    opacity: 1;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #home-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1;
+  height: calc(100dvh - 77px);
+  overflow-x: auto;
   overflow-y: hidden;
   width: 100vw;
   background-color: red;
@@ -15,11 +129,6 @@
   
 }
 
-/* #home-container:hover .product-poster-card {
-  transform: scale(0.9);
-  opacity: 0.7;
-} */
-
 .product-poster-card {
   display: flex;
   flex-direction: column;
@@ -27,10 +136,6 @@
   cursor: pointer;
 }
 
-/* .product-poster-card:hover {
-  transform: scale(1.2); 
-  z-index: 10; 
-} */
 
 .product-poster-card img {
   width: 200px;
@@ -43,6 +148,7 @@
 
 .product-poster-card:hover img {
   filter: saturate(1);
+  width: 220px;
 }
 
 .textBox {
@@ -59,12 +165,64 @@
   filter: saturate(1);
 }
   .product-poster-card:hover {
-  transform: scale(1.2); /* Increase size on hover */
-  z-index: 10; /* Bring it on top of neighbors */
+  transform: scale(1.2); 
+  z-index: 10; 
 }
 #home-container:hover .product-poster-card {
   transform: scale(1);
   opacity: 1;
 }
 
+} */
+
+/* 
+#grid-home-container {
+  transition: 500ms;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px 200px 200px 200px;
+  height:   calc(100dvh - 77px);
+  width: 100%;
+  gap: 3px;
+  background-color: rgb(68, 31, 38);
+  overflow-x: scroll;
+  
 }
+
+.item-grid {
+  display: grid;
+  grid-row: 1/2;
+  max-width: 85rem;
+  width: 100%;
+  transition: grid-template 300ms;
+  position: relative;
+}
+
+:where(.left, .center, .right) {
+  background: navajowhite;
+  transition: 300ms;
+}
+
+:where(.left, .center, .right):hover {
+  background: crimson;
+}
+
+#grid-home-container:has(.left:hover) {
+  grid-template-columns: 2fr 0.5fr 0.5fr;
+}
+
+#grid-home-container:has(.center:hover) {
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+}
+
+#grid-home-container:has(.right:hover) {
+  grid-template-columns: 0.5fr 0.5fr 2fr;
+}
+
+.item-grid > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: white;
+} */

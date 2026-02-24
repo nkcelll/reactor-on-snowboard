@@ -1,7 +1,7 @@
 import './App.css';
 
 import Header from './components/header/Header';
-import Footer from './components/layout/footer/Footer';
+// import Footer from './components/layout/footer/Footer';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import { BrowserRouter ,Route, Routes } from 'react-router-dom';
@@ -14,7 +14,7 @@ function App() {
 				<Route path='/' element={<Home />}/>
 				<Route path='/collection' element={<Products />}/>
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
 		</BrowserRouter>
     </>
   );

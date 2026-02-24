@@ -68,9 +68,16 @@
 }
 
 .active-grid {
-  background-color: red;
-  transition: background-color 5s ease;
+  background-color: var(--bg-third);
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  transition: background-color 1s ease;
   /* width: 200px; */
+}
+
+.active-gird.blurred {
+  filter: blur(4px)
 }
 
 .product-content {
