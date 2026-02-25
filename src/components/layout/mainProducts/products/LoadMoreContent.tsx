@@ -1,7 +1,18 @@
-export default function LoadMoreContent() {
+import type { Product } from './ProductsGrid';
+
+interface LoadMoreContentProps {
+  products: Product[];
+}
+
+export default function LoadMoreContent({ products }: LoadMoreContentProps) {
+  
   return (
-    <div className="load-more-content">
-      <button>Load More</button>
-    </div>
-  )
+    <>
+      {products.length > 0 && (
+        <div className="load-more-content">
+          <button>Load More</button>
+        </div>
+      )}
+    </>
+  );
 }

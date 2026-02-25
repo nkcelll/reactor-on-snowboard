@@ -1,5 +1,5 @@
 import './header.css';
-
+import { Link } from 'react-router-dom';
 import { Logo, IconUser, } from './index';
 import { NavMenu, SearchBox, Cart, SwitchTheme, BurgerMenu } from './index';
 
@@ -8,16 +8,16 @@ export default function Header() {
     <header>
       <nav className="main-header_container">
         <div className="left-header_side">
-          <a href="/">
+          <Link to="/">
             <Logo />
-          </a>
+          </Link>
         </div>
         <NavMenu />
         <div className="right-header_side">
           <SearchBox />
-          <a className='toLogIn' href="/login">
+          <Link to="/login" className='toLogIn'>
             <IconUser />
-          </a>
+          </Link>
           <Cart />
           <SwitchTheme />
           <BurgerMenu />

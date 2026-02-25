@@ -1,0 +1,33 @@
+.products-loading {
+  position: fixed;        
+  inset: 0;               
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: var(--bg-main);
+  transition: opacity 1s ease;
+  opacity: 1;
+  visibility: visible;
+  z-index: 9999; 
+}
+
+.icon-loading-svg {
+  /* color: red; */
+  /* background-color: red; */
+  fill: var(--text-main);
+}
+/* 
+.products-loading.fade-out {
+  opacity: 0;
+} */
+
+.products-loading span {
+  color: var(--text-main);
+  font-size: 1.5rem;
+  margin-right: 20px;
+  font-weight: bold;
+}

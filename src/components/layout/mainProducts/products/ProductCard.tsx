@@ -10,16 +10,17 @@ export default function ProductCard({ item }: ProductCardProps) {
   // Each card tracks its own image index (0 or 1)
   const [imgIndex, setImgIndex] = useState(0);
   
+  // console.log(item);
   
   return (
-    <div className="product-content">
-      <Link to="/" className="img-item-link">
+    <div key={item.key} className="product-content">
+      <Link to="/pep" className="img-item-link">
         <img
           onMouseEnter={() => setImgIndex(1)}
           onMouseLeave={() => setImgIndex(0)}
           className="img-g"
           // If images[1] doesn't exist, it falls back to images[0]
-          src={item.images[imgIndex] || item.images[0]}
+          src={item?.images?.[imgIndex] || item.image || ''}
           alt={item.name}
         />
       </Link>

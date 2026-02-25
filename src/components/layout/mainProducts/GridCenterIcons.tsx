@@ -6,8 +6,6 @@ interface onGridChangeProps {
 }
 
 export default function GridCenterIcons({ onGridChange, activeGrid }: onGridChangeProps) {
-  console.log(activeGrid);
-  
   
   return (
     <div className="flexBox grid-column-icons">
