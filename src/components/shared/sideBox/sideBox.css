@@ -1,3 +1,27 @@
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  /* z-index: 600; */
+  z-index: 110;
+  visibility: hidden;
+  /* top: 0; */
+  /* right: 0; */
+}
+
+.overlay.overlay-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+
 .box-container {
   display: flex;
   width: 500px;
@@ -10,11 +34,14 @@
   /* inset: 0; */
   right: 0;
   top: 0;
-  z-index: 110;
+  z-index: 120;
   position: fixed;
   flex-direction: column;
   gap: 40px;
-  overflow: hidden;
+}
+
+.box_open {
+  transform: translateX(0);
 }
 
 .box-content {
@@ -25,10 +52,6 @@
 .box-container-burger {
   display: flex;
   justify-content: space-between;
-}
-
-.box_open {
-  transform: translateX(0);
 }
 
 .box-flex {
@@ -235,7 +258,7 @@
 
 .inner-child.open,
 .inner.grandchild.open {
-  max-height: 1000px; /* large enough to fit content */
+  max-height: 1000px; 
 }
 .button-section {
   display: flex;
@@ -246,7 +269,6 @@
   background-color: var(--bg-sec);
   border-bottom: 1px solid currentColor;
   padding: 0 20px;
-  /* background-color: red; */
 }
 
 .item-collapser {
@@ -322,7 +344,7 @@
   display: flex;
   align-items: center;
   height: 44px;
-  gap: 20px; /* Reduced gap for better alignment */
+  gap: 20px; 
 }
 
 input[type='checkbox'] {

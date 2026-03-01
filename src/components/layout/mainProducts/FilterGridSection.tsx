@@ -12,7 +12,6 @@ interface FilterGridProps {
 }
 
 export default function FilterGridSection({ onGridChange, activeGrid, products }: FilterGridProps) {
-  console.log(products);
   
   return (
     <div id="filter-grid_section">

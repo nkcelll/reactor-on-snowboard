@@ -38,5 +38,6 @@ export const IconUser = icons.IconUser
 export const IconFilter = icons.IconFilter
 export const IconSendToEmail = icons.IconSendToEmail
 export const IconLoading = icons.IconLoading
+export const IconLoadingIntro = icons.IconLoadingIntro
 // Optional default export
 export default icons;

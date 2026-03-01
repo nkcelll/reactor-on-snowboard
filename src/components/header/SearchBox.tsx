@@ -22,9 +22,9 @@ export default function SearchBox() {
       <button onClick={open}>
         <IconSearch />
       </button>
-      <div className={`search-input ${isVisible ? 'open' : ''}`}>
+      <div className={`search-input ${isVisible ? 'open' : ''}`} aria-label={`Search box is ${isVisible ? 'open' : 'closed'}`}>
           <div className="input-dropDown_wrap">
-            <input type='search' placeholder='Search...' />
+            <input name='search' type='search' placeholder='Search...' />
             <button className='search-opened'>
               <IconSearch/>
             </button>

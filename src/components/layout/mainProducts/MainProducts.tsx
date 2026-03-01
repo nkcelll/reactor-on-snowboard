@@ -27,7 +27,7 @@ export default function MainProducts() {
       .then((data: Record<string, Product[]>) => {
         const firstArray = Object.values(data).find(Array.isArray) as Product[] | undefined;
         if (firstArray) setProducts(firstArray);
-        setTimeout(() => setIsLoading(false), 500);
+        setTimeout(() => setIsLoading(false), 1);
       })
       .catch((err) => {
         console.log(err);

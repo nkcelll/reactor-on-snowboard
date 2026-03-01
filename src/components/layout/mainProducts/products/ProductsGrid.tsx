@@ -1,6 +1,8 @@
+import '../../../shared/sideBox/sideBox.css';
+
 import ProductCard from './ProductCard';
 import NotFound from '@/components/shared/notFound/NotFound';
-
+import FilterProductsGrid from './FilterProductsGrid';
 export interface Product {
   key: string;
   name: string;
@@ -19,10 +21,10 @@ export default function ProductsGrid({
   onGridView,
   products,
 }: ProductsGridProps) {
-  console.log(products.map((item) => item));
-
+  
   return (
-    <>
+    <div className="main-content-container">
+      <FilterProductsGrid />
       {products.length === 0 ? (
         <NotFound />
       ) : (
@@ -35,6 +37,6 @@ export default function ProductsGrid({
           ))}
         </div>
       )}
-    </>
+    </div>
   );
 }

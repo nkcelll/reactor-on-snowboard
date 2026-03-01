@@ -13,8 +13,6 @@ export default function HomeProducts() {
   useSmoothHorizontalScroll(containerRef as React.RefObject<HTMLElement>);
 
   const products = Object.values(dataHome.data);
-  console.log(products);
-  
 
   const productsHome = products.map((item) => {
     const postersSrc = item.posters?.[0].poster;

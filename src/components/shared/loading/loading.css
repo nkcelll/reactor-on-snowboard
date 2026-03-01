@@ -7,12 +7,11 @@
 
   width: 100%;
   height: 100vh;
-
   background-color: var(--bg-main);
   transition: opacity 1s ease;
   opacity: 1;
   visibility: visible;
-  z-index: 9999; 
+  z-index: 15; 
 }
 
 .icon-loading-svg {
@@ -30,4 +29,36 @@
   font-size: 1.5rem;
   margin-right: 20px;
   font-weight: bold;
+}
+
+/* **************** */
+/* #intro-to-freestyler {
+  background-color: var(--bg-main);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+  opacity: 1;
+  visibility: visible;
+} */
+
+@media screen and (max-width: 768px) {
+
+  #logoForIntro {
+    width: 150px;
+    height: auto;
+  }
+
+  #icon-loading-intro {
+    width: 100px;
+    height: 100px;
+  }
+
+ 
 }
