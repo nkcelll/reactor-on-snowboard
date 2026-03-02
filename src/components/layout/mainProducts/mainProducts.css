@@ -52,10 +52,12 @@
   font-size: 16px;
   display: flex;
   gap:  10px;
+  width: 90px;
 }
-.filter-sort_container > span {
+.filter-sort_container > button > span {
   font-size: 16px;
   letter-spacing: 1.2px;
+  font-weight: 600;
 }
 
 
@@ -67,11 +69,21 @@
   /* gap: 20px; */
 }
 
+.left-filter-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .filters-left {
   display: flex;
   justify-content: center;
   width: 400px;
-  background-color: var(--bg-sec);
+  /* background-color: var(--bg-sec); *//
+}
+
+.sticky-filter > span {
+  font-size: 20px;
+  width: inherit;
 }
 
 .sticky-filter {
@@ -79,24 +91,27 @@
   position: -webkit-sticky;
   top: 77px;
   display: flex;
-  height: 500px;
-
+  gap:20px;
+  height: fit-content;
+  padding-top: 25px;
   flex-direction: column;
-  /* gap: 20px; */
   /* padding: 20px; */
-  background-color: var(--bg-third);
+  /* background-color: var(--bg-third); */
   width: 80%
 }
 
 .accordion-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  gap:10px
+  /* padding: 0 20px; */
 }
 
 .accordion-form {
   width: 100%;
-  background-color: var(--bg-sec);
+  /* background-color: var(--bg-sec); */
+  padding: 0 20px;
+
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -135,6 +150,9 @@
 .grid-content {
   display: grid;
   width: 100%;
+  gap:1px;
+  border-left: 1px solid currentColor;
+
   /* grid-template-columns: repeat(4, 1fr); */
 }
 
@@ -249,12 +267,28 @@
   .grid-content {
     grid-template-columns: repeat(3, 1fr)!important;
   }
+  .filters-left {
+    width: 40%;
+  }
+  .sticky-filter { 
+    width: 80%;
+  }
+  
+  .accordion-form {
+    height: 50px;
+  }
+  .filter-category-item {
+    font-size: 8px;
+  }
 }
 
 
 @media screen and (max-width: 768px) {
   .grid-content {
     grid-template-columns: repeat(2, 1fr)!important;
+    border-left: 1px solid currentColor;
+  }
+  .img-item-link {
   }
   .item-info {
     padding: 0 20px;
@@ -262,6 +296,10 @@
   .product-name {
     font-size: 14px;
   }
+  .filters-left {
+    display: none;
+  }
+  
 
 
 }
@@ -269,9 +307,16 @@
   
   .grid-content {
       grid-template-columns: repeat(1, 1fr)!important;
+      border: none;
+  }
+  .img-item-link {
+    border-right: none;
+    /* border-left: none; */
   }
   .item-info {
     padding: 0 20px;
+    border-right: none;
+    border-left: none;
   }
 
 }

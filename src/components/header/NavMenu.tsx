@@ -25,7 +25,6 @@ type MenuItem = {
 };
 
 export default function NavMenu() {
-  // const [isHovered, setIsHovered] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const menuItems: MenuItem[] = [
@@ -42,8 +41,12 @@ export default function NavMenu() {
         className="gender-nav-section"
         onMouseLeave={() => setHoveredIndex(null)}
       >
-        <Link to="/" onMouseEnter={() => setHoveredIndex(index)} className={`menu-gender-names ${hoveredIndex !== null && hoveredIndex !== index ? 'blurred' : ''} ${hoveredIndex === index ? 'isActive' : ''}`}>
-        {/* <Link to="/" onMouseEnter={() => setHoveredIndex(index)} className='menu-gender-names blur_hover'> */}
+        <Link
+          to="/"
+          onMouseEnter={() => setHoveredIndex(index)}
+          className={`menu-gender-names ${hoveredIndex !== null && hoveredIndex !== index ? 'blurred' : ''} ${hoveredIndex === index ? 'isActive' : ''}`}
+        >
+          {/* <Link to="/" onMouseEnter={() => setHoveredIndex(index)} className='menu-gender-names blur_hover'> */}
           {item.label.toLocaleUpperCase()} /
         </Link>
 
@@ -53,8 +56,10 @@ export default function NavMenu() {
           aria-label={`Menu dropdown is ${hoveredIndex ? 'Open' : 'Closed'}`}
         >
           {item.data.map((category) => (
-            <div className="list">
-              <h3 key={category.id} id={category.id}>{category.topCat}</h3>
+            <div className="list" key={category.id}>
+              <h3 key={category.id} id={category.id}>
+                {category.topCat}
+              </h3>
               {category.subCategory.map((subItem) => (
                 <Link key={subItem.id} to={subItem.url} className="item">
                   {subItem.subCat}
@@ -66,38 +71,5 @@ export default function NavMenu() {
       </div>
     );
   });
-
   return <div className="nav-section">{navValues}</div>;
 }
-
-//  <div className="nav-section">
-//       <div className="men-nav-section" onMouseLeave={() => setIsHovered(false)}>
-//         <a href="" onMouseEnter={() => setIsHovered(true)}>
-//           MEN /
-//         </a>
-
-//         <div
-//           className={`nav-dropDown-menu ${isHovered && 'menuVisible'}`}
-//           aria-label={`Menu dropdown is ${isHovered ? 'Open' : 'Closed'}`}
-//         >
-//           <div className="list">
-//             <h3>SNOWBOARDS</h3>
-//             <a href="" className="item">
-//               SNOWBOARDS
-//             </a>
-//             <a href="" className="item">
-//               BINDINGS
-//             </a>
-//             <a href="" className="item">
-//               BAGS
-//             </a>
-//             <a href="" className="item">
-//               BOOTS
-//             </a>
-//             <a href="" className="item">
-//               SNOWBOARD ACCESSORIES
-//             </a>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
