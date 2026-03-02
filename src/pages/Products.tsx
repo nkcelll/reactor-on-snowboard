@@ -5,7 +5,7 @@ export default function Products() {
   return (
     <>
       <MainProducts />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

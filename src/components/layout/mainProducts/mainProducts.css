@@ -288,8 +288,8 @@
     grid-template-columns: repeat(2, 1fr)!important;
     border-left: 1px solid currentColor;
   }
-  .img-item-link {
-  }
+  /* .img-item-link {
+  } */
   .item-info {
     padding: 0 20px;
   }

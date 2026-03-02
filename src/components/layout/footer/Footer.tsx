@@ -11,7 +11,11 @@ import { BurgerItemsButton } from '@/components/header';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-export default function Footer() {
+interface footerProps {
+  hidden: boolean
+}
+
+export default function Footer({hidden}: footerProps) {
   // store multiple open sections
   const [openSections, setOpenSections] = useState<string[]>([]);
 
@@ -24,7 +28,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="footer-main_container">
+    <footer className="footer-main_container" style={{display: hidden ? "none" : 'block'}}>
       <section className="footer-section">
         <div className="faq">
           <span className="span-name">FAQ</span>

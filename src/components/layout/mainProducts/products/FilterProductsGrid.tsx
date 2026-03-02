@@ -9,7 +9,7 @@ export default function FilterProductsGrid() {
   };
 
   return (
-      <div className="filters-left">
+      <aside className="filters-left">
         <div className="sticky-filter">
           <span>Filter /</span>
           <div className="accordion-wrapper">
@@ -39,6 +39,6 @@ export default function FilterProductsGrid() {
             )}
           </div>
         </div>
-      </div>
+      </aside>
   );
 }

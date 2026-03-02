@@ -1,0 +1,49 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+  background-color: rgb(80, 80, 80);
+}
+
+.auth-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  width: 300px;
+  height: 700px;
+  background-color: black;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+   width: inherit;
+  height: inherit;
+}
+
+.user-forms {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap:20px;
+  background-color: red;
+  
+}
+
+.user-forms > label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.auth-button-share {
+  width: 100%;
+  height: 40px;
+}

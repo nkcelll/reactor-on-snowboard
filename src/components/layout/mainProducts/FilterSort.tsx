@@ -3,7 +3,8 @@ import { BurgerItemsButton } from '@/components/header';
 import './mainProducts.css';
 import '../../shared/sideBox/sideBox.css';
 import SideBox from '@/components/shared/sideBox/SideBox';
-import FilterProductsGrid from './products/FilterProductsGrid';
+// import FilterProductsGrid from './products/FilterProductsGrid';
+// import FilterInputCheckbox from '@/components/shared/filterInputCheckbox/FilterInputCheckbox';
 
 import { useState } from 'react';
 
@@ -103,12 +104,34 @@ export default function FilterSort() {
         {openItems['1'] && (
           <div className="input-fields_container">
             {sortByInputFields}
+            
+          </div>
+        )}
+        <BurgerItemsButton
+          name="Gender"
+          className="button-section"
+          isOpen={!!openItems['2']}
+          onClick={() => toggleItem('2')}
+          style={{ fontWeight: 'bold', fontSize: '16px' }}
+        />
+        {openItems['2'] && (
+          <div className="input-fields_container">
+            <div className="filter-category-item input-fields">
+                <input type="checkbox" className="checkbox-style" />
+                <label htmlFor="">Male</label>
+              </div>
+              <div className="filter-category-item input-fields">
+                <input type="checkbox" className="checkbox-style" />
+                <label htmlFor="">Male</label>
+              </div>
+              <div className="filter-category-item input-fields">
+                <input type="checkbox" className="checkbox-style" />
+                <label htmlFor="">Male</label>
+              </div>
           </div>
         )}
       </SideBox>
-      {/* <SideBox isVisible={isVisible} close={close}>
-        <FilterProductsGrid/>
-      </SideBox> */}
+      
     </div>
   );
-}console.log()
+}
