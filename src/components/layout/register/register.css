@@ -164,3 +164,9 @@
   border-bottom: 1px solid currentColor;
   letter-spacing: 1.5px;
 }
+
+@media screen and (max-width: 425px) {
+  .password-modal-box {
+    width: 90%;
+  }
+}

@@ -39,5 +39,8 @@ export const IconFilter = icons.IconFilter
 export const IconSendToEmail = icons.IconSendToEmail
 export const IconLoading = icons.IconLoading
 export const IconLoadingIntro = icons.IconLoadingIntro
+export const IconCloseModal = icons.IconCloseModal
+export const IconArrowModalLeft = icons.IconArrowModalLeft
+export const IconArrowModalRight = icons.IconArrowModalRight
 // Optional default export
 export default icons;

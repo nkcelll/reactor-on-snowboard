@@ -14,7 +14,7 @@ export default function ProductCard({ item }: ProductCardProps) {
   
   return (
     <div key={item.key} className="product-content">
-      <Link to="/pep" className="img-item-link">
+      <Link to="/products/product" className="img-item-link">
         <img
           onMouseEnter={() => setImgIndex(1)}
           onMouseLeave={() => setImgIndex(0)}

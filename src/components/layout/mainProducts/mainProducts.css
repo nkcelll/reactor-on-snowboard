@@ -268,7 +268,7 @@
     grid-template-columns: repeat(3, 1fr)!important;
   }
   .filters-left {
-    width: 40%;
+    display: none;
   }
   .sticky-filter { 
     width: 80%;
