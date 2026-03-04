@@ -1,4 +1,4 @@
-import './modalImg.css';
+import './styles/modalImg.css';
 import {
   IconCloseModal,
   IconArrowModalLeft,

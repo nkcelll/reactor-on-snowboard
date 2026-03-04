@@ -1,0 +1,139 @@
+.product-details-container {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  gap: 10px;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  flex: 1;
+}
+/* ************************** */
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+
+.snowboard-information {
+  /* width: 100%; */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.terrain-map-text {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+}
+
+.terrain-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:30px;
+}
+
+.terrain-info {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: red;
+}
+
+.box-info-park {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70%;
+  height: 30px;
+  background-color: green;
+}
+.box-info-all-mountain {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70%;
+  height: 30px;
+  background-color: green;
+}
+.box-info-pow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 40%;
+  height: 30px;
+  background-color: green;
+}
+.terrain-info > span {
+  justify-content: flex-end;
+}
+
+
+/*  */
+.characteristics{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 20px;
+  width: 40%;
+}
+
+.span-characteristics {
+  font-size: 24px;
+  height: 40px;
+  font-weight: 600;
+}
+
+.terrain-customer {
+  display: flex;
+  flex-direction: column;
+  gap:30px
+}
+
+.characteristic-name-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.joyful-hard-rating {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: red;
+}
+
+.adjustability-customer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap:20px
+}
+
+.min-max-adjust-container {
+  display: flex;
+  flex-direction: column;
+  gap:10px
+}
+
+.rating-box {
+  display: flex;
+  width: 60%;
+  height: 30px;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: green;
+}
+
+.overal-rating > span {
+  font-size: 40px;
+}
