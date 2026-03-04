@@ -4,7 +4,8 @@ import Header from './components/header/Header';
 import Footer from './components/layout/footer/Footer';
 import Home from './pages/Home';
 import Products from './pages/Products';
-import Register from './pages/Register';
+import Login from './components/layout/register/Login';
+import SignUp from './components/layout/register/SignUp';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 
 function AppWraper() {
@@ -17,7 +18,8 @@ function AppWraper() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products/:id" element={<Products />} />
-        <Route path="/login" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
       <Footer hidden={isHome} />
     </>

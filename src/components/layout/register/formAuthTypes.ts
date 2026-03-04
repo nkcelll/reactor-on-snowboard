@@ -1,23 +1,22 @@
 export type InputFieldsAuth = {
-  type?: 'input'
+  type: 'input'
   label?: string
-  id?: string 
+  id?: string
   inputType?: string
   inputClassName?: string
+  placeHolder?: string
 }
 
 export type ButtonFieldAuth = {
-  type?: 'button'
-  label?: string
+  type: 'button'
   buttonName?: string
   id?: string
-  buttonType?: string
+  buttonType?: 'submit'
   buttonClassName: string
 }
 
 export type LinkFieldAuth = {
-  type?: 'link'
-  // label?: string
+  type: 'link'
   linkName?: string
   id?: string
   redirect?: string
@@ -25,14 +24,24 @@ export type LinkFieldAuth = {
 }
 
 export type RememberUser = {
-  type?: 'checkbox'
-  // label?: string
+  type: 'checkbox'
   userRemember?: string
+  id?: string
   inputType?: string
-}
-export type ForgotPassUser = {
-  userForgotPass?: string
-  // label?: string
+  inputClassName?: string
 }
 
-export type AuthFields = InputFieldsAuth | ButtonFieldAuth | LinkFieldAuth | RememberUser | ForgotPassUser
+export type ForgotPassUser = {
+  type: 'forgotModal'
+  buttonType: 'button'
+  // userForgotPass?: string
+  label?: string
+  id?: string
+}
+
+export type AuthFields =
+  | InputFieldsAuth
+  | ButtonFieldAuth
+  | LinkFieldAuth
+  | RememberUser
+  | ForgotPassUser
