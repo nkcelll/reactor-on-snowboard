@@ -1,5 +1,5 @@
 import './perProduct.css';
-import {ProductImages, PerProductMainInfo, ProductDetails} from './index'
+import {ProductImages, PerProductMainInfo, ProductDetails, AdditionalInformation} from './index'
 
 export default function PerProductLayout() {
   return (
@@ -9,6 +9,8 @@ export default function PerProductLayout() {
         <PerProductMainInfo/>
       </div>
         <ProductDetails/>
+        <AdditionalInformation/>
+        
     </div>
   );
 }

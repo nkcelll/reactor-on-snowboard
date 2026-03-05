@@ -1,4 +1,4 @@
-import './styles/productDetails.css';
+import '../../styles/productDetails.css';
 // import IconArrowDown from '@/assets/icons/IconArrowDown';
 export default function Details() {
   return (
