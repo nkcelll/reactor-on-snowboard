@@ -22,7 +22,7 @@ export default function MainProducts() {
   
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/products/${id}`)
+    fetch(`https://reactor-on-snowboard-server.onrender.com/api/mainproducts/${id}`)
       .then((resp) => resp.json())
       .then((data: Record<string, Product[]>) => {
         const firstArray = Object.values(data).find(Array.isArray) as Product[] | undefined;

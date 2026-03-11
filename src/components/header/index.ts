@@ -9,3 +9,5 @@ export {default as Overlay} from '../shared/Overlay'
 
 export {default as Logo} from '../../assets/Logo'
 export {default as IconUser} from '../../assets/icons/IconUser'
+
+export {default as useMenu} from './hooks/useMenu'

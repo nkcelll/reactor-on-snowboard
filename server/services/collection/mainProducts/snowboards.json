@@ -18,7 +18,6 @@
       "images": [
         "https://cdn.skatepro.com/product/520/bataleon-surfer-snowboard-55.webp",
         "https://cdn.skatepro.com/product/520/bataleon-surfer-snowboard-la.webp"
-
       ],
       "availability": "In Stock"
     },
@@ -58,8 +57,8 @@
         "weight": "3.1 kg"
       },
       "images": [
-        "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
-        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+        "https://wiredsnowboards.com/cdn/shop/files/WiredVantageSeries_600x.png?v=1755465818",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnh0I3x6owgE14Wt7MKAjuEGEq9yJD9LNa8A&s"
       ],
       "availability": "In Stock"
     },
@@ -68,8 +67,8 @@
       "name": "Velocity Snowboard",
       "brand": "VelocityBoards",
       "size": ["153 cm", "157 cm", "160 cm"],
-      "price": 450.00,
-      "salePrice": 420.00,
+      "price": 450.0,
+      "salePrice": 420.0,
       "specs": {
         "terrain": "All-mountain",
         "coreMaterial": "Wood and Carbon",
@@ -89,7 +88,7 @@
       "name": "StormEdge Snowboard",
       "brand": "EdgeTech",
       "size": ["150 cm", "155 cm", "158 cm"],
-      "price": 499.00,
+      "price": 499.0,
       "specs": {
         "terrain": "All-mountain",
         "coreMaterial": "Poplar Wood",
@@ -99,8 +98,8 @@
         "weight": "2.6 kg"
       },
       "images": [
-        "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
-        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+        "https://cdn.shopify.com/s/files/1/0627/5838/7964/files/24.25Nokhu-Flips.webp?v=1712591261",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQibvKKcNe3DKIDiYbUZ4aadqwALeSGudTgw&s"
       ],
       "availability": "In Stock"
     },
@@ -119,8 +118,8 @@
         "weight": "3.1 kg"
       },
       "images": [
-        "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
-        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+        "https://bataleon.com/cdn/shop/files/whatever-130673.jpg?v=1757349147",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSHaMsmyFla3WYuO_CYDg2dWjDB-rRUhO4yQ&s"
       ],
       "availability": "In Stock"
     },
@@ -139,8 +138,8 @@
         "weight": "3.1 kg"
       },
       "images": [
-        "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
-        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+        "https://cdn.shopify.com/s/files/1/0627/5838/7964/files/24.25Nokhu-Flips.webp?v=1712591261",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQibvKKcNe3DKIDiYbUZ4aadqwALeSGudTgw&s"
       ],
       "availability": "In Stock"
     },
@@ -159,8 +158,8 @@
         "weight": "3.1 kg"
       },
       "images": [
-        "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
-        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+        "https://adrenaline.ge/cdn/shop/files/ride_2526_superpig_RD251033_1.jpg?v=1767628217",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkmYKtwb4d7SmI6PxQcK8z8UlV85Btusx05g&s"
       ],
       "availability": "In Stock"
     },
@@ -219,8 +218,8 @@
         "weight": "3.1 kg"
       },
       "images": [
-        "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
-        "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
+        "https://adrenaline.ge/cdn/shop/files/ride_2526_superpig_RD251033_1.jpg?v=1767628217",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkmYKtwb4d7SmI6PxQcK8z8UlV85Btusx05g&s"
       ],
       "availability": "In Stock"
     },
@@ -323,8 +322,211 @@
         "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823"
       ],
       "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-018",
+      "name": "Glacier Edge Snowboard",
+      "brand": "IcePeak",
+      "size": ["150 cm", "155 cm", "160 cm"],
+      "price": 529.99,
+      "salePrice": 499.99,
+      "specs": {
+        "terrain": "All-mountain",
+        "coreMaterial": "Hybrid Wood",
+        "baseType": "Sintered",
+        "flex": "Medium",
+        "recommendedFor": "Intermediate",
+        "weight": "2.9 kg"
+      },
+      "images": [
+        "https://wiredsnowboards.com/cdn/shop/files/WiredVantageSeries_600x.png?v=1755465818",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnh0I3x6owgE14Wt7MKAjuEGEq9yJD9LNa8A&s"
+      ],
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-019",
+      "name": "Freestyle Nova Snowboard",
+      "brand": "Trickster",
+      "size": ["145 cm", "150 cm", "155 cm"],
+      "price": 419.99,
+      "specs": {
+        "terrain": "Freestyle",
+        "coreMaterial": "Aspen",
+        "baseType": "Extruded",
+        "flex": "Soft",
+        "recommendedFor": "Beginner - Intermediate",
+        "weight": "2.5 kg"
+      },
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0627/5838/7964/files/24.25Nokhu-Flips.webp?v=1712591261",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQibvKKcNe3DKIDiYbUZ4aadqwALeSGudTgw&s"
+      ],
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-020",
+      "name": "Mountain Master Snowboard",
+      "brand": "PeakRider",
+      "size": ["155 cm", "160 cm", "165 cm"],
+      "price": 579.99,
+      "salePrice": 549.99,
+      "specs": {
+        "terrain": "Powder",
+        "coreMaterial": "Bamboo",
+        "baseType": "Sintered",
+        "flex": "Stiff",
+        "recommendedFor": "Advanced",
+        "weight": "3.2 kg"
+      },
+      "images": [
+        "https://example.com/mountain-master-1.jpg",
+        "https://example.com/mountain-master-2.jpg"
+      ],
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-021",
+      "name": "Storm Rider Snowboard",
+      "brand": "StormTech",
+      "size": ["150 cm", "155 cm", "160 cm"],
+      "price": 489.99,
+      "specs": {
+        "terrain": "All-mountain",
+        "coreMaterial": "Poplar Wood",
+        "baseType": "Extruded",
+        "flex": "Medium",
+        "recommendedFor": "Intermediate",
+        "weight": "2.7 kg"
+      },
+      "images": [
+        "https://example.com/storm-rider-1.jpg",
+        "https://example.com/storm-rider-2.jpg"
+      ],
+      "availability": "Out of Stock"
+    },
+    {
+      "key": "snowboard-022",
+      "name": "Freeride X Snowboard",
+      "brand": "AlpineX",
+      "size": ["160 cm", "163 cm", "167 cm"],
+      "price": 649.99,
+      "salePrice": 619.99,
+      "specs": {
+        "terrain": "Freeride",
+        "coreMaterial": "Maple",
+        "baseType": "Sintered",
+        "flex": "Stiff",
+        "recommendedFor": "Advanced",
+        "weight": "3.3 kg"
+      },
+      "images": [
+        "https://example.com/freeride-x-1.jpg",
+        "https://example.com/freeride-x-2.jpg"
+      ],
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-023",
+      "name": "Urban Glide Snowboard",
+      "brand": "CityShred",
+      "size": ["148 cm", "152 cm", "155 cm"],
+      "price": 399.99,
+      "specs": {
+        "terrain": "Freestyle",
+        "coreMaterial": "Aspen",
+        "baseType": "Extruded",
+        "flex": "Soft",
+        "recommendedFor": "Beginner - Intermediate",
+        "weight": "2.6 kg"
+      },
+      "images": [
+        "https://example.com/urban-glide-1.jpg",
+        "https://example.com/urban-glide-2.jpg"
+      ],
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-024",
+      "name": "Blizzard Pro Snowboard",
+      "brand": "BlizzardTech",
+      "size": ["155 cm", "160 cm", "165 cm"],
+      "price": 599.99,
+      "salePrice": 569.99,
+      "specs": {
+        "terrain": "All-mountain",
+        "coreMaterial": "Wood & Carbon",
+        "baseType": "Sintered",
+        "flex": "Medium",
+        "recommendedFor": "Intermediate - Advanced",
+        "weight": "3.0 kg"
+      },
+      "images": [
+        "https://example.com/blizzard-pro-1.jpg",
+        "https://example.com/blizzard-pro-2.jpg"
+      ],
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-025",
+      "name": "EdgeMaster Snowboard",
+      "brand": "EdgeTech",
+      "size": ["150 cm", "155 cm", "160 cm"],
+      "price": 479.99,
+      "specs": {
+        "terrain": "All-mountain",
+        "coreMaterial": "Poplar Wood",
+        "baseType": "Extruded",
+        "flex": "Medium",
+        "recommendedFor": "Intermediate",
+        "weight": "2.8 kg"
+      },
+      "images": [
+        "https://example.com/edgemaster-1.jpg",
+        "https://example.com/edgemaster-2.jpg"
+      ],
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-026",
+      "name": "Avalanche Snowboard",
+      "brand": "SnowPeak",
+      "size": ["155 cm", "160 cm", "165 cm"],
+      "price": 639.99,
+      "salePrice": 609.99,
+      "specs": {
+        "terrain": "Powder",
+        "coreMaterial": "Bamboo",
+        "baseType": "Sintered",
+        "flex": "Stiff",
+        "recommendedFor": "Advanced",
+        "weight": "3.2 kg"
+      },
+      "images": [
+        "https://example.com/avalanche-1.jpg",
+        "https://example.com/avalanche-2.jpg"
+      ],
+      "availability": "In Stock"
+    },
+    {
+      "key": "snowboard-027",
+      "name": "Nitro Rush Snowboard",
+      "brand": "NitroBoard",
+      "size": ["148 cm", "152 cm", "155 cm"],
+      "price": 429.99,
+      "specs": {
+        "terrain": "Freestyle",
+        "coreMaterial": "Aspen",
+        "baseType": "Extruded",
+        "flex": "Soft",
+        "recommendedFor": "Beginner - Intermediate",
+        "weight": "2.6 kg"
+      },
+      "images": [
+        "https://example.com/nitro-rush-1.jpg",
+        "https://example.com/nitro-rush-2.jpg"
+      ],
+      "availability": "In Stock"
     }
-    
   ]
 }
-

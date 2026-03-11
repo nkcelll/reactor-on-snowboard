@@ -1,38 +1,11 @@
 import './header.css';
-import men from '../../../server/services/collection/home/menu/men.json';
-import women from '../../../server/services/collection/home/menu/women.json';
-import kids from '../../../server/services/collection/home/menu/kids.json';
-import sale from '../../../server/services/collection/home/menu/sale.json';
+import useMenu from './hooks/useMenu'; ////// Menu data driven
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-// ✅ Define types inline here
-type SubCategory = {
-  id: string;
-  subCat: string;
-  url: string;
-};
-
-type TopCategory = {
-  id: string;
-  topCat: string;
-  subCategory: SubCategory[];
-};
-
-type MenuItem = {
-  label: string;
-  data: TopCategory[];
-};
-
 export default function NavMenu() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
-  const menuItems: MenuItem[] = [
-    { label: 'Men', data: men as TopCategory[] },
-    { label: 'Women', data: women as TopCategory[] },
-    { label: 'Kids', data: kids as TopCategory[] },
-    { label: 'Sale', data: sale as TopCategory[] },
-  ];
+  const [menuItems] = useMenu();
 
   const navValues = menuItems.map((item, index) => {
     return (

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export default function useSmoothHorizontalScroll(ref: React.RefObject<HTMLElement >, speed = 2, ease = 0.03) {
+export default function useSmoothHorizontalScroll(ref: React.RefObject<HTMLElement >, isLoading: boolean) {
   useEffect(() => {
     const container = ref.current;
     if (!container) return;
@@ -12,7 +12,7 @@ export default function useSmoothHorizontalScroll(ref: React.RefObject<HTMLEleme
     function animate() {
       const delta = targetScrollLeft - currentScrollLeft;
 
-      currentScrollLeft += delta * ease;
+      currentScrollLeft += delta * 0.03;
       container.scrollLeft = currentScrollLeft;
 
       if (Math.abs(delta) > 0.5) {
@@ -26,7 +26,7 @@ export default function useSmoothHorizontalScroll(ref: React.RefObject<HTMLEleme
     function handleWheel(e: WheelEvent) {
       e.preventDefault();
 
-      targetScrollLeft += e.deltaY * speed;
+      targetScrollLeft += e.deltaY * 2;
 
       const maxScroll =
         container.scrollWidth - container.clientWidth;
@@ -50,5 +50,59 @@ export default function useSmoothHorizontalScroll(ref: React.RefObject<HTMLEleme
     return () => {
       container.removeEventListener("wheel", handleWheel);
     };
-  }, [ref, speed, ease]);
+  }, [ref, isLoading]);
 }
+// import { useEffect } from "react";
+
+// export default function useSmoothHorizontalScroll(ref: React.RefObject<HTMLElement >, speed = 2, ease = 0.03) {
+//   useEffect(() => {
+//     const container = ref.current;
+//     if (!container) return;
+
+//     let targetScrollLeft = container.scrollLeft;
+//     let currentScrollLeft = container.scrollLeft;
+//     let isAnimating = false;
+
+//     function animate() {
+//       const delta = targetScrollLeft - currentScrollLeft;
+
+//       currentScrollLeft += delta * ease;
+//       container.scrollLeft = currentScrollLeft;
+
+//       if (Math.abs(delta) > 0.5) {
+//         requestAnimationFrame(animate);
+//       } else {
+//         container.scrollLeft = targetScrollLeft;
+//         isAnimating = false;
+//       }
+//     }
+
+//     function handleWheel(e: WheelEvent) {
+//       e.preventDefault();
+
+//       targetScrollLeft += e.deltaY * speed;
+
+//       const maxScroll =
+//         container.scrollWidth - container.clientWidth;
+
+//       targetScrollLeft = Math.max(
+//         0,
+//         Math.min(targetScrollLeft, maxScroll)
+//       );
+
+//       if (!isAnimating) {
+//         isAnimating = true;
+//         currentScrollLeft = container.scrollLeft;
+//         requestAnimationFrame(animate);
+//       }
+//     }
+
+//     container.addEventListener("wheel", handleWheel, {
+//       passive: false,
+//     });
+
+//     return () => {
+//       container.removeEventListener("wheel", handleWheel);
+//     };
+//   }, [ref, speed, ease]);
+// }
