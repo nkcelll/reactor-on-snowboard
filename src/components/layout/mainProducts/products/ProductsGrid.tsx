@@ -5,6 +5,7 @@ import NotFound from '@/components/shared/notFound/NotFound';
 import FilterProductsGrid from './FilterProductsGrid';
 export interface Product {
   key: string;
+  id: string,
   name: string;
   price: number;
   images?: string[];

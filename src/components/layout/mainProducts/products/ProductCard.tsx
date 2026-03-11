@@ -13,7 +13,7 @@ export default function ProductCard({ item }: ProductCardProps) {
   // console.log(item);
   
   return (
-    <div key={item.key} className="product-content">
+    <div key={item.key} id={item.id} className="product-content">
       <Link to="/products/product" className="img-item-link">
         <img
           onMouseEnter={() => setImgIndex(1)}
