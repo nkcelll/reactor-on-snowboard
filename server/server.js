@@ -64,7 +64,6 @@ app.get('/api/mainProducts/:category', (req, res) => {
   const { category } = req.params;
   const fileName = `${category}.json`;
   const products = getProducts('mainProducts', fileName);
-  console.log(category);
 
   if (products) {
     res.status(200).json(products);
