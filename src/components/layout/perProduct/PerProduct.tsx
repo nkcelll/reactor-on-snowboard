@@ -11,7 +11,7 @@ import { usePerProductFetch } from './hook/index';
 
 export default function PerProductLayout() {
   const [perProduct, isLoading, error] = usePerProductFetch();
-  // console.log(perProduct);
+  console.log(perProduct);
 
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>{error}</div>;
@@ -34,8 +34,11 @@ export default function PerProductLayout() {
         // terrainMap={perProduct.}
         terrainMap={perProduct.terrainMap}
         characteristics={perProduct.characteristics}
+        overallRating={perProduct.overallRating}
       />
-      <AdditionalInformation />
+      <AdditionalInformation 
+        specs={perProduct.specs}
+      />
       <Recommend />
     </div>
   );

@@ -20,7 +20,6 @@
   width: 40%;
 }
 
-
 .snowboard-information {
   /* width: 100%; */
   height: auto;
@@ -33,13 +32,18 @@
   width: 100%;
   height: 40px;
   font-size: 18px;
+  font-weight: 900;
+}
+
+.terrain-name-span {
+  font-weight: 600;
 }
 
 .terrain-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap:30px;
+  gap: 30px;
 }
 
 .terrain-info {
@@ -48,6 +52,7 @@
   display: flex;
   align-items: center;
   background-color: var(--bg-sec);
+  border-radius: 100px;
 }
 
 .box-info-park {
@@ -55,7 +60,7 @@
   justify-content: flex-end;
   align-items: center;
   /* width: 70%; */
-  padding: 0 20px ;
+  padding: 0 20px;
 
   height: 30px;
   background-color: var(--bg-main);
@@ -66,11 +71,10 @@
   align-items: center;
   /* width: 70%; */
   height: 30px;
-  padding: 0 20px ;
-  
+  padding: 0 20px;
+
   /* background-color: green; */
   background-color: var(--bg-main);
-
 }
 .box-info-pow {
   display: flex;
@@ -78,15 +82,26 @@
   align-items: center;
   /* width: 40%; */
   height: 30px;
-  padding: 0 20px ;
+  padding: 0 20px;
   /* background-color: green; */
   background-color: var(--bg-main);
-
 }
 
 .box-map-character-border-control {
-  border-radius: 2%;
+  border-radius: 100px;
+  margin: 0 10px;
 }
 .terrain-info > span {
   justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .product-details-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 60px;
+  }
+  .product-details {
+    width: 100%;
+  }
 }

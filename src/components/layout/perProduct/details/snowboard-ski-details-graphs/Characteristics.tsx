@@ -2,9 +2,9 @@ import '../../styles/characteristics.css';
 import type { CharacteristicsProps } from '../../types';
 interface CharacteristicsEndpoint {
   characteristics: CharacteristicsProps
+  overallRating: string
 }
-export default function Characteristics({characteristics}: CharacteristicsEndpoint) {
-  console.log(characteristics);
+export default function Characteristics({characteristics, overallRating}: CharacteristicsEndpoint) {
   
   return (
     <div className="characteristics">
@@ -15,27 +15,27 @@ export default function Characteristics({characteristics}: CharacteristicsEndpoi
           <span>Hard</span>
         </div>
         <div className="joyful-hard-rating terrain-info">
-          <div className="joyful-hard rating-box">
-            <span>{characteristics.rideLlevel}</span>
+          <div className="joyful-hard rating-box" style={{width: `${parseInt(characteristics.rideLevel)}0%`}}>
+            <span>{characteristics.rideLevel}</span>
           </div>
         </div>
       </div>
       <div className="adjustability-customer">
-        <span>Adjustability</span>
+        <span className='adjustability'>Adjustability</span>
         <div className="min-max-adjust-container">
           <div className="joyful-hard characteristic-name-box">
             <span>Min</span>
             <span>Max</span>
           </div>
           <div className="joyful-hard-rating">
-            <div className="rating-box">
+            <div className="rating-box" style={{width: `${parseInt(characteristics.adjustability)}0%`}}>
               <span>{characteristics.adjustability}</span>
             </div>
           </div>
         </div>
       </div>
       <div className="overal-rating">
-        <span>Overall 5.9</span>
+        <span>Overall Rating: {overallRating}</span>
       </div>
     </div>
   );

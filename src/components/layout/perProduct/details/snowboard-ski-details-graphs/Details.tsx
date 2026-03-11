@@ -34,7 +34,7 @@ export default function Details({ terrainMap }: TerrainEndpoint) {
       <div className="snowboard-information">
           <span className="terrain-map-text">Terrain Map</span>
         <div className="terrain-container">
-            <span>Park</span>
+            <span className='terrain-name-span'>Park</span>
           <div className="terrain-info">
             <div className="box-info-park box-map-character-border-control" style={{width: `${parseInt(terrainMap.park)}0%`}}>
               <span>{terrainMap.park}</span>
@@ -42,7 +42,7 @@ export default function Details({ terrainMap }: TerrainEndpoint) {
           </div>
         </div>
         <div className="terrain-container">
-            <span>All Mountain</span>
+            <span className='terrain-name-span'>All Mountain</span>
           <div className="terrain-info">
             <div className="box-info-all-mountain box-map-character-border-control" style={{width: `${parseInt(terrainMap.allMountain)}0%`}}>
               <span>{terrainMap.allMountain}</span>
@@ -50,7 +50,7 @@ export default function Details({ terrainMap }: TerrainEndpoint) {
           </div>
         </div>
         <div className="terrain-container">
-            <span>POW</span>
+            <span className='terrain-name-span'>POW</span>
           <div className="terrain-info">
             <div className="box-info-pow box-map-character-border-control" style={{width: `${parseInt(terrainMap.pow)}0%`}}>
               <span>{terrainMap.pow}</span>

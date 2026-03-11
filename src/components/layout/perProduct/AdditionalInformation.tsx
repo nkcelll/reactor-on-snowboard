@@ -1,11 +1,16 @@
 import './styles/additionalInformation.css';
 import ButtonToggle from './details/component/ButtonToggle';
 import DetailsInfo from './details/DetailInfo';
+import type { ProductSpecs } from './types';
 import { SpecsInfo, FeaturesInfo } from './index';
+
+interface SpecsInfoProps {
+  specs: ProductSpecs
+}
 
 import { useState } from 'react';
 
-export default function AdditionalInformation() {
+export default function AdditionalInformation({specs}: SpecsInfoProps) {
   const [detailOpen, setDetailOpen] = useState<Record<number, boolean>>({
     1: false,
     2: false,
@@ -37,7 +42,10 @@ export default function AdditionalInformation() {
           detailOpen={detailOpen[2]}
           toggleDropdown={() => toggleDropdown(2)}
         />
-        <SpecsInfo detailOpen={detailOpen[2]} />
+        <SpecsInfo 
+          detailOpen={detailOpen[2]} 
+          specs={specs}
+        />
       </div>
       <div className="product-dropdown-detail">
         <ButtonToggle //////////////////////////////////////////////  Featured

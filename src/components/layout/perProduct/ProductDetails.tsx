@@ -1,34 +1,26 @@
 import './styles/productDetails.css';
-// import IconArrowDown from '@/assets/icons/IconArrowDown'
 import { Details, Characteristics } from './index';
-import type { TerrainMap, CharacteristicsProps} from './types';
+import type { TerrainMap, CharacteristicsProps } from './types';
 
 interface ProductDetailProps {
-  terrainMap: TerrainMap,
-  characteristics: CharacteristicsProps
+  terrainMap: TerrainMap;
+  characteristics: CharacteristicsProps;
+  overallRating: string;
 }
 
-export default function ProductDetails({terrainMap, characteristics}: ProductDetailProps) {
-  // console.log(terrainMap,characteristics);
-  
+export default function ProductDetails({
+  terrainMap,
+  characteristics,
+  overallRating,
+}: ProductDetailProps) {
+
   return (
     <div className="product-details-container">
-      <Details
-        terrainMap ={terrainMap}
-      />
+      <Details terrainMap={terrainMap} />
       <Characteristics
         characteristics={characteristics}
+        overallRating={overallRating}
       />
-      {/* <div className="specs detail">
-        <button>Specs</button>
-        <IconArrowDown/>
-
-      </div>
-      <div className="features detail">
-        <button>Features</button>
-        <IconArrowDown/>
-      </div> */}
-      
     </div>
   );
 }
