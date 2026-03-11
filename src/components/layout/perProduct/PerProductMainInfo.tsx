@@ -1,23 +1,37 @@
 import { IconMinus, IconPlus } from '@/assets/icons';
-import { useState, useEffect } from 'react';
-import { useParams, useSearchParams } from 'react-router-dom';
+// import { useState, useEffect } from 'react';
+// import { useParams} from 'react-router-dom';
 
 export default function PerProductsMainInfo() {
-  const [product, setProduct] = useState({})
-  const {category, productId} = useParams()
-  // const [searchParams] = useSearchParams()
-  // const productId = searchParams.get('id')
-  console.log(category, productId);
+  // const [product, setProduct] = useState({});
+  // const { category, productId } = useParams();
+  // const [error, setError] = useState('')
+  // console.log(product);
   
 
   // useEffect(() => {
   //   const fetchProduct = async () => {
   //     // const paramId = id
-  //     const response = await fetch(`https://reactor-on-snowboard-server.onrender.com/api/mainproducts/${category}/${}`)
-  //   }
-  //   fetchProduct()
-  // })
-  
+  //     try {
+  //       const response = await fetch(
+  //         `https://reactor-on-snowboard-server.onrender.com/api/mainproducts/${category}/${productId}`,
+  //       );
+  //       if(!response.ok) {
+  //         throw new Error(`Error message status: ${response.status} `)
+  //       }
+  //       const result = await response.json();
+  //       setProduct(result)
+  //     } catch (error) {
+  //       if(error instanceof Error) {
+  //         setError(error.message)
+  //       } else {
+  //         setError('Something went wrong')
+  //       }
+  //     }
+      
+  //   };
+  //   fetchProduct();
+  // },[category, productId]);
 
   return (
     <div className="main-product">

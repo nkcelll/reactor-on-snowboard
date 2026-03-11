@@ -6,9 +6,15 @@ import {
 } from '@/assets/icons';
 import { useState, useEffect } from 'react';
 
-export default function ProductImages() {
+
+interface ProductImageProps {
+  images: string[]
+}
+
+export default function ProductImages({images}: ProductImageProps) {
   const [openModal, setOpenModal] = useState(false);
   const [modalIndex, setModalIndex] = useState(0);
+
   useEffect(() => {
     document.body.style.overflow = openModal ? 'hidden' : 'auto';
   }, [openModal]);
@@ -18,12 +24,12 @@ export default function ProductImages() {
     setModalIndex(index);
   };
 
-  const images = [
-    'https://cdn.skatepro.com/product/520/bataleon-surfer-snowboard-55.webp',
-    'https://cdn.skatepro.com/product/520/bataleon-surfer-snowboard-la.webp',
-    'https://cdn.skatepro.com/product/520/bataleon-surfer-snowboard-2p.webp',
-    'https://cdn.skatepro.com/product/520/bataleon-surfer-snowboard-po.webp',
-  ];
+  // const images = [
+  //   'https://cdn.skatepro.com/product/520/bataleon-surfer-snowboard-55.webp',
+  //   'https://cdn.skatepro.com/product/520/bataleon-surfer-snowboard-la.webp',
+  //   'https://cdn.skatepro.com/product/520/bataleon-surfer-snowboard-2p.webp',
+  //   'https://cdn.skatepro.com/product/520/bataleon-surfer-snowboard-po.webp',
+  // ];
 
   const showNext = () => {
     setModalIndex((prevIndex) => (prevIndex + 1) % images.length);
