@@ -16,6 +16,16 @@
         "recommendedFor": "Intermediate - Advanced",
         "weight": "2.9 kg"
       },
+      "terrainMap": {
+        "park": "6",
+        "allMountain": "8",
+        "pow": "3"
+      },
+      "characteristics": {
+        "rideLlevel": "3",
+        "adjustability": "5"
+      },
+      "overallRating": "5",
       "images": [
         "https://cdn.skatepro.com/product/520/bataleon-surfer-snowboard-55.webp",
         "https://cdn.skatepro.com/product/520/bataleon-surfer-snowboard-la.webp",
@@ -39,6 +49,16 @@
         "recommendedFor": "Beginner - Intermediate",
         "weight": "2.7 kg"
       },
+      "characteristics": {
+        "rideLlevel": "7",
+        "adjustability": "6"
+      },
+      "terrainMap": {
+        "park": "8.7",
+        "allMountain": "4.3",
+        "pow": "5.5"
+      },
+      "overallRating": "6.3",
       "images": [
         "https://romesnowboards.com/cdn/shop/files/Rome-SDS-Heist-2025-Rome-Snowboards_-product-image-2425-Heist-2025-Rome-Snowboards_-1-24f4-4531-87dd-bab627292bde.jpg?v=1723730882&width=823",
         "https://bataleon.com/cdn/shop/files/evil-twin-596047.jpg?v=1740742740&width=823",
@@ -63,6 +83,16 @@
         "recommendedFor": "Advanced",
         "weight": "3.1 kg"
       },
+      "terrainMap": {
+        "park": "9",
+        "allMountain": "6",
+        "pow": "9.5"
+      },
+      "characteristics": {
+        "rideLlevel": "10",
+        "adjustability": "7"
+      },
+      "overallRating": "8.3",
       "images": [
         "https://venturesnowboards.com/cdn/shop/files/Storm-Snowboard.jpg?v=1760118273&width=533",
         "https://bataleon.com/cdn/shop/files/whatever-130673.jpg?v=1757349147",

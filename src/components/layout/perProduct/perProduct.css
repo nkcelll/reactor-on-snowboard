@@ -18,9 +18,9 @@
   width: 70%;
 }
 
-.per-product-images >button {
+/* .per-product-images >button { */
   /* background-color: var(--bg-sec); */
-}
+/* } */
 
 .per-product-images > button > img {
   width: 100%;
@@ -40,9 +40,20 @@
   top: 77px;
 }
 
+.availability {
+  color:var(--text-main);
+  font-weight: bold;
+}
+
 .main-product > .price {
   font-weight: 600;
 }
+
+.price-on-sale {
+  color:rgb(226, 134, 134);
+  text-decoration: line-through;
+}
+
 
 .choose-size {
   font-weight: 600;
@@ -73,6 +84,15 @@
   width: fit-content;
   padding: 0 20px;
   border: 1px solid currentColor;
+}
+
+.amount-count {
+  font-weight: 600;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  width: 16px;
+  font-size: 16px;
 }
 .add-to-cart-button {
   display: flex;

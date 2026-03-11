@@ -1,70 +1,85 @@
 import { IconMinus, IconPlus } from '@/assets/icons';
-// import { useState, useEffect } from 'react';
+import { useState } from 'react';
 // import { useParams} from 'react-router-dom';
 
-export default function PerProductsMainInfo() {
-  // const [product, setProduct] = useState({});
-  // const { category, productId } = useParams();
-  // const [error, setError] = useState('')
-  // console.log(product);
-  
+interface ProductMainInfo {
+  availability: string;
+  brand: string;
+  name: string;
+  price: number;
+  salePrice?: number;
+  size?: string[];
+}
 
-  // useEffect(() => {
-  //   const fetchProduct = async () => {
-  //     // const paramId = id
-  //     try {
-  //       const response = await fetch(
-  //         `https://reactor-on-snowboard-server.onrender.com/api/mainproducts/${category}/${productId}`,
-  //       );
-  //       if(!response.ok) {
-  //         throw new Error(`Error message status: ${response.status} `)
-  //       }
-  //       const result = await response.json();
-  //       setProduct(result)
-  //     } catch (error) {
-  //       if(error instanceof Error) {
-  //         setError(error.message)
-  //       } else {
-  //         setError('Something went wrong')
-  //       }
-  //     }
-      
-  //   };
-  //   fetchProduct();
-  // },[category, productId]);
+export default function PerProductsMainInfo({
+  availability,
+  brand,
+  name,
+  price,
+  salePrice,
+  size,
+}: ProductMainInfo) {
+  const [count, setCount] = useState<number>(1);
+
+  const increment = () => {
+    setCount((prev) => prev + 1);
+  };
+  const decrement = () => {
+    if (count === 1) {
+      setCount(1);
+    } else {
+      setCount((prev) => prev - 1);
+    }
+  };
+
+  const inStock = availability === 'In Stock';
+  // console.log(size);
 
   return (
     <div className="main-product">
-      <h1>Bataleon Ecko Mode</h1>
-      <span className="price">Price: - $400.99</span>
-      <div className="size-input-fields-container">
-        <span className="choose-size">Select Size:</span>
-        <div className="size-input-fields">
-          <input type="radio" />
-          <input type="radio" />
-          <input type="radio" />
+      <h1>{name}</h1>
+      <h3>Brand: {brand}</h3>
+      <span className="availability">{availability}</span>
+      <span className={salePrice ? 'price-on-sale' : 'price'}>
+        Price - $ {price}
+      </span>
+      {/* <span className={"price"}>{`Price: - ${salePrice ? price : salePrice}`}</span> */}
+      {salePrice && <span className="price">Sale: - $ {salePrice}</span>}
+      {inStock && (
+        <div className="size-input-fields-container">
+          <span className="choose-size">Select Size:</span>
+          {size?.map((s, index) => (
+            <div key={index} className="size-input-fields">
+              <input type="radio" />
+              <label htmlFor="">{s}</label>
+            </div>
+          ))}
         </div>
-      </div>
+      )}
       <span>
         Built for steep lines, deep days and powerful all-terrain riding. Built
         for steep lines, deep days and powerful all-terrain riding. Built for
         steep lines, deep days and powerful all-terrain riding.
       </span>
-      <div className="amount-container">
-        <span>Amount:</span>
-        <div className="amount-product">
-          <button type="button">
-            <IconMinus />
-          </button>
-          <button>1</button>
-          <button type="button">
-            <IconPlus />
-          </button>
-        </div>
-      </div>
-      <div className="add-to-cart-button">
-        <button id="add-to-cart">Add to cart</button>
-      </div>
+      {inStock && (
+        <>
+          <div className="amount-container">
+            <span>Amount:</span>
+            <div className="amount-product">
+              <button type="button" onClick={decrement}>
+                <IconMinus />
+              </button>
+              <span className="amount-count">{count}</span>
+              <button type="button" onClick={increment}>
+                <IconPlus />
+              </button>
+            </div>
+          </div>
+          <div className="add-to-cart-button">
+            <button id="add-to-cart">Add to cart</button>
+          </div>
+        </>
+      )}
     </div>
   );
 }

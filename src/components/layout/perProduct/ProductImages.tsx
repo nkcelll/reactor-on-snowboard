@@ -24,13 +24,6 @@ export default function ProductImages({images}: ProductImageProps) {
     setModalIndex(index);
   };
 
-  // const images = [
-  //   'https://cdn.skatepro.com/product/520/bataleon-surfer-snowboard-55.webp',
-  //   'https://cdn.skatepro.com/product/520/bataleon-surfer-snowboard-la.webp',
-  //   'https://cdn.skatepro.com/product/520/bataleon-surfer-snowboard-2p.webp',
-  //   'https://cdn.skatepro.com/product/520/bataleon-surfer-snowboard-po.webp',
-  // ];
-
   const showNext = () => {
     setModalIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
