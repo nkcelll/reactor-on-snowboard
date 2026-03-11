@@ -47,7 +47,7 @@ app.get('/api/home/:file', (req, res) => {
 
 // Get Menu endpoints
 app.get('/api/home/menu/:menuFiels', (req, res) => {
-  const { subFolder, menuFiels } = req.params;
+  const { menuFiels } = req.params;
   const fileName = `${menuFiels}.json`;
 
   const data = getProducts('home/menu', fileName);
