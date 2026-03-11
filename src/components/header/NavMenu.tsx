@@ -1,8 +1,8 @@
 import './header.css';
-import men from '../../../services/collection/home/menu/men.json';
-import women from '../../../services/collection/home/menu/women.json';
-import kids from '../../../services/collection/home/menu/kids.json';
-import sale from '../../../services/collection/home/menu/sale.json';
+import men from '../../../server/services/collection/home/menu/men.json';
+import women from '../../../server/services/collection/home/menu/women.json';
+import kids from '../../../server/services/collection/home/menu/kids.json';
+import sale from '../../../server/services/collection/home/menu/sale.json';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 

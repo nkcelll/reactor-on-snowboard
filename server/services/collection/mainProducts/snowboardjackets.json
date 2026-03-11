@@ -1,0 +1,154 @@
+{
+  "snowboardjackets": [
+    {
+      "key": "jacket-001",
+      "name": "SnowStorm Jacket",
+      "size": ["S", "M", "L", "XL"],
+      "price": 199.99,
+      "salePrice": 179.99,
+      "description": "High-performance snowboard jacket built for extreme conditions.",
+      "specs": {
+        "material": "Waterproof Nylon, Insulated",
+        "features": ["Breathable", "Waterproof", "Adjustable hood", "Thermal insulation"]
+      },
+      "gender": "Unisex",
+      "image": "/images/jacket-001.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "jacket-002",
+      "name": "FreezeProof Insulated Jacket",
+      "size": ["M", "L", "XL"],
+      "price": 219.99,
+      "salePrice": 199.99,
+      "description": "Stay warm and dry with this insulated and waterproof jacket.",
+      "specs": {
+        "material": "Polyester, Synthetic insulation",
+        "features": ["Water-resistant", "Breathable", "Snow skirt", "Adjustable cuffs"]
+      },
+      "gender": "Male",
+      "image": "/images/jacket-002.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "jacket-003",
+      "name": "Element Snow Jacket",
+      "size": ["S", "M", "L"],
+      "price": 249.99,
+      "salePrice": 229.99,
+      "description": "All-mountain jacket with durable waterproof protection.",
+      "specs": {
+        "material": "GORE-TEX, Insulated",
+        "features": ["Waterproof", "Windproof", "Breathable", "Adjustable fit"]
+      },
+      "gender": "Female",
+      "image": "/images/jacket-003.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "jacket-004",
+      "name": "StormGuard Snow Jacket",
+      "size": ["M", "L", "XL"],
+      "price": 179.99,
+      "salePrice": 159.99,
+      "description": "Affordable yet highly functional snow jacket for everyday riders.",
+      "specs": {
+        "material": "Polyester, Water-resistant",
+        "features": ["Windproof", "Breathable", "Ventilation zippers"]
+      },
+      "gender": "Unisex",
+      "image": "/images/jacket-004.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "jacket-005",
+      "name": "AlphaSnow Performance Jacket",
+      "size": ["S", "M", "L", "XL"],
+      "price": 269.99,
+      "salePrice": 249.99,
+      "description": "Top-tier snow jacket with exceptional warmth and waterproofing.",
+      "specs": {
+        "material": "Nylon, PrimaLoft insulation",
+        "features": ["Waterproof", "Thermal insulation", "Windproof", "Elastic cuffs"]
+      },
+      "gender": "Male",
+      "image": "/images/jacket-005.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "jacket-006",
+      "name": "ArcticBlast Snow Jacket",
+      "size": ["S", "M", "L"],
+      "price": 229.99,
+      "salePrice": 199.99,
+      "description": "Ultra-warm jacket perfect for cold mountain conditions.",
+      "specs": {
+        "material": "Polyester, Water-resistant",
+        "features": ["Breathable", "Insulated", "Snow gaiters", "Adjustable hood"]
+      },
+      "gender": "Female",
+      "image": "/images/jacket-006.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "jacket-007",
+      "name": "TechX Snowboard Jacket",
+      "size": ["M", "L", "XL"],
+      "price": 299.99,
+      "salePrice": 279.99,
+      "description": "Performance snow jacket with cutting-edge materials and features.",
+      "specs": {
+        "material": "GORE-TEX, Thermolite insulation",
+        "features": ["Waterproof", "Breathable", "Fully adjustable", "Snowproof"]
+      },
+      "gender": "Unisex",
+      "image": "/images/jacket-007.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "jacket-008",
+      "name": "MountainEdge Insulated Jacket",
+      "size": ["S", "M", "L"],
+      "price": 239.99,
+      "salePrice": 219.99,
+      "description": "Highly durable and warm jacket for every snowboarder.",
+      "specs": {
+        "material": "Polyester, Polyester insulation",
+        "features": ["Thermal insulation", "Adjustable fit", "Waterproof"]
+      },
+      "gender": "Male",
+      "image": "/images/jacket-008.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "jacket-009",
+      "name": "GlacierPro Snow Jacket",
+      "size": ["M", "L", "XL"],
+      "price": 259.99,
+      "salePrice": 239.99,
+      "description": "A technical snowboard jacket designed to withstand harsh conditions.",
+      "specs": {
+        "material": "Nylon, PrimaLoft insulation",
+        "features": ["Water-resistant", "Windproof", "Breathable", "Fully seam-sealed"]
+      },
+      "gender": "Female",
+      "image": "/images/jacket-009.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "jacket-010",
+      "name": "IceBreaker Jacket",
+      "size": ["S", "M", "L"],
+      "price": 189.99,
+      "salePrice": 169.99,
+      "description": "Comfortable and stylish jacket, ideal for casual snowboarders.",
+      "specs": {
+        "material": "Softshell, Fleece-lined",
+        "features": ["Breathable", "Stretch fit", "Adjustable cuffs"]
+      },
+      "gender": "Unisex",
+      "image": "/images/jacket-010.jpg",
+      "availability": "In Stock"
+    }
+  ]
+}

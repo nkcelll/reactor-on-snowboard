@@ -1,0 +1,204 @@
+{
+  "gloves": [
+    {
+      "key": "glove-001",
+      "name": "Pro Winter Gloves",
+      "size": ["M", "L", "XL"],
+      "price": 89.99,
+      "salePrice": 79.99,
+      "description": "High-performance gloves designed for extreme winter conditions.",
+      "specs": {
+        "material": "Waterproof nylon, insulated",
+        "closureType": "Velcro wrist strap",
+        "flex": "Medium",
+        "lining": "Fleece lining",
+        "footbed": "Memory foam padding",
+        "outsole": "Rubber grip",
+        "features": ["Waterproof", "Windproof", "Breathable"]
+      },
+      "gender": "Unisex",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTczynT3_P9Ac3RdzBNG12FKt5o5BLvHBOgNg&s",
+      "availability": "In Stock"
+    },
+    {
+      "key": "glove-002",
+      "name": "Fusion Snowboard Gloves",
+      "size": ["S", "M", "L"],
+      "price": 79.99,
+      "salePrice": 69.99,
+      "description": "Comfortable snowboard gloves with enhanced grip.",
+      "specs": {
+        "material": "Leather and Gore-Tex",
+        "closureType": "Elastic wrist",
+        "flex": "Soft",
+        "lining": "Thermal fleece",
+        "footbed": "Customizable fit",
+        "outsole": "Tacky rubber for grip",
+        "features": ["Breathable", "Water-resistant", "Touchscreen compatible"]
+      },
+      "gender": "Male",
+      "image": "https://m.media-amazon.com/images/I/81susELcpTL._AC_UY1000_.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "glove-003",
+      "name": "Alpha Ski Gloves",
+      "size": ["M", "L", "XL"],
+      "price": 99.99,
+      "salePrice": 89.99,
+      "description": "Perfect for skiing and snowboarding in cold weather.",
+      "specs": {
+        "material": "Synthetic leather and waterproof fabric",
+        "closureType": "Elastic wristband",
+        "flex": "Medium",
+        "lining": "Thermal lining",
+        "footbed": "Shock-absorbing foam",
+        "outsole": "Grip pads for stability",
+        "features": ["Windproof", "Waterproof", "Insulated"]
+      },
+      "gender": "Female",
+      "image": "/images/glove-003.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "glove-004",
+      "name": "Xtreme Snowboard Gloves",
+      "size": ["M", "L"],
+      "price": 129.99,
+      "salePrice": 119.99,
+      "description": "Advanced snowboard gloves for cold and wet conditions.",
+      "specs": {
+        "material": "Waterproof leather and mesh",
+        "closureType": "Adjustable wrist strap",
+        "flex": "Hard",
+        "lining": "Soft fleece",
+        "footbed": "Foam cushioning",
+        "outsole": "Rubberized for better grip",
+        "features": ["Water-resistant", "Breathable", "Comfortable fit"]
+      },
+      "gender": "Unisex",
+      "image": "/images/glove-004.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "glove-005",
+      "name": "SnowTech Snowboard Gloves",
+      "size": ["S", "M", "L"],
+      "price": 69.99,
+      "salePrice": 59.99,
+      "description": "Affordable and comfortable gloves for everyday snowboarding.",
+      "specs": {
+        "material": "Polyester and leather",
+        "closureType": "Elasticized wrist",
+        "flex": "Soft",
+        "lining": "Light insulation",
+        "footbed": "Memory foam",
+        "outsole": "Rubber grip",
+        "features": ["Breathable", "Durable", "Water-resistant"]
+      },
+      "gender": "Male",
+      "image": "/images/glove-005.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "glove-006",
+      "name": "WinterPro Snowboard Gloves",
+      "size": ["M", "L"],
+      "price": 89.99,
+      "salePrice": 79.99,
+      "description": "Perfect for long snowboard sessions, offering superior warmth and flexibility.",
+      "specs": {
+        "material": "Nylon and leather",
+        "closureType": "Velcro and elastic wristbands",
+        "flex": "Medium",
+        "lining": "Soft fleece",
+        "footbed": "Comfort padding",
+        "outsole": "Sticky rubber",
+        "features": ["Windproof", "Water-resistant", "Comfortable fit"]
+      },
+      "gender": "Female",
+      "image": "/images/glove-006.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "glove-007",
+      "name": "SnowRider Gloves",
+      "size": ["M", "L"],
+      "price": 85.99,
+      "salePrice": 75.99,
+      "description": "Snowboard gloves with a stylish design, offering warmth and comfort.",
+      "specs": {
+        "material": "Polyester and fleece",
+        "closureType": "Elastic wristband",
+        "flex": "Medium",
+        "lining": "Fleece lining",
+        "footbed": "Padded cushioning",
+        "outsole": "Rubber for traction",
+        "features": ["Comfortable", "Waterproof", "Durable"]
+      },
+      "gender": "Unisex",
+      "image": "/images/glove-007.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "glove-008",
+      "name": "ThermoFlex Snowboard Gloves",
+      "size": ["S", "M", "L"],
+      "price": 74.99,
+      "salePrice": 64.99,
+      "description": "Snowboard gloves designed for maximum warmth and flexibility.",
+      "specs": {
+        "material": "Nylon and leather",
+        "closureType": "Velcro strap",
+        "flex": "Medium",
+        "lining": "Thermal fleece",
+        "footbed": "Memory foam",
+        "outsole": "Rubber",
+        "features": ["Windproof", "Breathable", "Water-resistant"]
+      },
+      "gender": "Male",
+      "image": "/images/glove-008.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "glove-009",
+      "name": "ColdGrip Snowboard Gloves",
+      "size": ["M", "L"],
+      "price": 89.99,
+      "salePrice": 79.99,
+      "description": "Snowboard gloves for extreme cold, offering superior grip.",
+      "specs": {
+        "material": "Synthetic leather and nylon",
+        "closureType": "Adjustable wrist strap",
+        "flex": "Hard",
+        "lining": "Fleece",
+        "footbed": "Foam padding",
+        "outsole": "Sticky rubber",
+        "features": ["Water-resistant", "Windproof", "Thermo-moldable"]
+      },
+      "gender": "Unisex",
+      "image": "/images/glove-009.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "glove-010",
+      "name": "StormRider Gloves",
+      "size": ["S", "M", "L"],
+      "price": 109.99,
+      "salePrice": 99.99,
+      "description": "Heavy-duty gloves designed for snowboarding in the harshest conditions.",
+      "specs": {
+        "material": "Waterproof Gore-Tex",
+        "closureType": "Elastic wristband",
+        "flex": "Soft",
+        "lining": "Warm fleece",
+        "footbed": "Memory foam",
+        "outsole": "Rubber grip",
+        "features": ["Waterproof", "Breathable", "Insulated"]
+      },
+      "gender": "Female",
+      "image": "/images/glove-010.jpg",
+      "availability": "In Stock"
+    }
+  ]
+}

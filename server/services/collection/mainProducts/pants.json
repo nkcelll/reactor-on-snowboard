@@ -1,0 +1,154 @@
+{
+  "pants": [
+    {
+      "key": "pants-001",
+      "name": "AlphaSnow Snowboard Pants",
+      "size": ["S", "M", "L", "XL"],
+      "price": 179.99,
+      "salePrice": 159.99,
+      "description": "Durable waterproof snowboard pants with adjustable fit.",
+      "specs": {
+        "material": "Waterproof Nylon, Insulated",
+        "features": ["Windproof", "Water-resistant", "Adjustable waist", "Snow gaiters"]
+      },
+      "gender": "Unisex",
+      "image": "/images/pants-001.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "pants-002",
+      "name": "FreezeGuard Snowboard Pants",
+      "size": ["M", "L", "XL"],
+      "price": 199.99,
+      "salePrice": 179.99,
+      "description": "High-performance snowboard pants designed for extreme weather.",
+      "specs": {
+        "material": "Polyester, Waterproof",
+        "features": ["Breathable", "Windproof", "Snowproof", "Fully seam-sealed"]
+      },
+      "gender": "Male",
+      "image": "/images/pants-002.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "pants-003",
+      "name": "ThermoFlex Snowboard Pants",
+      "size": ["S", "M", "L"],
+      "price": 169.99,
+      "salePrice": 149.99,
+      "description": "Lightweight and warm snow pants, perfect for all-day riding.",
+      "specs": {
+        "material": "Water-resistant Nylon, Insulated",
+        "features": ["Breathable", "Adjustable cuffs", "Waterproof zippers"]
+      },
+      "gender": "Female",
+      "image": "/images/pants-003.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "pants-004",
+      "name": "EdgeGuard Thermal Pants",
+      "size": ["S", "M", "L"],
+      "price": 139.99,
+      "salePrice": 119.99,
+      "description": "Affordable yet warm thermal pants perfect for snowy conditions.",
+      "specs": {
+        "material": "Polyester, Fleece-lined",
+        "features": ["Warm", "Softshell", "Elastic waistband"]
+      },
+      "gender": "Unisex",
+      "image": "/images/pants-004.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "pants-005",
+      "name": "MountainEdge Insulated Pants",
+      "size": ["M", "L", "XL"],
+      "price": 219.99,
+      "salePrice": 199.99,
+      "description": "High-insulation snow pants with excellent wind and water resistance.",
+      "specs": {
+        "material": "Waterproof Polyester, Insulated",
+        "features": ["Breathable", "Adjustable fit", "Waterproof zippers"]
+      },
+      "gender": "Male",
+      "image": "/images/pants-005.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "pants-006",
+      "name": "FrostShield Thermal Pants",
+      "size": ["S", "M", "L"],
+      "price": 149.99,
+      "salePrice": 129.99,
+      "description": "Thermal pants that provide great insulation during cold weather.",
+      "specs": {
+        "material": "Softshell, Fleece-lined",
+        "features": ["Breathable", "Thermal insulation", "Windproof"]
+      },
+      "gender": "Female",
+      "image": "/images/pants-006.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "pants-007",
+      "name": "SnowTrek Performance Pants",
+      "size": ["M", "L", "XL"],
+      "price": 239.99,
+      "salePrice": 219.99,
+      "description": "Durable, high-performance pants for extreme snowboarding conditions.",
+      "specs": {
+        "material": "GORE-TEX, Insulated",
+        "features": ["Breathable", "Windproof", "Adjustable waist"]
+      },
+      "gender": "Unisex",
+      "image": "/images/pants-007.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "pants-008",
+      "name": "ThermoPro Snowboard Pants",
+      "size": ["S", "M", "L"],
+      "price": 179.99,
+      "salePrice": 159.99,
+      "description": "Insulated snow pants designed to keep you warm in any condition.",
+      "specs": {
+        "material": "Polyester, Waterproof",
+        "features": ["Waterproof", "Thermal insulation", "Fully adjustable"]
+      },
+      "gender": "Male",
+      "image": "/images/pants-008.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "pants-009",
+      "name": "ArcticShield Thermal Pants",
+      "size": ["S", "M", "L"],
+      "price": 159.99,
+      "salePrice": 139.99,
+      "description": "Thermal pants with great protection against cold weather and snow.",
+      "specs": {
+        "material": "Polyester, Insulated",
+        "features": ["Breathable", "Water-resistant", "Adjustable fit"]
+      },
+      "gender": "Unisex",
+      "image": "/images/pants-009.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "pants-010",
+      "name": "WinterGuard Snowboard Pants",
+      "size": ["M", "L", "XL"],
+      "price": 209.99,
+      "salePrice": 189.99,
+      "description": "Heavy-duty snow pants with exceptional insulation and waterproofing.",
+      "specs": {
+        "material": "GORE-TEX, Insulated",
+        "features": ["Waterproof", "Breathable", "Snow gaiters"]
+      },
+      "gender": "Female",
+      "image": "/images/pants-010.jpg",
+      "availability": "In Stock"
+    }
+  ]
+}

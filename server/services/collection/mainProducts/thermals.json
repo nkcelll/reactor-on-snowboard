@@ -1,0 +1,154 @@
+{
+  "thermals": [
+    {
+      "key": "thermal-001",
+      "name": "ThermoShield Base Layer",
+      "size": ["S", "M", "L", "XL"],
+      "price": 79.99,
+      "salePrice": 69.99,
+      "description": "Lightweight and breathable base layer for all-day comfort.",
+      "specs": {
+        "material": "Polyester, Spandex blend",
+        "features": ["Moisture-wicking", "Quick-drying", "Stretch fit"]
+      },
+      "gender": "Unisex",
+      "image": "/images/thermal-001.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "thermal-002",
+      "name": "Xtreme Snow Thermal",
+      "size": ["M", "L", "XL"],
+      "price": 89.99,
+      "salePrice": 79.99,
+      "description": "Insulated and warm thermal layer designed for extreme cold weather.",
+      "specs": {
+        "material": "Merino wool blend",
+        "features": ["Breathable", "Thermal insulation", "Anti-odor treatment"]
+      },
+      "gender": "Female",
+      "image": "/images/thermal-002.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "thermal-003",
+      "name": "ProThermal Layer",
+      "size": ["S", "M", "L"],
+      "price": 69.99,
+      "salePrice": 59.99,
+      "description": "Perfect base layer to keep you warm during winter sports.",
+      "specs": {
+        "material": "Polyester, Nylon",
+        "features": ["Stretch fit", "Moisture-wicking", "Soft touch"]
+      },
+      "gender": "Male",
+      "image": "/images/thermal-003.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "thermal-004",
+      "name": "SnowFlex Thermals",
+      "size": ["M", "L", "XL"],
+      "price": 79.99,
+      "salePrice": 69.99,
+      "description": "Soft and durable thermal base layer with extra warmth.",
+      "specs": {
+        "material": "Thermal fleece",
+        "features": ["Windproof", "Water-resistant", "Anti-chafe stitching"]
+      },
+      "gender": "Unisex",
+      "image": "/images/thermal-004.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "thermal-005",
+      "name": "SnowGuard Base Layer",
+      "size": ["S", "M", "L"],
+      "price": 59.99,
+      "salePrice": 49.99,
+      "description": "Affordable and reliable base layer for all conditions.",
+      "specs": {
+        "material": "Polyester blend",
+        "features": ["Quick-drying", "Lightweight", "Breathable"]
+      },
+      "gender": "Male",
+      "image": "/images/thermal-005.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "thermal-006",
+      "name": "HeatWave Thermal Layer",
+      "size": ["S", "M", "L", "XL"],
+      "price": 69.99,
+      "salePrice": 59.99,
+      "description": "Stay warm in any conditions with this highly efficient thermal layer.",
+      "specs": {
+        "material": "Merino wool",
+        "features": ["Thermal regulation", "Breathable", "Comfortable fit"]
+      },
+      "gender": "Female",
+      "image": "/images/thermal-006.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "thermal-007",
+      "name": "ArcticTherm Insulated Layer",
+      "size": ["M", "L"],
+      "price": 99.99,
+      "salePrice": 89.99,
+      "description": "Premium insulated thermal layer for ultimate warmth.",
+      "specs": {
+        "material": "Nylon, Spandex",
+        "features": ["Thermal insulation", "Moisture-wicking", "Flexible fit"]
+      },
+      "gender": "Unisex",
+      "image": "/images/thermal-007.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "thermal-008",
+      "name": "FrostGuard Thermals",
+      "size": ["S", "M", "L"],
+      "price": 79.99,
+      "salePrice": 69.99,
+      "description": "Perfect thermal base layer to keep you warm in cold climates.",
+      "specs": {
+        "material": "Polyester fleece",
+        "features": ["Wind-resistant", "Breathable", "Anti-odor"]
+      },
+      "gender": "Male",
+      "image": "/images/thermal-008.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "thermal-009",
+      "name": "QuickDry Thermal Layer",
+      "size": ["S", "M", "L"],
+      "price": 59.99,
+      "salePrice": 49.99,
+      "description": "Quick-drying thermal layer for active snowboarders.",
+      "specs": {
+        "material": "Polyester, Spandex",
+        "features": ["Moisture-wicking", "Quick-drying", "Stretch fit"]
+      },
+      "gender": "Female",
+      "image": "/images/thermal-009.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "thermal-010",
+      "name": "IceFlow Thermal Base Layer",
+      "size": ["M", "L", "XL"],
+      "price": 79.99,
+      "salePrice": 69.99,
+      "description": "High-performance thermal layer for extreme cold conditions.",
+      "specs": {
+        "material": "Thermal fleece",
+        "features": ["Windproof", "Breathable", "Stretch fit"]
+      },
+      "gender": "Unisex",
+      "image": "/images/thermal-010.jpg",
+      "availability": "In Stock"
+    }
+  ]
+}

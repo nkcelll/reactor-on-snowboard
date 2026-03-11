@@ -1,0 +1,72 @@
+{
+  "bags": [
+    {
+      "key": "bag-001",
+      "name": "Padded Snowboard Bag",
+      "size": ["155cm", "165cm", "175cm"],
+      "price": 129.99,
+      "specs": {
+        "material": "Water-resistant polyester",
+        "pockets": "2 exterior zippered pockets",
+        "padding": "Thick foam padding",
+        "closureType": "Full-length zipper",
+        "dimensions": "155cm x 35cm x 15cm",
+        "weight": "2.5 kg",
+        "features": ["Adjustable shoulder straps", "Internal strap system"]
+      },
+      "image": "https://mtnweekly.com/wp-content/uploads/2021/11/Burton-AK-Surgence-Tour-Pack.png",
+      "availability": "In Stock"
+    },
+    {
+      "key": "bag-002",
+      "name": "Snowboard Travel Duffel Bag",
+      "size": ["150cm", "160cm"],
+      "price": 179.99,
+      "specs": {
+        "material": "Durable canvas",
+        "pockets": "1 large compartment, 1 small accessory pocket",
+        "padding": "Light padding",
+        "closureType": "Heavy-duty zipper",
+        "dimensions": "160cm x 40cm x 20cm",
+        "weight": "3 kg",
+        "features": ["Roller wheels", "Stowable shoulder strap", "Handles on both ends"]
+      },
+      "image": "https://mtnweekly.com/wp-content/uploads/2021/11/Burton-AK-Surgence-Tour-Pack.png",
+      "availability": "In Stock"
+    },
+    {
+      "key": "bag-003",
+      "name": "Soft Snowboard Sleeve Bag",
+      "size": ["140cm", "150cm"],
+      "price": 69.99,
+      "specs": {
+        "material": "Soft polyester fabric",
+        "pockets": "None",
+        "padding": "Minimal padding",
+        "closureType": "Zipper",
+        "dimensions": "150cm x 30cm x 10cm",
+        "weight": "1.2 kg",
+        "features": ["Lightweight", "Compact design", "Easy to carry"]
+      },
+      "image": "https://mtnweekly.com/wp-content/uploads/2021/11/Burton-AK-Surgence-Tour-Pack.png",
+      "availability": "In Stock"
+    },
+    {
+      "key": "bag-004",
+      "name": "Premium Snowboard Gear Bag",
+      "size": ["170cm", "180cm"],
+      "price": 249.99,
+      "specs": {
+        "material": "Heavy-duty nylon",
+        "pockets": "Multiple interior compartments, 1 exterior pocket",
+        "padding": "High-density foam padding",
+        "closureType": "Heavy-duty zipper",
+        "dimensions": "180cm x 45cm x 20cm",
+        "weight": "3.8 kg",
+        "features": ["Extra large storage", "Wheeled for easy transport", "Durable handles"]
+      },
+      "image": "https://mtnweekly.com/wp-content/uploads/2021/11/Burton-AK-Surgence-Tour-Pack.png",
+      "availability": "Out of Stock"
+    }
+  ]
+}

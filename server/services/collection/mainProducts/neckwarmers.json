@@ -1,0 +1,124 @@
+{
+  "neckwarmers": [
+    {
+      "key": "neckwarmer-001",
+      "name": "WarmWave Neck Warmer",
+      "brand": "WaveGear",
+      "size": ["One Size"],
+      "price": 19.99,
+      "salePrice": 14.99,
+      "gender": "Unisex",
+      "description": "Soft, stretchy neck warmer designed to keep you warm in cold weather.",
+      "image": "/images/neckwarmer-001.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "neckwarmer-002",
+      "name": "ArcticFlex Neck Warmer",
+      "brand": "ArcticTech",
+      "size": ["One Size"],
+      "price": 22.99,
+      "salePrice": 18.99,
+      "gender": "Male",
+      "description": "Thermal fleece neck warmer that provides full coverage and warmth.",
+      "image": "/images/neckwarmer-002.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "neckwarmer-003",
+      "name": "FrostGuard Neck Warmer",
+      "brand": "FrostGear",
+      "size": ["One Size"],
+      "price": 17.99,
+      "salePrice": 13.99,
+      "gender": "Female",
+      "description": "Stretchable neck warmer with a soft interior to trap heat.",
+      "image": "/images/neckwarmer-003.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "neckwarmer-004",
+      "name": "BlizzardShield Neck Warmer",
+      "brand": "BlizzardWear",
+      "size": ["One Size"],
+      "price": 25.99,
+      "salePrice": 19.99,
+      "gender": "Unisex",
+      "description": "Water-resistant and insulated neck warmer for extreme conditions.",
+      "image": "/images/neckwarmer-004.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "neckwarmer-005",
+      "name": "ThermaTech Neck Warmer",
+      "brand": "ThermaGear",
+      "size": ["One Size"],
+      "price": 21.99,
+      "salePrice": 16.99,
+      "gender": "Male",
+      "description": "Lightweight and breathable neck warmer that retains heat effectively.",
+      "image": "/images/neckwarmer-005.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "neckwarmer-006",
+      "name": "IceBreaker Neck Warmer",
+      "brand": "IceEdge",
+      "size": ["One Size"],
+      "price": 24.99,
+      "salePrice": 19.99,
+      "gender": "Female",
+      "description": "Premium neck warmer with ultra-soft fleece for maximum warmth.",
+      "image": "/images/neckwarmer-006.jpg",
+      "availability": "Out of Stock"
+    },
+    {
+      "key": "neckwarmer-007",
+      "name": "SnowShield Neck Warmer",
+      "brand": "SnowTech",
+      "size": ["One Size"],
+      "price": 18.99,
+      "salePrice": 14.49,
+      "gender": "Unisex",
+      "description": "Compact and easy to store, perfect for layering on cold days.",
+      "image": "/images/neckwarmer-007.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "neckwarmer-008",
+      "name": "PeakGuard Neck Warmer",
+      "brand": "PeakGear",
+      "size": ["One Size"],
+      "price": 20.00,
+      "salePrice": 15.50,
+      "gender": "Male",
+      "description": "Durable and cozy neck warmer to shield against cold winds.",
+      "image": "/images/neckwarmer-008.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "neckwarmer-009",
+      "name": "StormProtect Neck Warmer",
+      "brand": "StormGear",
+      "size": ["One Size"],
+      "price": 28.99,
+      "salePrice": 22.99,
+      "gender": "Female",
+      "description": "Windproof and insulating neck warmer for snowy and windy days.",
+      "image": "/images/neckwarmer-009.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "neckwarmer-010",
+      "name": "ColdGuard Neck Warmer",
+      "brand": "ColdShield",
+      "size": ["One Size"],
+      "price": 26.99,
+      "salePrice": 21.99,
+      "gender": "Unisex",
+      "description": "Soft and flexible with added warmth for cold weather protection.",
+      "image": "/images/neckwarmer-010.jpg",
+      "availability": "In Stock"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "helmets": [
+    {
+      "key": "helmet-001",
+      "name": "ProSnow Helmet",
+      "size": ["S", "M", "L"],
+      "price": 129.99,
+      "salePrice": 119.99,
+      "description": "High-performance helmet with advanced safety features.",
+      "specs": {
+        "material": "Polycarbonate shell, EPS foam",
+        "closureType": "Adjustable chin strap",
+        "features": ["Impact resistance", "Ventilation system", "Adjustable fit"]
+      },
+      "gender": "Unisex",
+      "image": "/images/helmet-001.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "helmet-002",
+      "name": "Fusion Snowboard Helmet",
+      "size": ["M", "L", "XL"],
+      "price": 149.99,
+      "salePrice": 139.99,
+      "description": "Stylish helmet designed for comfort and protection on the slopes.",
+      "specs": {
+        "material": "ABS shell, EPS foam",
+        "closureType": "Quick-release chin strap",
+        "features": ["Lightweight", "Multi-vent system", "Comfort padding"]
+      },
+      "gender": "Male",
+      "image": "/images/helmet-002.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "helmet-003",
+      "name": "Alpha Snowboard Helmet",
+      "size": ["S", "M", "L"],
+      "price": 159.99,
+      "salePrice": 149.99,
+      "description": "Comfortable and durable helmet for ultimate protection.",
+      "specs": {
+        "material": "Polycarbonate shell, EPS foam",
+        "closureType": "Rotational dial fit system",
+        "features": ["Anti-fog visor", "Impact-resistant", "Breathable mesh lining"]
+      },
+      "gender": "Female",
+      "image": "/images/helmet-003.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "helmet-004",
+      "name": "Xtreme Snowboard Helmet",
+      "size": ["S", "M", "L"],
+      "price": 169.99,
+      "salePrice": 159.99,
+      "description": "Top-of-the-line helmet for serious snowboarders.",
+      "specs": {
+        "material": "ABS plastic, EPS foam",
+        "closureType": "Adjustable chin strap",
+        "features": ["Ventilation system", "Durable outer shell", "Comfort padding"]
+      },
+      "gender": "Unisex",
+      "image": "/images/helmet-004.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "helmet-005",
+      "name": "SnowGuard Helmet",
+      "size": ["M", "L"],
+      "price": 119.99,
+      "salePrice": 109.99,
+      "description": "Affordable helmet with great protection and style.",
+      "specs": {
+        "material": "Durable shell, EPS foam",
+        "closureType": "Elastic chin strap",
+        "features": ["Breathable", "Adjustable fit", "Ventilation"]
+      },
+      "gender": "Male",
+      "image": "/images/helmet-005.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "helmet-006",
+      "name": "Turbo Snowboard Helmet",
+      "size": ["S", "M", "L"],
+      "price": 139.99,
+      "salePrice": 129.99,
+      "description": "Performance-driven helmet with high safety ratings.",
+      "specs": {
+        "material": "Polycarbonate shell, EPS foam",
+        "closureType": "Quick-lock chin strap",
+        "features": ["High-impact protection", "Ventilation channels", "Adjustable fit"]
+      },
+      "gender": "Unisex",
+      "image": "/images/helmet-006.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "helmet-007",
+      "name": "StormRider Helmet",
+      "size": ["M", "L"],
+      "price": 159.99,
+      "salePrice": 149.99,
+      "description": "Heavy-duty helmet for extreme snowboarding conditions.",
+      "specs": {
+        "material": "ABS shell, EPS foam",
+        "closureType": "Elastic chin strap",
+        "features": ["Impact resistant", "Multi-directional ventilation", "Comfortable padding"]
+      },
+      "gender": "Female",
+      "image": "/images/helmet-007.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "helmet-008",
+      "name": "Vision Snowboard Helmet",
+      "size": ["M", "L"],
+      "price": 129.99,
+      "salePrice": 119.99,
+      "description": "Helmet designed for optimal comfort and safety.",
+      "specs": {
+        "material": "Polycarbonate shell, EPS foam",
+        "closureType": "Chin guard and adjustable straps",
+        "features": ["Breathable", "Lightweight", "Shock absorption"]
+      },
+      "gender": "Male",
+      "image": "/images/helmet-008.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "helmet-009",
+      "name": "ProGuard Snowboard Helmet",
+      "size": ["S", "M", "L"],
+      "price": 179.99,
+      "salePrice": 169.99,
+      "description": "Premium helmet with extra safety features and a sleek design.",
+      "specs": {
+        "material": "ABS outer shell, EPS inner foam",
+        "closureType": "Quick fit strap",
+        "features": ["Impact resistant", "Adjustable fit", "Anti-fog visor"]
+      },
+      "gender": "Unisex",
+      "image": "/images/helmet-009.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "helmet-010",
+      "name": "Glacier Snowboard Helmet",
+      "size": ["S", "M"],
+      "price": 159.99,
+      "salePrice": 149.99,
+      "description": "Sturdy helmet designed to withstand harsh winter conditions.",
+      "specs": {
+        "material": "Polycarbonate outer shell, EPS foam",
+        "closureType": "Chin strap with buckle",
+        "features": ["Durable", "Waterproof", "Adjustable ventilation"]
+      },
+      "gender": "Female",
+      "image": "/images/helmet-010.jpg",
+      "availability": "In Stock"
+    }
+  ]
+}

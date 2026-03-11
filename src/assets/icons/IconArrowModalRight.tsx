@@ -1,4 +1,4 @@
-const IconArrowModalRight = ({ size = 40, color = "currentColor", strokeWidth = 2 }) => {
+const IconArrowModalRight = ({ size = 32, color = "currentColor", strokeWidth = 2 }) => {
   return (
     <svg
       width={size}

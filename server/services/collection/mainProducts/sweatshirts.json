@@ -1,0 +1,124 @@
+{
+  "sweatshirts": [
+    {
+      "key": "sweatshirt-001",
+      "name": "ProFlex Sport Sweatshirt",
+      "brand": "ProFit",
+      "size": ["S", "M", "L", "XL"],
+      "price": 49.99,
+      "salePrice": 39.99,
+      "gender": "Unisex",
+      "description": "A breathable and durable sweatshirt designed for active sports.",
+      "image": "/images/sweatshirt-001.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "sweatshirt-002",
+      "name": "UltraFlex Performance Hoodie",
+      "brand": "UltraWear",
+      "size": ["M", "L", "XL"],
+      "price": 59.99,
+      "salePrice": 45.99,
+      "gender": "Male",
+      "description": "A stylish hoodie perfect for cold-weather workouts and casual wear.",
+      "image": "/images/sweatshirt-002.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "sweatshirt-003",
+      "name": "FlexCore Sport Hoodie",
+      "brand": "FlexFit",
+      "size": ["S", "M", "L", "XL"],
+      "price": 55.99,
+      "salePrice": 44.99,
+      "gender": "Female",
+      "description": "Made with moisture-wicking fabric to keep you dry during intense activities.",
+      "image": "/images/sweatshirt-003.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "sweatshirt-004",
+      "name": "Xtreme Flex Sweatshirt",
+      "brand": "XtremeGear",
+      "size": ["L", "XL", "XXL"],
+      "price": 65.00,
+      "salePrice": 50.00,
+      "gender": "Unisex",
+      "description": "An oversized sweatshirt designed for ultimate comfort and flexibility.",
+      "image": "/images/sweatshirt-004.jpg",
+      "availability": "Out of Stock"
+    },
+    {
+      "key": "sweatshirt-005",
+      "name": "Velocity Fit Hoodie",
+      "brand": "Velocity Apparel",
+      "size": ["S", "M", "L"],
+      "price": 49.99,
+      "salePrice": 39.99,
+      "gender": "Female",
+      "description": "A perfect fit for outdoor training and running.",
+      "image": "/images/sweatshirt-005.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "sweatshirt-006",
+      "name": "Swift Sport Hoodie",
+      "brand": "Swift Performance",
+      "size": ["M", "L", "XL"],
+      "price": 59.99,
+      "salePrice": 48.99,
+      "gender": "Male",
+      "description": "Lightweight, perfect for layering on cooler days.",
+      "image": "/images/sweatshirt-006.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "sweatshirt-007",
+      "name": "Endurance Fit Sweatshirt",
+      "brand": "EnduraWear",
+      "size": ["S", "M", "L"],
+      "price": 64.99,
+      "salePrice": 49.99,
+      "gender": "Unisex",
+      "description": "A durable sweatshirt with a modern fit for everyday wear.",
+      "image": "/images/sweatshirt-007.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "sweatshirt-008",
+      "name": "Core Performance Hoodie",
+      "brand": "CoreFit",
+      "size": ["M", "L", "XL"],
+      "price": 69.99,
+      "salePrice": 55.99,
+      "gender": "Male",
+      "description": "Made with a special fabric to support high-intensity workouts.",
+      "image": "/images/sweatshirt-008.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "sweatshirt-009",
+      "name": "ActiveMove Hoodie",
+      "brand": "ActiveGear",
+      "size": ["S", "M", "L"],
+      "price": 59.99,
+      "salePrice": 47.99,
+      "gender": "Female",
+      "description": "Stretchable and breathable fabric ideal for active wear.",
+      "image": "/images/sweatshirt-009.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "sweatshirt-010",
+      "name": "AllSport Flex Hoodie",
+      "brand": "AllSport Apparel",
+      "size": ["S", "M", "L", "XL"],
+      "price": 69.99,
+      "salePrice": 54.99,
+      "gender": "Unisex",
+      "description": "A classic hoodie with a sporty look, perfect for training.",
+      "image": "/images/sweatshirt-010.jpg",
+      "availability": "In Stock"
+    }
+  ]
+}

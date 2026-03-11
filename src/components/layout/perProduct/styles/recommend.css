@@ -1,0 +1,49 @@
+.recommend-section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 60px;
+  gap: 30px;
+}
+
+.recommend-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+}
+
+.recommend-button-box-scroll {
+  display: flex;
+  align-items: center;
+  gap:30px
+}
+
+.recommend-button-box-scroll > button {
+  background-color: var(--bg-sec);
+  border-radius: 45%;
+  width: 40px;
+  height: 40px;
+}
+
+.recommend-content-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  /* background-color: red; */
+  gap:20px;
+  overflow-x: hidden;
+   scroll-behavior: smooth;
+
+}
+
+.recommend-items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.recomment-items-image {
+  width: 300px;
+}

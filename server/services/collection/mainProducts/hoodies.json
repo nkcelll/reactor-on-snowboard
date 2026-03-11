@@ -1,0 +1,124 @@
+{
+  "hoodies": [
+    {
+      "key": "hoodie-001",
+      "name": "SnowFlex Hoodie",
+      "brand": "FlexGear",
+      "size": ["S", "M", "L", "XL"],
+      "price": 39.99,
+      "salePrice": 29.99,
+      "gender": "Unisex",
+      "description": "Cozy fleece hoodie designed for comfort and warmth during outdoor activities.",
+      "image": "/images/hoodie-001.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "hoodie-002",
+      "name": "ChillOut Hoodie",
+      "brand": "ChillTech",
+      "size": ["S", "M", "L", "XL"],
+      "price": 45.99,
+      "salePrice": 35.99,
+      "gender": "Male",
+      "description": "Warm and stylish hoodie perfect for layering after snowboarding sessions.",
+      "image": "/images/hoodie-002.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "hoodie-003",
+      "name": "ArcticEdge Hoodie",
+      "brand": "EdgeWear",
+      "size": ["S", "M", "L", "XL"],
+      "price": 49.99,
+      "salePrice": 39.99,
+      "gender": "Female",
+      "description": "Lightweight but warm hoodie with an adjustable hood and sleek design.",
+      "image": "/images/hoodie-003.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "hoodie-004",
+      "name": "SnowGuard Hoodie",
+      "brand": "SnowCraft",
+      "size": ["S", "M", "L", "XL"],
+      "price": 55.99,
+      "salePrice": 44.99,
+      "gender": "Unisex",
+      "description": "Heavy-duty hoodie made for snow sports, with windproof material.",
+      "image": "/images/hoodie-004.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "hoodie-005",
+      "name": "WinterBreeze Hoodie",
+      "brand": "BreezeGear",
+      "size": ["S", "M", "L", "XL"],
+      "price": 39.99,
+      "salePrice": 31.99,
+      "gender": "Male",
+      "description": "Breathable and insulating hoodie ideal for winter sports.",
+      "image": "/images/hoodie-005.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "hoodie-006",
+      "name": "PeakThermo Hoodie",
+      "brand": "PeakTech",
+      "size": ["S", "M", "L", "XL"],
+      "price": 42.99,
+      "salePrice": 33.99,
+      "gender": "Female",
+      "description": "Thermal hoodie designed for both on and off the slopes.",
+      "image": "/images/hoodie-006.jpg",
+      "availability": "Out of Stock"
+    },
+    {
+      "key": "hoodie-007",
+      "name": "BlizzardShield Hoodie",
+      "brand": "BlizzardWear",
+      "size": ["S", "M", "L", "XL"],
+      "price": 48.99,
+      "salePrice": 38.99,
+      "gender": "Unisex",
+      "description": "Insulated hoodie for extreme cold weather protection.",
+      "image": "/images/hoodie-007.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "hoodie-008",
+      "name": "StormChaser Hoodie",
+      "brand": "StormTech",
+      "size": ["S", "M", "L", "XL"],
+      "price": 49.99,
+      "salePrice": 39.99,
+      "gender": "Male",
+      "description": "A rugged hoodie with water-resistant features for stormy weather.",
+      "image": "/images/hoodie-008.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "hoodie-009",
+      "name": "ThermalStorm Hoodie",
+      "brand": "ThermaGear",
+      "size": ["S", "M", "L", "XL"],
+      "price": 59.99,
+      "salePrice": 49.99,
+      "gender": "Female",
+      "description": "Warm, insulated hoodie designed for winter sports enthusiasts.",
+      "image": "/images/hoodie-009.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "hoodie-010",
+      "name": "SnowShifter Hoodie",
+      "brand": "ShifterGear",
+      "size": ["S", "M", "L", "XL"],
+      "price": 52.99,
+      "salePrice": 43.99,
+      "gender": "Unisex",
+      "description": "Classic fit hoodie with modern style, designed to keep you warm and comfortable.",
+      "image": "/images/hoodie-010.jpg",
+      "availability": "In Stock"
+    }
+  ]
+}

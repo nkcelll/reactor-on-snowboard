@@ -1,0 +1,90 @@
+{
+  "boots": [
+    {
+      "key": "boot-001",
+      "name": "Alpha Snowboard Boots",
+      "size": ["7", "8", "9", "10", "11", "12", "13"],
+      "price": 229.99,
+      "description": "good",
+      "specs": {
+        "material": "Synthetic leather, mesh",
+        "closureType": "Boa lacing system",
+        "flex": "Medium",
+        "lining": "Fleece-lined",
+        "footbed": "Memory foam footbed",
+        "outsole": "Rubber with EVA cushioning",
+        "features": ["Waterproof", "Breathable", "Thermo-moldable liner"]
+      },
+      "image": "",
+      "availability": "In Stock"
+    },
+    {
+      "key": "boot-002",
+      "name": "Fusion Snowboard Boots",
+      "size": ["6", "7", "8", "9", "10", "11"],
+      "price": 189.99,
+      "specs": {
+        "material": "Durable PU leather",
+        "closureType": "Traditional lace-up system",
+        "flex": "Soft",
+        "lining": "Heat-moldable liner",
+        "footbed": "Customizable footbed",
+        "outsole": "Rubber with grip pads",
+        "features": ["All-day comfort", "Lace lock system", "Enhanced ankle support"]
+      },
+      "image": "/images/boot-002.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "boot-003",
+      "name": "Storm Pro Snowboard Boots",
+      "size": ["8", "9", "10", "11", "12"],
+      "price": 349.99,
+      "specs": {
+        "material": "Advanced synthetic fabric",
+        "closureType": "Dual Boa system",
+        "flex": "Stiff",
+        "lining": "Thermal liner with heat-reflective technology",
+        "footbed": "Cushioning gel footbed",
+        "outsole": "Vibram sole with extra traction",
+        "features": ["Waterproof", "Insulated", "Shock-absorbing sole"]
+      },
+      "image": "/images/boot-003.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "boot-004",
+      "name": "Freestyle Snowboard Boots",
+      "size": ["6", "7", "8", "9", "10"],
+      "price": 159.99,
+      "specs": {
+        "material": "Soft synthetic upper",
+        "closureType": "Quick-pull lacing system",
+        "flex": "Soft",
+        "lining": "Breathable liner",
+        "footbed": "Standard foam footbed",
+        "outsole": "Rubber with grip texture",
+        "features": ["Lightweight", "Flexible", "Good for freestyle riding"]
+      },
+      "image": "/images/boot-004.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "boot-005",
+      "name": "Stealth All-Mountain Boots",
+      "size": ["9", "10", "11", "12"],
+      "price": 279.99,
+      "specs": {
+        "material": "Leather and suede combination",
+        "closureType": "Hybrid Boa + Velcro strap system",
+        "flex": "Medium-stiff",
+        "lining": "Fleece and moisture-wicking liner",
+        "footbed": "EVA foam footbed",
+        "outsole": "Rubber with multi-directional tread",
+        "features": ["Versatile", "High durability", "Great for all-mountain use"]
+      },
+      "image": "/images/boot-005.jpg",
+      "availability": "Out of Stock"
+    }
+  ]
+}

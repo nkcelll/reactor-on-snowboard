@@ -1,0 +1,124 @@
+{
+  "snowboardMasks": [
+    {
+      "key": "mask-001",
+      "name": "SnowVision Pro Mask",
+      "brand": "VisionGear",
+      "size": ["One Size"],
+      "price": 39.99,
+      "salePrice": 29.99,
+      "gender": "Unisex",
+      "description": "Premium protection for your face with anti-fog technology.",
+      "image": "/images/mask-001.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "mask-002",
+      "name": "GlacierShield Snow Mask",
+      "brand": "GlacierFit",
+      "size": ["One Size"],
+      "price": 44.99,
+      "salePrice": 34.99,
+      "gender": "Male",
+      "description": "Lightweight and breathable mask designed to withstand extreme cold.",
+      "image": "/images/mask-002.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "mask-003",
+      "name": "StormPro Face Mask",
+      "brand": "StormGear",
+      "size": ["One Size"],
+      "price": 29.99,
+      "salePrice": 22.99,
+      "gender": "Female",
+      "description": "A versatile snow mask with a sleek design for maximum comfort.",
+      "image": "/images/mask-003.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "mask-004",
+      "name": "IceBreaker Snow Mask",
+      "brand": "IceTech",
+      "size": ["One Size"],
+      "price": 49.99,
+      "salePrice": 39.99,
+      "gender": "Unisex",
+      "description": "Keeps your face warm and protected from snow and wind.",
+      "image": "/images/mask-004.jpg",
+      "availability": "Out of Stock"
+    },
+    {
+      "key": "mask-005",
+      "name": "HyperShield Snow Mask",
+      "brand": "HyperGear",
+      "size": ["One Size"],
+      "price": 54.99,
+      "salePrice": 42.99,
+      "gender": "Male",
+      "description": "Top-tier protection with enhanced breathability and UV protection.",
+      "image": "/images/mask-005.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "mask-006",
+      "name": "FrostGuard Ski Mask",
+      "brand": "FrostEdge",
+      "size": ["One Size"],
+      "price": 59.99,
+      "salePrice": 48.99,
+      "gender": "Female",
+      "description": "Warm and comfortable with an adjustable strap for perfect fit.",
+      "image": "/images/mask-006.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "mask-007",
+      "name": "BlizzardPro Face Mask",
+      "brand": "BlizzardTech",
+      "size": ["One Size"],
+      "price": 59.99,
+      "salePrice": 49.99,
+      "gender": "Unisex",
+      "description": "Protects your face from harsh winds and snow with superior insulation.",
+      "image": "/images/mask-007.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "mask-008",
+      "name": "SnowBlocker Mask",
+      "brand": "SnowShield",
+      "size": ["One Size"],
+      "price": 34.99,
+      "salePrice": 27.99,
+      "gender": "Male",
+      "description": "Full coverage mask designed for all-day wear on the slopes.",
+      "image": "/images/mask-008.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "mask-009",
+      "name": "PeakGuard Ski Mask",
+      "brand": "PeakTech",
+      "size": ["One Size"],
+      "price": 45.00,
+      "salePrice": 35.00,
+      "gender": "Unisex",
+      "description": "A premium mask that offers both comfort and performance.",
+      "image": "/images/mask-009.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "mask-010",
+      "name": "ArcticShield Face Mask",
+      "brand": "ArcticWear",
+      "size": ["One Size"],
+      "price": 39.99,
+      "salePrice": 29.99,
+      "gender": "Female",
+      "description": "Stylish and functional, designed to protect against cold and snow.",
+      "image": "/images/mask-010.jpg",
+      "availability": "In Stock"
+    }
+  ]
+}

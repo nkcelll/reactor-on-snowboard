@@ -1,0 +1,154 @@
+{
+  "tops": [
+    {
+      "key": "top-001",
+      "name": "AlphaSnow Snowboard Jacket",
+      "size": ["S", "M", "L", "XL"],
+      "price": 249.99,
+      "salePrice": 229.99,
+      "description": "Durable and lightweight snowboard jacket with superior waterproofing.",
+      "specs": {
+        "material": "Waterproof Nylon, Insulated",
+        "features": ["Breathable", "Windproof", "Adjustable hood", "Snow gaiters"]
+      },
+      "gender": "Unisex",
+      "image": "/images/top-001.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "top-002",
+      "name": "FreezeGuard Thermal Top",
+      "size": ["S", "M", "L"],
+      "price": 129.99,
+      "salePrice": 119.99,
+      "description": "Warm thermal top, perfect for layering on colder snowboarding days.",
+      "specs": {
+        "material": "Polyester, Fleece-lined",
+        "features": ["Thermal insulation", "Moisture-wicking", "Breathable"]
+      },
+      "gender": "Male",
+      "image": "/images/top-002.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "top-003",
+      "name": "ThermoFlex Snowboard Jacket",
+      "size": ["M", "L", "XL"],
+      "price": 199.99,
+      "salePrice": 179.99,
+      "description": "Premium insulated snowboard jacket with adjustable cuffs and hood.",
+      "specs": {
+        "material": "Water-resistant Polyester, Insulated",
+        "features": ["Breathable", "Thermal lining", "Water-resistant zippers"]
+      },
+      "gender": "Female",
+      "image": "/images/top-003.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "top-004",
+      "name": "EdgeGuard Snowboard Thermal Top",
+      "size": ["S", "M", "L"],
+      "price": 139.99,
+      "salePrice": 129.99,
+      "description": "Lightweight thermal top with stretch fabric for freedom of movement.",
+      "specs": {
+        "material": "Spandex, Polyester",
+        "features": ["Stretch fabric", "Breathable", "Moisture-wicking"]
+      },
+      "gender": "Unisex",
+      "image": "/images/top-004.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "top-005",
+      "name": "MountainFlex Insulated Jacket",
+      "size": ["M", "L", "XL"],
+      "price": 299.99,
+      "salePrice": 279.99,
+      "description": "Heavy-duty snowboard jacket for extreme weather with advanced insulation.",
+      "specs": {
+        "material": "Waterproof Nylon, Insulated",
+        "features": ["Windproof", "Adjustable cuffs", "Fully seam-sealed"]
+      },
+      "gender": "Male",
+      "image": "/images/top-005.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "top-006",
+      "name": "FrostShield Thermal Top",
+      "size": ["S", "M", "L"],
+      "price": 89.99,
+      "salePrice": 79.99,
+      "description": "Cozy thermal top, ideal for layering under jackets or for casual use.",
+      "specs": {
+        "material": "Cotton, Fleece",
+        "features": ["Soft", "Thermal insulation", "Breathable"]
+      },
+      "gender": "Female",
+      "image": "/images/top-006.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "top-007",
+      "name": "SnowTrek Performance Snowboard Top",
+      "size": ["M", "L", "XL"],
+      "price": 179.99,
+      "salePrice": 159.99,
+      "description": "High-performance thermal top, designed for extreme cold temperatures.",
+      "specs": {
+        "material": "Polyester, Spandex",
+        "features": ["Stretch fabric", "Thermal insulation", "Quick-dry"]
+      },
+      "gender": "Unisex",
+      "image": "/images/top-007.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "top-008",
+      "name": "ThermalPro Snowboard Jacket",
+      "size": ["S", "M", "L"],
+      "price": 179.99,
+      "salePrice": 159.99,
+      "description": "Insulated snowboard jacket, with perfect balance of warmth and breathability.",
+      "specs": {
+        "material": "Waterproof Nylon, Insulated",
+        "features": ["Breathable", "Adjustable cuffs", "Ventilation zippers"]
+      },
+      "gender": "Male",
+      "image": "/images/top-008.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "top-009",
+      "name": "ArcticGuard Thermal Snowboard Top",
+      "size": ["S", "M", "L"],
+      "price": 129.99,
+      "salePrice": 119.99,
+      "description": "Premium thermal top, designed for high-intensity snowboarding activities.",
+      "specs": {
+        "material": "Polyester, Fleece-lined",
+        "features": ["Warm", "Moisture-wicking", "Breathable"]
+      },
+      "gender": "Unisex",
+      "image": "/images/top-009.jpg",
+      "availability": "In Stock"
+    },
+    {
+      "key": "top-010",
+      "name": "WinterGuard Insulated Top",
+      "size": ["S", "M", "L"],
+      "price": 159.99,
+      "salePrice": 139.99,
+      "description": "Snowboard thermal top, built to keep you warm while providing freedom of movement.",
+      "specs": {
+        "material": "Water-resistant Polyester, Insulated",
+        "features": ["Breathable", "Windproof", "Stretch fit"]
+      },
+      "gender": "Female",
+      "image": "/images/top-010.jpg",
+      "availability": "In Stock"
+    }
+  ]
+}

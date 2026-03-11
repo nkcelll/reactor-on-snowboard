@@ -1,7 +1,7 @@
 import './styles/additionalInformation.css';
 import ButtonToggle from './details/component/ButtonToggle';
-import DetailsInfo from './details/DetailInfo'
-import {SpecsInfo, FeaturesInfo} from './index';
+import DetailsInfo from './details/DetailInfo';
+import { SpecsInfo, FeaturesInfo } from './index';
 
 import { useState } from 'react';
 
@@ -9,62 +9,44 @@ export default function AdditionalInformation() {
   const [detailOpen, setDetailOpen] = useState<Record<number, boolean>>({
     1: false,
     2: false,
-    3: false
+    3: false,
   });
-  console.log(detailOpen);
 
   const toggleDropdown = (index: number) => {
-
-      // setDetailOpen(true);
-      setDetailOpen(prev => {
-        return ({
-          ...prev,
-          [index]: !prev[index]
-        })
-      });
+    // setDetailOpen(true);
+    setDetailOpen((prev) => {
+      return {
+        ...prev,
+        [index]: !prev[index],
+      };
+    });
   };
   return (
     <div className="additional-information-container">
       <div className="product-dropdown-detail">
         <ButtonToggle //////////////////////////////////////////////  Prod Details
-          detailName = 'Product Details'
+          detailName="Product Details"
           detailOpen={detailOpen[1]}
           toggleDropdown={() => toggleDropdown(1)}
         />
-        <DetailsInfo
-          detailOpen = {detailOpen[1]}
-        />
+        <DetailsInfo detailOpen={detailOpen[1]} />
       </div>
-      <div className="product-dropdown-detail"> 
+      <div className="product-dropdown-detail">
         <ButtonToggle //////////////////////////////////////////////  Specs
-          detailName = 'Specs'
+          detailName="Specs"
           detailOpen={detailOpen[2]}
           toggleDropdown={() => toggleDropdown(2)}
         />
-        <SpecsInfo   
-          detailOpen = {detailOpen[2]}
-        />
+        <SpecsInfo detailOpen={detailOpen[2]} />
       </div>
       <div className="product-dropdown-detail">
-        <ButtonToggle  //////////////////////////////////////////////  Featured
-          detailName = 'Featured'
+        <ButtonToggle //////////////////////////////////////////////  Featured
+          detailName="Featured"
           detailOpen={detailOpen[3]}
           toggleDropdown={() => toggleDropdown(3)}
         />
-        <FeaturesInfo
-          detailOpen = {detailOpen[3]}
-        />
+        <FeaturesInfo detailOpen={detailOpen[3]} />
       </div>
-
-
-
-
-
-
-
-
-
-
 
       {/* <div className="product-dropdown-detail">
         <button type="button" onClick={() => toggleDropdown(1)}>

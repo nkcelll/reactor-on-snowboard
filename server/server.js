@@ -1,48 +1,83 @@
-const express = require("express");
-const fs = require("fs");
-const path = require("path");
-const cors = require("cors");
-
+const express = require('express');
+const fs = require('fs');
+const path = require('path');
+const cors = require('cors');
 
 const app = express();
 const PORT = 9999;
 
-app.use(cors({
-  origin: "*" // Allow requests from all origins
-}));
+app.use(
+  cors({
+    origin: '*',
+  }),
+);
 
-// Middleware to parse JSON data from incoming requests
 app.use(express.json());
 
-// 📌 Function to load JSON data from a file
-const getProducts = (file) => {
+const getProducts = (folder, file) => {
   try {
-    const filePath = path.join(__dirname, "collection",'menu', file); // Construct file path
-    // console.log("Looking for file at:", filePath); // Log the file path for debugging
-    const data = fs.readFileSync(filePath, "utf-8"); // Read file data
-    return JSON.parse(data); // Parse and return the JSON data
+    const filePath = path.join(
+      __dirname,
+      'services',
+      'collection',
+      folder,
+      file,
+    );
+    const data = fs.readFileSync(filePath, 'utf-8');
+    return JSON.parse(data);
   } catch (error) {
-    console.error("Error reading file:", file, error);
-    return null; // Return null if there is an error
+    console.error('Error reading file:', file, error);
+    return null;
   }
 };
 
-// 📌 Route to get products by category
-app.get("/api/products/:category", (req, res) => {
-  const { category } = req.params; // Extract the category from the URL
-  const fileName = `${category}.json`; // Construct the file name dynamically
-  const products = getProducts(fileName); // Call getProducts with the file name
+// Get Home Products
+app.get('/api/home/:file', (req, res) => {
+  const { file } = req.params;
+  const fileName = `${file}.json`;
 
-  if (products) {
-    // If products are found, send them in the response
-    res.status(200).json(products);
+  const data = getProducts('home', fileName);
+
+  if (data) {
+    res.status(200).json(data);
   } else {
-    // If no products are found (file is missing or empty), send an error message
-    res.status(404).json({ message: "Category not found!" });
+    res.status(404).json({ message: 'File not found!' });
   }
 });
 
-// 📌 Start the server
+// Get Menu endpoints
+app.get('/api/home/menu/:menuFiels', (req, res) => {
+  const { subFolder, menuFiels } = req.params;
+  const fileName = `${menuFiels}.json`;
+
+  const data = getProducts('home/menu', fileName);
+
+  if (data) {
+    res.status(200).json(data);
+  } else {
+    res.status(404).json({ message: 'File not found!' });
+  }
+});
+
+// Get Whole Products
+app.get('/api/mainProducts/:category', (req, res) => {
+  const { category } = req.params;
+  const fileName = `${category}.json`;
+  const products = getProducts('mainProducts', fileName);
+  console.log(category);
+
+  if (products) {
+    res.status(200).json(products);
+  } else {
+    res.status(404).json({ message: 'Category not found!' });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`✅ Fake API running at http://localhost:${PORT}`);
 });
+
+//  Folder/File Checker
+// const homeFilePath = path.join(__dirname, 'services', "collection", "mainProducts");
+// console.log("Checking path:", homeFilePath);
+// console.log("File exists?", fs.existsSync(homeFilePath));

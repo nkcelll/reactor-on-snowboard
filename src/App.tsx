@@ -7,7 +7,9 @@ import Products from './pages/Products';
 import PerProductsLayout from './pages/PerProcutsLayout';
 import Login from './components/layout/register/Login';
 import SignUp from './components/layout/register/SignUp';
+import Account from './components/layout/account/Account';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
+
 
 function AppWraper() {
   const location = useLocation();
@@ -22,6 +24,7 @@ function AppWraper() {
         <Route path="/products/product" element={<PerProductsLayout />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path='/account' element={<Account/>} />
       </Routes>
       <Footer hidden={isHome} />
     </>
