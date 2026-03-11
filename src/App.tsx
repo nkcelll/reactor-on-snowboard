@@ -31,7 +31,8 @@ function AppWraper() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products/:id" element={<Products />} />
-          <Route path="/products/product" element={<PerProductsLayout />} />
+          <Route path="/products/:category/product/:productId" element={<PerProductsLayout />} />
+          {/* <Route path="/products/product/:id" element={<PerProductsLayout />} /> */}
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path='/account' element={<Account/>} />

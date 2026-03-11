@@ -1,6 +1,24 @@
 import { IconMinus, IconPlus } from '@/assets/icons';
+import { useState, useEffect } from 'react';
+import { useParams, useSearchParams } from 'react-router-dom';
 
 export default function PerProductsMainInfo() {
+  const [product, setProduct] = useState({})
+  const {category, productId} = useParams()
+  // const [searchParams] = useSearchParams()
+  // const productId = searchParams.get('id')
+  console.log(category, productId);
+  
+
+  // useEffect(() => {
+  //   const fetchProduct = async () => {
+  //     // const paramId = id
+  //     const response = await fetch(`https://reactor-on-snowboard-server.onrender.com/api/mainproducts/${category}/${}`)
+  //   }
+  //   fetchProduct()
+  // })
+  
+
   return (
     <div className="main-product">
       <h1>Bataleon Ecko Mode</h1>

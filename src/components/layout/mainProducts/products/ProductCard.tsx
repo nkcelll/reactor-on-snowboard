@@ -1,20 +1,23 @@
+import type { Product } from "./ProductsGrid";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import type { Product } from "./ProductsGrid";
+import { useParams } from "react-router-dom";
+
 
 interface ProductCardProps {
   item: Product;
 }
 
 export default function ProductCard({ item }: ProductCardProps) {
-  // Each card tracks its own image index (0 or 1)
   const [imgIndex, setImgIndex] = useState(0);
-  
+
+  const {id} = useParams()
+  const category = id
   // console.log(item);
   
   return (
     <div key={item.key} id={item.id} className="product-content">
-      <Link to="/products/product" className="img-item-link">
+      <Link to={`/products/${category}/product/id=${item.id}`} className="img-item-link">
         <img
           onMouseEnter={() => setImgIndex(1)}
           onMouseLeave={() => setImgIndex(0)}

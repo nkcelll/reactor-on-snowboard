@@ -72,6 +72,27 @@ app.get('/api/mainProducts/:category', (req, res) => {
   }
 });
 
+// Get single product by id
+app.get('/api/mainProducts/:category/:id', (req, res) => {
+  const { category, id } = req.params;
+  const fileName = `${category}.json`;
+
+  const data = getProducts('mainProducts', fileName);
+
+  if (!data) return res.status(404).json({ message: 'Category file not found!' });
+
+  // Assuming your JSON structure is { snowboards: [ ... ] }
+  const productArray = data[category]; // e.g., data["snowboards"]
+
+  if (!productArray) return res.status(404).json({ message: 'Category not found!' });
+
+  const product = productArray.find((p) => p.id === id);
+
+  if (!product) return res.status(404).json({ message: 'Product not found!' });
+
+  res.status(200).json(product);
+});
+
 app.listen(PORT, () => {
   console.log(`✅ Fake API running at http://localhost:${PORT}`);
 });
