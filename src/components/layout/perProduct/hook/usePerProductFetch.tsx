@@ -1,6 +1,27 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
+import type { TerrainMap, CharacteristicsProps, ProductSpecs } from '../types';
+
+// interface ProductSpecs {
+//   baseType: string,
+//   coreMaterial: string,
+//   flex: string,
+//   recommendedFor: string,
+//   terrain: string,
+//   weight: string
+// }
+
+// interface TerrainMap {
+//   park: string;
+//   allMountain: string;
+//   pow: string;
+// }
+// interface Characteristics {
+//   rideLevel: string,
+//   adjustability: string
+// }
+
 interface PerProduct {
   availability: string,
   brand: string,
@@ -11,7 +32,9 @@ interface PerProduct {
   price: number,
   salePrice?: number,
   size?: string[],
-  specs?: Record<string, any>
+  specs?: ProductSpecs
+  terrainMap: TerrainMap,
+  characteristics: CharacteristicsProps
 }
 
 const usePerProductFetch = (): [PerProduct | undefined, boolean, string] => {

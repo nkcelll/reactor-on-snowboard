@@ -47,14 +47,16 @@
   height: 40px;
   display: flex;
   align-items: center;
-  background-color: var(--bg-third);
+  background-color: var(--bg-sec);
 }
 
 .box-info-park {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 70%;
+  /* width: 70%; */
+  padding: 0 20px ;
+
   height: 30px;
   background-color: var(--bg-main);
 }
@@ -62,8 +64,10 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 70%;
+  /* width: 70%; */
   height: 30px;
+  padding: 0 20px ;
+  
   /* background-color: green; */
   background-color: var(--bg-main);
 
@@ -72,11 +76,16 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 40%;
+  /* width: 40%; */
   height: 30px;
+  padding: 0 20px ;
   /* background-color: green; */
   background-color: var(--bg-main);
 
+}
+
+.box-map-character-border-control {
+  border-radius: 2%;
 }
 .terrain-info > span {
   justify-content: flex-end;

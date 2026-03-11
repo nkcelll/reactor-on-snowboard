@@ -22,7 +22,7 @@
         "pow": "3"
       },
       "characteristics": {
-        "rideLlevel": "3",
+        "rideLevel": "3",
         "adjustability": "5"
       },
       "overallRating": "5",
@@ -50,7 +50,7 @@
         "weight": "2.7 kg"
       },
       "characteristics": {
-        "rideLlevel": "7",
+        "rideLevel": "7",
         "adjustability": "6"
       },
       "terrainMap": {
@@ -89,7 +89,7 @@
         "pow": "9.5"
       },
       "characteristics": {
-        "rideLlevel": "10",
+        "rideLevel": "10",
         "adjustability": "7"
       },
       "overallRating": "8.3",

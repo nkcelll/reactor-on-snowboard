@@ -30,7 +30,11 @@ export default function PerProductLayout() {
           size={perProduct?.size}
         />
       </div>
-      <ProductDetails />
+      <ProductDetails 
+        // terrainMap={perProduct.}
+        terrainMap={perProduct.terrainMap}
+        characteristics={perProduct.characteristics}
+      />
       <AdditionalInformation />
       <Recommend />
     </div>

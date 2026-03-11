@@ -1,6 +1,11 @@
 import '../../styles/characteristics.css';
-
-export default function Characteristics() {
+import type { CharacteristicsProps } from '../../types';
+interface CharacteristicsEndpoint {
+  characteristics: CharacteristicsProps
+}
+export default function Characteristics({characteristics}: CharacteristicsEndpoint) {
+  console.log(characteristics);
+  
   return (
     <div className="characteristics">
       <span className="span-characteristics">Characteristics</span>
@@ -11,7 +16,7 @@ export default function Characteristics() {
         </div>
         <div className="joyful-hard-rating terrain-info">
           <div className="joyful-hard rating-box">
-            <span>6</span>
+            <span>{characteristics.rideLlevel}</span>
           </div>
         </div>
       </div>
@@ -24,7 +29,7 @@ export default function Characteristics() {
           </div>
           <div className="joyful-hard-rating">
             <div className="rating-box">
-              <span>6</span>
+              <span>{characteristics.adjustability}</span>
             </div>
           </div>
         </div>
