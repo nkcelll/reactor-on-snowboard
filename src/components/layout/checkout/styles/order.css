@@ -1,0 +1,31 @@
+.order-price-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px 20px;
+  border-bottom: 1px solid currentColor;
+
+}
+
+.price-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 40px;
+}
+
+.order-price-span {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1.50px;
+}
+.total-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid currentColor;
+  height: 60px;
+  padding: 0 20px;
+  
+}

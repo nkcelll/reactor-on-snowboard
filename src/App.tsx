@@ -18,6 +18,7 @@ const PerProductsLayout = lazy(() => import('./pages/PerProcutsLayout'))
 const Login = lazy(() => import('./components/layout/register/Login'))
 const SignUp = lazy(() => import('./components/layout/register/SignUp'))
 const Account = lazy(() => import('./components/layout/account/Account'))
+const Checkout = lazy(() => import('./components/layout/checkout/Checkout'))
 
 
 function AppWraper() {
@@ -36,6 +37,7 @@ function AppWraper() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path='/account' element={<Account/>} />
+          <Route path='checkout' element={<Checkout/>}/>
         </Routes>
       </Suspense>
       <Footer hidden={isHome} />
