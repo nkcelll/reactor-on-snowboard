@@ -18,10 +18,12 @@ export default function HomeProducts() {
   > | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
-
   const containerRef = useRef<HTMLElement>(null);
 
-  useSmoothHorizontalScroll(containerRef as React.RefObject<HTMLElement>, isLoading);
+  useSmoothHorizontalScroll(
+    containerRef as React.RefObject<HTMLElement>,
+    isLoading,
+  );
 
   useEffect(() => {
     const fetchHomeProducts = async () => {
@@ -48,12 +50,11 @@ export default function HomeProducts() {
     fetchHomeProducts();
   }, []);
 
-  // if(!error) {
-  //   return <p>{error}</p>
-  // }
+  if (error) {
+    return <div className="error-message-container">{error}</div>;
+  }
 
   const products = homeProducts ? Object.values(homeProducts.data) : [];
-  // console.log(products);
 
   const productsHome = products.map((item) => {
     const postersSrc = item.posters?.[0].poster;
@@ -69,7 +70,7 @@ export default function HomeProducts() {
   return (
     <>
       {isLoading ? (
-        <ProductsLoading isLoading={isLoading}/>
+        <ProductsLoading isLoading={isLoading} />
       ) : (
         <main ref={containerRef} id="home-container">
           {productsHome}

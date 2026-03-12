@@ -8,7 +8,7 @@ interface TerrainEndpoint {
 export default function Details({ terrainMap }: TerrainEndpoint) {
   // const a = Object.entries(terrainMap).map(item => item)
   // console.log(a);
-  
+  if(!terrainMap) return
   return (
     <>
       {/* <div className="product-details">

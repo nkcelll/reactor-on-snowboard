@@ -13,9 +13,14 @@ export default function ProductDetails({
   characteristics,
   overallRating,
 }: ProductDetailProps) {
-
   return (
-    <div className="product-details-container">
+    <div
+      className="product-details-container"
+      style={{
+        display:
+          !terrainMap && !characteristics && !overallRating ? 'none' : '',
+      }}
+    >
       <Details terrainMap={terrainMap} />
       <Characteristics
         characteristics={characteristics}

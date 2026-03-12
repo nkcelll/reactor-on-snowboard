@@ -4,10 +4,9 @@ import {
   PerProductMainInfo,
   ProductDetails,
   AdditionalInformation,
-  Recommend,
+  // Recommend,
 } from './index';
 import { usePerProductFetch } from './hook/index';
-// import { useState } from 'react';
 
 export default function PerProductLayout() {
   const [perProduct, isLoading, error] = usePerProductFetch();
@@ -31,7 +30,6 @@ export default function PerProductLayout() {
         />
       </div>
       <ProductDetails 
-        // terrainMap={perProduct.}
         terrainMap={perProduct.terrainMap}
         characteristics={perProduct.characteristics}
         overallRating={perProduct.overallRating}
@@ -39,7 +37,7 @@ export default function PerProductLayout() {
       <AdditionalInformation 
         specs={perProduct.specs}
       />
-      <Recommend />
+      {/* <Recommend /> */}
     </div>
   );
 }

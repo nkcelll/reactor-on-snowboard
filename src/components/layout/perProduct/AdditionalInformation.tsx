@@ -5,7 +5,7 @@ import type { ProductSpecs } from './types';
 import { SpecsInfo, FeaturesInfo } from './index';
 
 interface SpecsInfoProps {
-  specs: ProductSpecs
+  specs?: ProductSpecs
 }
 
 import { useState } from 'react';
@@ -16,6 +16,7 @@ export default function AdditionalInformation({specs}: SpecsInfoProps) {
     2: false,
     3: false,
   });
+  if(!specs) return null
 
   const toggleDropdown = (index: number) => {
     // setDetailOpen(true);

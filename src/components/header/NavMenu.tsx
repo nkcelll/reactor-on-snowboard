@@ -5,8 +5,12 @@ import { Link } from 'react-router-dom';
 
 export default function NavMenu() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  const [menuItems] = useMenu();
+  const [menuItems, err] = useMenu();
+  console.log(menuItems);
 
+  if (err) {
+    return <div className="menu-error">{err}</div>;
+  }
   const navValues = menuItems.map((item, index) => {
     return (
       <div

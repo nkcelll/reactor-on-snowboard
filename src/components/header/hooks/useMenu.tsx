@@ -1,23 +1,23 @@
 import { useEffect, useState } from 'react';
 
-type SubCategory = {
+interface SubCategory {
   id: string;
   subCat: string;
   url: string;
 };
 
-type TopCategory = {
+interface TopCategory {
   id: string;
   topCat: string;
   subCategory: SubCategory[];
 };
 
-type MenuItem = {
+interface MenuItem {
   label: string;
   data: TopCategory[];
 };
 
-export default function useMenu() {
+export default function useMenu(): [MenuItem[], string] {
   const [menuItems, setMenuItems] = useState<MenuItem[]>([]);
   const [err, setErr] = useState('');
 
@@ -62,5 +62,5 @@ export default function useMenu() {
     };
     fetchNavMenu();
   }, []);
-  return [menuItems];
+  return [menuItems, err];
 }

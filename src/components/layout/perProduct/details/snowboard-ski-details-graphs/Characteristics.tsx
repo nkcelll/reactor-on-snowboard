@@ -5,7 +5,8 @@ interface CharacteristicsEndpoint {
   overallRating: string
 }
 export default function Characteristics({characteristics, overallRating}: CharacteristicsEndpoint) {
-  
+  if(!characteristics) return
+  if(!overallRating) return
   return (
     <div className="characteristics">
       <span className="span-characteristics">Characteristics</span>

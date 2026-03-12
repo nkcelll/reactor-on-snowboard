@@ -1,12 +1,12 @@
 import './styles/recommend.css';
-import { IconArrowModalLeft, IconArrowModalRight } from '@/assets/icons';
-import { Link } from 'react-router-dom';
-import { useState, useEffect, useRef } from 'react';
+// import { IconArrowModalLeft, IconArrowModalRight } from '@/assets/icons';
+// import { Link } from 'react-router-dom';
+// import { useState, useEffect, useRef } from 'react';
 
-type Product = {
-  name: string;
-  images: string[];
-};
+// type Product = {
+//   name: string;
+//   images: string[];
+// };
 
 export default function Recommend() {
 //   const [recommends, setRecommends] = useState<Product[]>([]);
