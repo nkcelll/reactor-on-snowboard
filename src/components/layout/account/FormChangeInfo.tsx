@@ -1,16 +1,24 @@
 import { IconClose } from '@/assets/icons';
-import type { ProfileFields } from './ProfileFields';
+import type { ProfileFields, AddressFields } from './ProfileInputFields';
 
 interface FormChangeEndpoints {
-  userProfileInputs: ProfileFields[];
-  isOpen: boolean;
-  toggleModal: () => void;
+  userProfileInputs?: ProfileFields[];
+  addressInputs?: AddressFields[];
+  openProfile?: boolean;
+  openAddress?: boolean;
+  toggleProfile?: () => void;
+  toggleAddress?: () => void;
 }
 
+// type ModalType = 'profile' | 'address' | null
+
 export default function FormChangeInfo({
-  userProfileInputs,
-  isOpen,
-  toggleModal,
+  userProfileInputs = [],
+  openProfile,
+  toggleProfile,
+  addressInputs = [],
+  openAddress,
+  toggleAddress,
 }: FormChangeEndpoints) {
   const userProfileInfo = userProfileInputs.map((field) => {
     return (
@@ -25,18 +33,40 @@ export default function FormChangeInfo({
       </div>
     );
   });
+
+  const addressInfo = addressInputs.map((field) => {
+    return (
+      <div key={field.id} className="edit-form-inputs-modal">
+        <label htmlFor={field.htmlFor}>{field.label}</label>
+        <input
+          className="input-fields edit-form-input-fields"
+          id={field.id}
+          type={field.inputType}
+          placeholder={field.placeHolder}
+          required
+        />
+      </div>
+    );
+  });
+
+  const title = openProfile ? 'Edit Profile' : 'Edit Address';
+
   return (
     <>
-      {isOpen && (
+      {(openProfile || openAddress) && (
         <div className="modal-profile-user-container">
-          <div className="user-wrapper-modal">
+          <form className="user-wrapper-modal">
             <div className="form-edit-header">
-              <span>Edit Profile</span>
-              <button type="button" onClick={toggleModal}>
+              <span>{title}</span>
+              <button
+                type="button"
+                onClick={openProfile ? toggleProfile : toggleAddress}
+              >
                 <IconClose />
               </button>
             </div>
-            {userProfileInfo}
+            {openProfile && userProfileInfo}
+            {openAddress && addressInfo}
             <div className="modal-profile-save-cancel-buttons">
               <button type="submit" className="modal-profile-save-buttons">
                 Save
@@ -44,12 +74,12 @@ export default function FormChangeInfo({
               <button
                 type="button"
                 className="modal-profile-save-buttons"
-                onClick={toggleModal}
+                onClick={openProfile ? toggleProfile : toggleAddress}
               >
                 Cancel
               </button>
             </div>
-          </div>
+          </form>
         </div>
       )}
     </>
