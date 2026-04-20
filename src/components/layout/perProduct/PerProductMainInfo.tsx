@@ -1,25 +1,44 @@
 import { IconMinus, IconPlus } from '@/assets/icons';
-import { useState } from 'react';
-// import { useParams} from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useCart } from '@/context/cart/cartContext';
 
 interface ProductMainInfo {
   availability: string;
+
   brand: string;
+  id: string;
   name: string;
   price: number;
   salePrice?: number;
   size?: string[];
+  image?: string
 }
 
 export default function PerProductsMainInfo({
   availability,
   brand,
-  name,
-  price,
+  id,
+  name, //
+  price, //
   salePrice,
-  size,
+  size, //
+  image
 }: ProductMainInfo) {
+  const { addToCart } = useCart();
   const [count, setCount] = useState<number>(1);
+  const [selectedSize, setSelectedSize] = useState<string | undefined>();
+
+  const addProductToCart = () => {
+    addToCart({
+      id,
+      name,
+      price,
+      size: selectedSize,
+      quantity: count,
+      image,
+
+    });
+  };
 
   const increment = () => {
     setCount((prev) => prev + 1);
@@ -36,7 +55,7 @@ export default function PerProductsMainInfo({
   // console.log(size);
 
   return (
-    <div className="main-product">
+    <div className="main-product" id={id}>
       <h1>{name}</h1>
       <h3>Brand: {brand}</h3>
       <span className="availability">{availability}</span>
@@ -76,7 +95,7 @@ export default function PerProductsMainInfo({
             </div>
           </div>
           <div className="add-to-cart-button">
-            <button id="add-to-cart">Add to cart</button>
+            <button id="add-to-cart" onClick={addProductToCart}>Add to cart</button>
           </div>
         </>
       )}

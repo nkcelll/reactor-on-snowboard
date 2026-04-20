@@ -21,12 +21,14 @@ export default function PerProductLayout() {
         <ProductImages images={perProduct?.images || []} />
         <PerProductMainInfo
           key={perProduct.id}
+          id={perProduct.id}
           availability={perProduct?.availability}
           brand={perProduct?.brand}
           name={perProduct.name}
           price={perProduct.price}
           salePrice={perProduct?.salePrice}
           size={perProduct?.size}
+          image={perProduct.images?.[0]}
         />
       </div>
       <ProductDetails 

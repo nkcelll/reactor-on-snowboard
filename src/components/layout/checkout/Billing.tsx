@@ -38,7 +38,7 @@ export default function Billing() {
             <label htmlFor="firstName">First Name</label>
             <input className='input-fields' type="text" required/>
           </div>
-          <button className='proceed-checkout-button'>Proceed Checkout</button>
+          <button type='submit' className='proceed-checkout-button'>Proceed Checkout</button>
         </form>
       </div>
       <button></button>

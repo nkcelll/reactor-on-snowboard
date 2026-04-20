@@ -68,6 +68,15 @@
   height: 60px;
 } */
 
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 .cart-head {
   display: flex;
   gap: 20px;
@@ -345,6 +354,8 @@
   align-items: center;
   height: 44px;
   gap: 20px; 
+  padding: 0 20px;
+
 }
 
 

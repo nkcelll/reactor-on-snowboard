@@ -42,5 +42,7 @@ export const IconLoadingIntro = icons.IconLoadingIntro
 export const IconCloseModal = icons.IconCloseModal
 export const IconArrowModalLeft = icons.IconArrowModalLeft
 export const IconArrowModalRight = icons.IconArrowModalRight
+export const IconCartEmpty = icons.IconCartEmpty
+
 // Optional default export
 export default icons;
